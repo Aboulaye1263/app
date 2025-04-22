@@ -1,0 +1,1 @@
+export const refs = Array.from({ length: 15 }, (_, i) => `/images/refs/${i + 1}.png`);
