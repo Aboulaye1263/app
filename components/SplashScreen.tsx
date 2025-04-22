@@ -21,7 +21,7 @@ const SplashScreen = () => {
     <div className="fixed inset-0 bg-white z-[9999] flex items-center justify-center transition-opacity duration-500">
       <div className="flex flex-col items-center gap-4">
         <Image
-          src="/images/logo.png"
+          src="/images/logo TOM.png"
           alt="Logo"
           width={200}
           height={200}

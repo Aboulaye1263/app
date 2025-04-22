@@ -55,8 +55,7 @@ export default function Home() {
               <span className="text-[var(--primary)]">Afrique de l'Ouest</span>
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-justify">
-              Fondé en 2004, Le Terminal des Opérations Maritimes (TOM GROUPE
-              MEDLOG) est un opérateur logistique spécialisé pionnier en Afrique
+              Fondé en 2004, Le Terminal des Opérations Maritimes (TOM) est un opérateur logistique spécialisé pionnier en Afrique
               de l&apos;Ouest, ayant établi sa marque grâce à sa fiabilité. Nous
               avons établi la norme pour les dépôts de conteneurs grâce à notre
               engagement envers l&apos;excellence opérationnelle,

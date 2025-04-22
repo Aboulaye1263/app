@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Logo Column */}
           <div>
             <Image
-              src="/images/logo_white.png"
+              src="/images/logo TOM white.png"
               alt="TOM MEDLOG"
               width={150}
               height={60}
@@ -20,7 +20,7 @@ export default function Footer() {
 
           {/* Contact Info Column */}
           <div>
-            <h3 className="font-bold mb-4 ">MEDLOG S.A.</h3>
+            <h3 className="font-bold mb-4 ">TOM S.A.</h3>
             <p className="text-sm mb-4">
               Immeuble MSC Hann Bel Air, Route Des Hydrocarbures
             </p>
@@ -36,7 +36,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">À PROPOS DE NOUS</h3>
             <p className="text-sm text-justify">
-              En tant que l&apos;un des fournisseurs de logistique et de chaîne d&apos;approvisionnement les plus étendus géographiquement au monde, Medlog est présent dans plus de 80 pays et offre de multiples services, avec le soutien d&apos;équipes locales dans le monde entier.
+              En tant que l&apos;un des fournisseurs de logistique et de chaîne d&apos;approvisionnement les plus étendus géographiquement au monde, TOM est présent dans plus de 80 pays et offre de multiples services, avec le soutien d&apos;équipes locales dans le monde entier.
             </p>
           </div>
         </div>

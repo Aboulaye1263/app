@@ -62,10 +62,10 @@ export default function HeaderMenu({
         className="hover:scale-105 transition-transform duration-300"
       >
         <Image
-          src={isScrolled ? "/images/logo.png" : "/images/logo_white.png"}
+          src={isScrolled ? "/images/logo TOM.png" : "/images/logo TOM white.png"}
           alt="TOM MEDLOG Logo"
-          width={120}
-          height={40}
+          width={160}
+          height={50}
           className="object-contain hover:scale-105 transition-all duration-500 hover:cursor-pointer"
         />
       </Link>

@@ -29,7 +29,7 @@ export default function WhyJoinUs() {
             </div>
             <div className="w-20 h-1 bg-yellow-400"></div>
             <p className="text-gray-700 text-justify">
-              Chez <span className="font-bold ">MEDLOG</span>, les gens sont au
+              Chez <span className="font-bold ">TOM</span>, les gens sont au
               cœur de nos activités. Nous nous engageons non seulement à
               recruter les bonnes personnes, mais aussi à fournir la formation
               et l’accompagnement dont nos équipes ont besoin pour faire
@@ -101,7 +101,7 @@ export default function WhyJoinUs() {
                 <div className="w-full h-0.5 bg-[#F3DFA2] mb-6"></div>
               </div>
               <p className="text-gray-700 text-justify">
-                Lorsque vous travaillez pour TOM MEDLOG, vous faites partie
+                Lorsque vous travaillez pour TOM, vous faites partie
                 d'une équipe qui se concentre sur l'impact positif dans le monde
                 – du maintien du flux des échanges mondiaux à la fourniture de
                 solutions durables et à la protection de nos mers.

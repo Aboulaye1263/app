@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { Accordion, AccordionPanel, AccordionTitle, AccordionContent } from "flowbite-react";
+import { Accordion, AccordionPanel, AccordionTitle, AccordionContent, Tooltip } from "flowbite-react";
 
 
 function CountUp({
@@ -112,7 +112,7 @@ export default function About() {
             data-aos="fade-up"
             className="flex flex-col gap-4 items-center mb-16"
           >
-            <p className="text-gray-700 text-sm md:text-base text-justify">
+            <p className="text-gray-700 text-sm md:text-base text-center">
               Parce que la logistique en Afrique de l'Ouest méritait mieux que
               des embûches et des retards, on s'est lancé un défi: Révolutionner
               le secteur, brique par brique, innovation par innovation.
@@ -129,7 +129,7 @@ export default function About() {
                   <h3 className="text-2xl font-bold mb-2">2008</h3>
                   <p className="text-gray-700 text-justify">
                     On a décidé de faire bouger les lignes de la logistique en
-                    Afrique de l'Ouest. Depuis, on n'a jamais levé le pied..
+                    Afrique de l'Ouest. Depuis, on n'a jamais levé le pied.
                   </p>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
@@ -165,7 +165,7 @@ export default function About() {
                     toutes les zones de dépotages et avoir un meilleur contrôle
                     des services douanier. Impact direct sur l’amélioration des
                     flux avec l’hinterland, particulièrement le corridor
-                    Dakar-Bamako
+                    Dakar-Bamako.
                   </p>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
@@ -181,7 +181,7 @@ export default function About() {
                 <div className="w-1/2 pl-8">
                   <h3 className="text-2xl font-bold mb-2">2022</h3>
                   <p className="text-gray-700 text-justify">
-                    Le Terminal des Opérations Maritimes Medlog (TOM MEDLOG)
+                    Le Terminal des Opérations Maritimes (TOM)
                     Sénégal a traité durant le mois de novembre 2022, 80.449
                     tonnes de marchandises en conventionnel réalisant ainsi une
                     performance record.
@@ -225,7 +225,7 @@ export default function About() {
             data-aos="fade-up"
             className="flex flex-col gap-4 items-center mt-16"
           >
-            <p className="text-gray-700 text-sm md:text-base text-justify">
+            <p className="text-gray-700 text-sm md:text-base text-center">
               Ce qu'on construit, ce n'est pas juste des entrepôts : On facilite
               les échanges. On booste les entreprises locales. On accélère la
               transformation logistique. Et surtout, on ne s'arrête pas là.
@@ -519,7 +519,7 @@ export default function About() {
           <div className="flex flex-col gap-6 md:gap-12 w-full md:w-1/2 h-full md:h-[70vh] px-8 py-16 overflow-y-hidden md:overflow-y-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--primary)] scroll-smooth [&>*]:opacity-100 [&>*]:translate-y-0">
             <div className="relative flex flex-col gap-2 mt-14">
 
-              <Accordion>
+              {/* <Accordion>
                 <AccordionPanel>
                   <AccordionTitle>Nous croyons à l'égalité des chances</AccordionTitle>
                   <AccordionContent>
@@ -599,19 +599,26 @@ export default function About() {
                     </p>
                   </AccordionContent>
                 </AccordionPanel>
-              </Accordion>
-              {/* <div
+              </Accordion> */}
+              <div
                 className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                 data-point
               ></div>
               <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+             
               <div className="flex flex-row items-center ">
-               
+              <Image
+                  src="/images/chance.png"
+                  alt="Medlog"
+                  width={70}
+                  height={70}
+                  className="mr-1"
+                />
                 
                 <h3 className="text-3xl font-bold text-white">
                   Nous croyons à l'égalité des chances
                 </h3>
-              </div> */}
+              </div>
               
                 {/* <p className="text-white text-sm md:text-base text-justify mt-8" >
                   Notre mission est de fournir à nos employés des opportunités
@@ -626,12 +633,15 @@ export default function About() {
               
                
               </div>
-              {/* <div className="relative flex flex-col gap-2 mt-14">
+              <div className="relative flex flex-col gap-2 mt-14">
               <div
                 className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                 data-point
               ></div>
               <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+              
+                 
+              <div className="flex flex-row items-center">
               <Image
                   src="/images/evolution.png"
                   alt="Medlog"
@@ -639,21 +649,18 @@ export default function About() {
                   height={70}
                   className="mr-1"
                 />
-                 
-              <div className="flex flex-row items-center">
-                 
                <h3 className="text-3xl font-bold text-white">
                   Nous évoluons constamment
                 </h3> 
                 
               </div>
-               <p className="text-white text-sm md:text-base text-justify mt-8">
+               {/* <p className="text-white text-sm md:text-base text-justify mt-8">
                 À travers des solutions de transport fiables et durables, nous
                 facilitons les échanges internationaux, stimulons les économies
                 locales et œuvrons pour une logistique plus responsable.
-              </p> 
-              </div> */}
-              {/* <div className="relative flex flex-col gap-2 mt-14">
+              </p>  */}
+              </div>
+              <div className="relative flex flex-col gap-4 mt-14">
                 <div
                   className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                   data-point
@@ -671,17 +678,17 @@ export default function About() {
                     Nous sommes une famille
                   </h3>
                 </div>
-                  <p className="text-white text-sm md:text-base text-justify mt-8">
-                    Chez MEDLOG, nous cultivons un esprit de famille qui inspire
+                  {/* <p className="text-white text-sm md:text-base text-justify mt-8">
+                    Chez TOM, nous cultivons un esprit de famille qui inspire
                     confiance, dévouement et sentiment d' appartenance. Nous croyons
                     en la force des relations humaines et en l'importance de créer
                     un environnement où chacun se sent valorisé et soutenu. Cet
                     esprit familial nous pousse à agir avec courage et
                     responsabilité, dans l'intérêt de nos clients et de nos
                     collaborateurs.
-                  </p> 
-              </div>  */}
-              {/* <div className="relative flex flex-col gap-2 mt-14">
+                  </p>  */}
+              </div> 
+              <div className="relative flex flex-col gap-2 mt-14">
                 <div className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                 data-point></div>
                 <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
@@ -704,9 +711,9 @@ export default function About() {
                 à nos clients une expérience unique. Chaque membre de notre
                 équipe est animé par cette volonté de dépassement et de
                 satisfaction client.
-                </p> 
-              </div>  */} 
-                {/* <div className="relative flex flex-col gap-2 mt-14">
+                </p>  */}
+              </div>  
+                <div className="relative flex flex-col gap-2 mt-14">
                   <div
                     className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                     data-point
@@ -724,13 +731,13 @@ export default function About() {
                     Nous nous soucions des gens
                   </h3>
                   </div>
-                  {/* <p className="text-white text-sm md:text-base text-justify mt-8">
+                   {/* <p className="text-white text-sm md:text-base text-justify mt-8">
                     Nous pensons que chaque personne apporte une valeur unique. Nous
                     développons des relations authentiques fondées sur l'éthique, le
                     respect et l' esprit d'équipe. Nous nous soucions vraiment de la
                     satisfaction et de la fidélité de nos clients et collaborateurs.
-                  </p> 
-                </div>*/}
+                  </p>  */}
+                </div>
             </div>   
           </div>
         </div>
@@ -747,11 +754,11 @@ export default function About() {
             <h2 className="text-4xl text-[#222221] font-bold mb-4 md:mb-6 text-center">
               UNE ÉQUIPE D'EXPERTS
             </h2>
-            <p className="text-gray-700 text-sm md:text-base text-justify">
+            {/* <p className="text-gray-700 text-sm md:text-base text-justify">
               Notre équipe combine expertise internationale et compréhension
               fine des réalités locales, l'alliance parfaite entre vision
               globale et maîtrise du terrain.
-            </p>
+            </p> */}
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[

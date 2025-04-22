@@ -6,7 +6,7 @@ import Link from 'next/link';
 const blogPosts = [
   {
     id: 1,
-    title: "COMMENT TOM MEDLOG RÉVOLUTIONNE T-ELLE LE TRANSPORT EN AFRIQUE DE L'OUEST ?",
+    title: "COMMENT TOM RÉVOLUTIONNE T-ELLE LE TRANSPORT EN AFRIQUE DE L'OUEST ?",
     image: "/images/blogs/article_1.jpg",
     slug: "transport-revolution"
   },
@@ -30,8 +30,8 @@ export default function BlogPage() {
         <HeaderMenu isScrolledAndImmutable/>
       {/* Header Section */}
       <div className="bg-[#222221] text-white py-12 px-4 text-center pt-40">
-        <h1 className="text-2xl md:text-4xl font-bold max-w-4xl mx-auto leading-tight">
-          RESTEZ INFORMÉ DES DERNIÈRES TENDANCES ET INNOVATIONS DANS LE SECTEUR DE LA LOGISTIQUE, AINSI QUE DES ACTUALITÉS DE TOM MEDLOG SÉNÉGAL.
+        <h1 className="text-2xl md:text-4xl font-normal max-w-4xl mx-auto leading-tight">
+          RESTEZ INFORMÉ DES DERNIÈRES TENDANCES ET INNOVATIONS DANS LE SECTEUR DE LA LOGISTIQUE, AINSI QUE DES ACTUALITÉS DE TOM SÉNÉGAL.
         </h1>
       </div>
 

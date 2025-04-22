@@ -9,7 +9,7 @@ export default function Contact() {
 
       {/* Contact Section */}
       <div className="bg-[#222221] pt-48 pb-32">
-        <h1 className="text-4xl md:text-5xl text-[var(--primary)] font-bold text-center mb-16 ">
+        <h1 className="text-4xl md:text-5xl text-[var(--primary)] font-normal text-center mb-16 ">
           Contactez-nous
         </h1>
 
