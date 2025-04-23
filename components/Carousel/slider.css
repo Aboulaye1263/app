@@ -1,0 +1,17 @@
+.expand-slider-container {
+    --slider-height: 500px;
+    --expanded-width: 65%;
+    --compressed-width: 17.5%;
+    --hover-width: 22%;
+    --transition-speed: 500ms;
+  }
+  
+  @media (min-width: 768px) {
+    .expand-slider-container {
+      --slider-height: 600px;
+      --expanded-width: 60%;
+      --compressed-width: 20%; 
+      --hover-width: 25%;
+    }
+  }
+  

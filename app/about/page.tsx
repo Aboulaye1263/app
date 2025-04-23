@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import { Accordion, AccordionPanel, AccordionTitle, AccordionContent, Tooltip } from "flowbite-react";
+import { Tooltip } from "flowbite-react";
 
 
 function CountUp({
@@ -507,113 +507,45 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-6 md:gap-12 container mx-auto">
           <div
             id="valeurs"
-            className="w-full mt-16 md:mt-0 md:w-1/2 flex flex-row md:flex-col items-center justify-center directed-scroll"
+            className="w-full mt-16 md:mt-0 md:w-2/5 flex flex-row md:flex-col items-center justify-center directed-scroll"
           >
             <div>
-              <h2 className="text-6xl text-white font-bold mb-4 md:mb-6 ">
+              <h2 className="text-5xl text-white font-bold mb-4 md:mb-6 ">
                 NOS VALEURS
               </h2>
               
             </div>
           </div>
-          <div className="flex flex-col gap-6 md:gap-12 w-full md:w-1/2 h-full md:h-[70vh] px-8 py-16 overflow-y-hidden md:overflow-y-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--primary)] scroll-smooth [&>*]:opacity-100 [&>*]:translate-y-0">
-            <div className="relative flex flex-col gap-2 mt-14">
+          <div className="flex flex-col gap-6 md:gap-12 w-full md:w-3/5 h-full md:h-[75vh] px-8 py-16 overflow-y-hidden md:overflow-y-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--primary)] scroll-smooth [&>*]:opacity-100 [&>*]:translate-y-0">
+            <div className="relative flex flex-col gap-2 mt-0">
 
-              {/* <Accordion>
-                <AccordionPanel>
-                  <AccordionTitle>Nous croyons à l'égalité des chances</AccordionTitle>
-                  <AccordionContent>
-                    <p className="text-white text-sm md:text-base text-justify mt-8" >
-                      Notre mission est de fournir à nos employés des opportunités
-                      d'épanouissement et de croissance personnelle. Nous nous
-                      engageons à partager nos connaissances, à fournir une formation
-                      et un soutien, permettant la croissance professionnelle de nos
-                      employés. Nous garantissons des opportunités équitables, offrant
-                      un développement professionnel à long terme, accueillant la
-                      diversité et valorisant toutes les cultures.
-                    </p>
-                  </AccordionContent>
-                </AccordionPanel>
-              </Accordion>
-              <Accordion>
-                <AccordionPanel>
-                  <AccordionTitle>Nous évoluons constamment</AccordionTitle>
-                  <AccordionContent>
-                    <p className="text-white text-sm md:text-base text-justify mt-8" >
-                      À travers des solutions de transport fiables et durables, nous
-                  facilitons les échanges internationaux, stimulons les économies
-                  locales et œuvrons pour une logistique plus responsable.
-                    </p>
-                  </AccordionContent>
-                </AccordionPanel>
-              </Accordion>
-              <Accordion>
-                <AccordionPanel>
-                  <AccordionTitle>Nous sommes une famille</AccordionTitle>
-                  <AccordionContent>
-                    <p className="text-white text-sm md:text-base text-justify mt-8" >
-                      Chez MEDLOG, nous cultivons un esprit de famille qui inspire
-                      confiance, dévouement et sentiment d' appartenance. Nous croyons
-                      en la force des relations humaines et en l'importance de créer
-                      un environnement où chacun se sent valorisé et soutenu. Cet
-                      esprit familial nous pousse à agir avec courage et
-                      responsabilité, dans l'intérêt de nos clients et de nos
-                      collaborateurs.
-                    </p>
-                  </AccordionContent>
-                </AccordionPanel>
-              </Accordion>
-              <Accordion>
-                <AccordionPanel>
-                  <AccordionTitle>Nous sommes passionnés et engagés</AccordionTitle>
-                  <AccordionContent>
-                    <p className="text-white text-sm md:text-base text-justify mt-8" >
-                      Nous sommes passionnés par ce que nous faisons. Cette passion se
-                      traduit par un engagement quotidien à fournir des services d'
-                      excellence, à surmonter les défis avec persévérance et à offrir
-                      à nos clients une expérience unique. Chaque membre de notre
-                      équipe est animé par cette volonté de dépassement et de
-                      satisfaction client.
-                    </p>
-                  </AccordionContent>
-                </AccordionPanel>
-              </Accordion>
-              <Accordion>
-                <AccordionPanel>
-                  <AccordionTitle className="flex">
-                    <Image
-                      src="/images/chance.png"
-                      alt="Medlog"
-                      width={40}
-                      height={40}
-                      className="h-full rounded-lg opacity-100"
-                    />
-                    Nous nous soucions des gens
-                  </AccordionTitle>
-                  <AccordionContent>
-                    <p className="text-white text-sm md:text-base text-justify mt-8" >
-                      Nous pensons que chaque personne apporte une valeur unique. Nous
-                      développons des relations authentiques fondées sur l'éthique, le
-                      respect et l' esprit d'équipe. Nous nous soucions vraiment de la
-                      satisfaction et de la fidélité de nos clients et collaborateurs.
-                    </p>
-                  </AccordionContent>
-                </AccordionPanel>
-              </Accordion> */}
-              <div
+            
+              {/* <div
                 className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                 data-point
-              ></div>
-              <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+              ></div> */}
+              {/* <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
              
               <div className="flex flex-row items-center ">
-              <Image
-                  src="/images/chance.png"
-                  alt="Medlog"
-                  width={70}
-                  height={70}
-                  className="mr-1"
-                />
+                <Tooltip 
+                className="bg-[var(--foreground)]"
+                placement="top"
+                content="Notre mission est de fournir à nos employés des opportunités
+                  d'épanouissement et de croissance personnelle. Nous nous
+                  engageons à partager nos connaissances, à fournir une formation
+                  et un soutien, permettant la croissance professionnelle de nos
+                  employés. Nous garantissons des opportunités équitables, offrant
+                  un développement professionnel à long terme, accueillant la
+                  diversité et valorisant toutes les cultures.">
+                  <Image
+                    src="/images/chance.png"
+                    alt="Medlog"
+                    width={70}
+                    height={70}
+                    className="mr-1"
+                  />
+                </Tooltip>
+              
                 
                 <h3 className="text-3xl font-bold text-white">
                   Nous croyons à l'égalité des chances
@@ -633,22 +565,29 @@ export default function About() {
               
                
               </div>
-              <div className="relative flex flex-col gap-2 mt-14">
-              <div
+              <div className="relative flex flex-col gap-2 mt-20">
+              {/* <div
                 className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                 data-point
               ></div>
-              <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+              <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
               
                  
               <div className="flex flex-row items-center">
-              <Image
+                <Tooltip 
+                className="bg-[var(--foreground)]"
+                content="À travers des solutions de transport fiables et durables, nous
+                facilitons les échanges internationaux, stimulons les économies
+                locales et œuvrons pour une logistique plus responsable.">
+                <Image
                   src="/images/evolution.png"
                   alt="Medlog"
                   width={70}
                   height={70}
                   className="mr-1"
                 />
+                </Tooltip>
+              
                <h3 className="text-3xl font-bold text-white">
                   Nous évoluons constamment
                 </h3> 
@@ -660,20 +599,31 @@ export default function About() {
                 locales et œuvrons pour une logistique plus responsable.
               </p>  */}
               </div>
-              <div className="relative flex flex-col gap-4 mt-14">
-                <div
+              <div className="relative flex flex-col gap-4 mt-24">
+                {/* <div
                   className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                   data-point
                 ></div>
-                <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+                <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
                 <div className="flex flex-row items-center">
-                  <Image
+                  <Tooltip 
+                  className="bg-[var(--foreground)]"
+                  content="Chez TOM, nous cultivons un esprit de famille qui inspire
+                    confiance, dévouement et sentiment d' appartenance. Nous croyons
+                    en la force des relations humaines et en l'importance de créer
+                    un environnement où chacun se sent valorisé et soutenu. Cet
+                    esprit familial nous pousse à agir avec courage et
+                    responsabilité, dans l'intérêt de nos clients et de nos
+                    collaborateurs.">
+                     <Image
                     src="/images/famille.png"
                     alt="Medlog"
                     width={70}
                     height={70}
                     className="mr-4"
                   />
+                  </Tooltip>
+                 
                   <h3 className="text-3xl font-bold text-white">
                     Nous sommes une famille
                   </h3>
@@ -688,45 +638,58 @@ export default function About() {
                     collaborateurs.
                   </p>  */}
               </div> 
-              <div className="relative flex flex-col gap-2 mt-14">
-                <div className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
+              <div className="relative flex flex-col gap-2 mt-24">
+                {/* <div className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                 data-point></div>
-                <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+                <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
                 <div className="flex flex-row items-center">
-                  <Image
-                    src="/images/passion.png"
-                    alt="Medlog"
-                    width={70}
-                    height={70}
-                    className="mr-4"
-                  />
+                  <Tooltip 
+                    className="bg-[var(--foreground)]"
+                    content="Nous sommes passionnés par ce que nous faisons. Cette passion se
+                    traduit par un engagement quotidien à fournir des services d'
+                    excellence, à surmonter les défis avec persévérance et à offrir
+                    à nos clients une expérience unique. Chaque membre de notre
+                    équipe est animé par cette volonté de dépassement et de
+                    satisfaction client.">
+                    <Image
+                      src="/images/passion.png"
+                      alt="Medlog"
+                      width={70}
+                      height={70}
+                      className="mr-4"
+                    />
+                  </Tooltip>
+                  
                   <h3 className="text-3xl font-bold text-white">
                     Nous sommes passionnés et engagés
                   </h3>
                 </div>
                 {/* <p className="text-white text-sm md:text-base text-justify mt-8">
-                Nous sommes passionnés par ce que nous faisons. Cette passion se
-                traduit par un engagement quotidien à fournir des services d'
-                excellence, à surmonter les défis avec persévérance et à offrir
-                à nos clients une expérience unique. Chaque membre de notre
-                équipe est animé par cette volonté de dépassement et de
-                satisfaction client.
+                
                 </p>  */}
               </div>  
-                <div className="relative flex flex-col gap-2 mt-14">
-                  <div
+                <div className="relative flex flex-col gap-2 mt-20">
+                  {/* <div
                     className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
                     data-point
                   ></div>
-                  <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" />
+                  <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
                   <div className="flex flex-row items-center">
-                  <Image
-                    src="/images/soucieux.png"
-                    alt="Medlog"
-                    width={70}
-                    height={70}
-                    className="mr-4"
-                  />
+                  <Tooltip 
+                    className="bg-[var(--foreground)]"
+                    content="Nous pensons que chaque personne apporte une valeur unique. Nous
+                    développons des relations authentiques fondées sur l'éthique, le
+                    respect et l' esprit d'équipe. Nous nous soucions vraiment de la
+                    satisfaction et de la fidélité de nos clients et collaborateurs.">
+                       <Image
+                        src="/images/soucieux.png"
+                        alt="Medlog"
+                        width={70}
+                        height={70}
+                        className="mr-4"
+                      />
+                    </Tooltip>
+                 
                   <h3 className="text-3xl font-bold text-white">
                     Nous nous soucions des gens
                   </h3>

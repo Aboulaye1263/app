@@ -1,5 +1,5 @@
 "use client";
-
+import ExpandSlider from "@/components/Carousel/ExpandSlider";
 import Footer from "@/components/Footer";
 import HeaderMenu from "@/components/Header/HeaderMenu";
 import Image from "next/image";
@@ -20,6 +20,33 @@ export default function ServicesPage() {
       once: true,
     });
   }, []);
+  const sliderImages = [
+    {
+      src: "/images/carousel.png",
+      alt: "Transport",
+      iconSrc:"/images/other_services/transport.png",
+      tagLink:"transport"
+    },
+    {
+      src: "/images/medlog_3.jpg",
+      alt: "Dépôt conteneurs",
+      iconSrc:"/images/other_services/conteneur.png",
+      tagLink:"depot"
+    },
+    {
+      src: "/images/mission_stockage.png",
+      alt: "Entreposage / Distribution marchandises",
+      iconSrc:"/images/other_services/entreposage.png",
+      tagLink:"entreposage"
+    },
+    {
+      src: "/images/objectif.png",
+      alt: "Solutions logistiques à valeurs ajoutées",
+      iconSrc:"/images/other_services/value.png",
+      tagLink:"solution"
+    }
+
+  ];
 
   return (
     <main className="min-h-screen bg-[#FAFAFA] overflow-x-hidden">
@@ -67,94 +94,21 @@ export default function ServicesPage() {
       </div>
 
       {/* Services Grid */}
-      <div className="mt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-20">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {services.map((service, index) => (
-            <div
-              id={service.tagLink}
-              key={service.id}
-              className="directed-scroll"
-            >
-              <div
-                className={`group h-full relative overflow-hidden rounded-2xl backdrop-blur-sm
-                         transition-all duration-500 transform hover:-translate-y-2 hover:shadow-2xl
-                         ${
-                           index % 2 === 0 ? "bg-[#222221]/95" : "bg-white/95"
-                         }`}
-                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-              >
-                {/* Decorative elements */}
-                <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[var(--primary)]/20 to-transparent rounded-full blur-2xl transform translate-x-16 -translate-y-16"></div>
-                <div className="absolute bottom-0 left-0 w-32 h-32 bg-gradient-to-tr from-[var(--primary)]/20 to-transparent rounded-full blur-2xl transform -translate-x-16 translate-y-16"></div>
-
-                <div className="relative p-8 flex flex-col h-full">
-                  {/* Icon */}
-                  <div className="mb-6">
-                    <div className="w-16 h-16 rounded-xl p-3 transform group-hover:scale-110 group-hover:rotate-3 transition-all duration-300">
-                      <Image
-                        src={service.image}
-                        alt={service.title}
-                        width={80}
-                        height={80}
-                        className="w-full h-full object-contain"
-                      />
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="flex-grow">
-                    <h3
-                      className={`text-2xl font-bold mb-6 tracking-tight
-                                ${
-                                  index % 2 === 0 ? "text-white" : "text-black"
-                                }`}
-                    >
-                      {service.title}
-                    </h3>
-
-                    <ul
-                      className={`space-y-4 text-lg leading-relaxed
-                                ${
-                                  index % 2 === 0
-                                    ? "text-gray-300"
-                                    : "text-gray-600"
-                                }`}
-                    >
-                      {service.description}
-                    </ul>
-                  </div>
-
-                  {/* Arrow indicator */}
-                  <Link
-                    href={`/services/${service.tagLink}`}
-                    className={`mt-8 flex items-center gap-2 text-sm font-medium
-                                ${
-                                  index % 2 === 0
-                                    ? "text-[var(--primary)]"
-                                    : "text-gray-900"
-                                }`}
-                  >
-                    <span>En savoir plus</span>
-                    <svg
-                      className="w-5 h-5 transform group-hover:translate-x-2 transition-transform"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth={2}
-                        d="M17 8l4 4m0 0l-4 4m4-4H3"
-                      />
-                    </svg>
-                  </Link>
-                </div>
-              </div>
-            </div>
-          ))}
+       <div className="min-h-screen bg-gradient-to-br from-white-900 to-white-800 py-16 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="flex flex-col items-center justify-center mb-12">
+            {/* <h1 className="text-4xl md:text-5xl font-normal text-white text-center mb-4">Nos services</h1>
+            <div className="flex items-center gap-3">
+              
+              <p className="text-gray-300 text-center">Lorem ipsum dolor sit amet</p>
+              
+            </div> */}
+          </div>
+          
+          <ExpandSlider images={sliderImages} />
         </div>
-      </div>
+      </div> 
+      
 
       {/* Transport Section */}
       <div className="relative w-full">
@@ -169,7 +123,7 @@ export default function ServicesPage() {
           <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-black/50" />
         </div>
 
-        <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        {/* <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="max-w-3xl" data-aos="fade-right">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-8 text-white flex items-center gap-4">
               <div className="w-12 h-1 bg-[var(--primary)]"></div>
@@ -201,7 +155,7 @@ export default function ServicesPage() {
               ))}
             </ul>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Solutions Section */}
