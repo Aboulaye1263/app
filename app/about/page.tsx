@@ -283,19 +283,48 @@ export default function About() {
                     <CountUp end={-1} duration={2} /> km
                   </div>
                   <div className="text-black">
-                     à vol d'oiseau du port autonome de Dakar
+                     À vol d'oiseau du port autonome de Dakar
                   </div>
                 </td>
                 <td className="w-1/3 px-4 py-28 bg-[var(--primary)] border-gray-300 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={10000} duration={2} />
+                    +<CountUp end={10000} duration={2} /> EVP
                   </div>
-                  <div className="text-black">EVP</div>
+                  <div className="text-black">Capacité de stockage</div>
                 </td>
-                <td className="w-1/3 px-4 relative overflow-hidden group hover:scale-110 transition-transform duration-300">
+                <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  <Image
+                  <div className="text-4xl font-bold mb-2">
+                   <CountUp end={34500} duration={2} /> m²
+                  </div>
+                  <div className="text-[#222221]">
+                    Entrepôts dédiés aux matières premières
+                  </div>
+                 
+                </td>
+                
+              </tr>
+              <tr>
+                <td className="w-1/3 bg-[#222221] text-center px-4 relative overflow-hidden group hover:scale-110 transition-transform duration-300">
+                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                  <div className="text-4xl text-white font-bold mb-2">
+                    
+                    <CountUp end={150000} duration={2} /> EVP
+                  </div>
+                  <div className="text-white">
+                  Traitées par an
+                  </div>
+                </td>
+                <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
+                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+                  {/* <div className="text-4xl font-bold mb-2">
+                    <CountUp end={34500} duration={2} /> m²
+                  </div>
+                  <div className="text-[#222221]">
+                     entrepôts dédiés aux matières premières
+                  </div> */}
+                   <Image
                     src="/images/chiffres_cles.png"
                     alt="Countries"
                     height={400}
@@ -303,34 +332,14 @@ export default function About() {
                     className="w-[400px] h-[400px] md:w-[300px] md:h-[300px] object-contain"
                   />
                 </td>
-              </tr>
-              <tr>
-                <td className="w-1/3 bg-[#222221] text-center px-4 relative overflow-hidden group hover:scale-110 transition-transform duration-300">
-                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  <div className="text-4xl text-white font-bold mb-2">
-                    <CountUp end={250000} fontColor="text-white" duration={2} /> m²
-                  </div>
-                  <div className="text-white">
-                     Surfaces logistiques dédiées
-                  </div>
-                </td>
-                <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
-                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  <div className="text-4xl font-bold mb-2">
-                    <CountUp end={34500} duration={2} /> m²
-                  </div>
-                  <div className="text-[#222221]">
-                     entrepôts dédiés aux matières premières
-                  </div>
-                </td>
 
                 <td className="w-1/3 border-gray-300 px-4 py-28 bg-[#222221] text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2 text-white">
-                    <CountUp end={210000} fontColor="text-white" duration={2} /> m²
+                    <CountUp end={21} fontColor="text-white" duration={2} /> hectares
                   </div>
                   <div className="text-white">
-                     plateforme logistique portuaire
+                    De plateforme logistique portuaire
                   </div>
                 </td>
               </tr>
@@ -498,223 +507,107 @@ export default function About() {
 
       <div
         data-aos="zoom-in"
-        className="bg-[#222221] relative w-full px-4 md:px-32 lg:px-48"
+        className="bg-[var(--primary)] relative w-full h-[60vh] px-4 md:px-32 lg:px-4 text-center "
       >
         <div
           data-aos="fade-left"
           className="hidden md:block md:absolute left-8 md:left-16 lg:left-24 top-0 bottom-0 w-[2px] bg-[var(--primary)]"
         />
+        <div>
+          <h2 className="text-5xl text-[var(--foreground)] font-bold mb-20 md:mb-20 mt-14">
+            NOS VALEURS
+          </h2>
+          
+        </div>
         <div className="flex flex-col md:flex-row gap-6 md:gap-12 container mx-auto">
           <div
             id="valeurs"
-            className="w-full mt-16 md:mt-0 md:w-2/5 flex flex-row md:flex-col items-center justify-center directed-scroll"
+            className="w-full mt-16 md:mt-0  flex flex-row md:flex-col items-center justify-center directed-scroll"
           >
-            <div>
-              <h2 className="text-5xl text-white font-bold mb-4 md:mb-6 ">
-                NOS VALEURS
-              </h2>
-              
-            </div>
+            <Image
+              src="/images/chance.png"
+              alt="Medlog"
+              width={70}
+              height={70}
+              className="mr-1"
+            />
+            <h3 className="text-xl font-bold text-[#222221] mt-4">
+              Nous croyons à l'égalité des chances
+            </h3>
           </div>
-          <div className="flex flex-col gap-6 md:gap-12 w-full md:w-3/5 h-full md:h-[75vh] px-8 py-16 overflow-y-hidden md:overflow-y-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--primary)] scroll-smooth [&>*]:opacity-100 [&>*]:translate-y-0">
-            <div className="relative flex flex-col gap-2 mt-0">
-
-            
-              {/* <div
-                className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
-                data-point
-              ></div> */}
-              {/* <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
-             
-              <div className="flex flex-row items-center ">
-                <Tooltip 
-                className="bg-[var(--foreground)]"
-                placement="top"
-                content="Notre mission est de fournir à nos employés des opportunités
-                  d'épanouissement et de croissance personnelle. Nous nous
-                  engageons à partager nos connaissances, à fournir une formation
-                  et un soutien, permettant la croissance professionnelle de nos
-                  employés. Nous garantissons des opportunités équitables, offrant
-                  un développement professionnel à long terme, accueillant la
-                  diversité et valorisant toutes les cultures.">
-                  <Image
-                    src="/images/chance.png"
-                    alt="Medlog"
-                    width={70}
-                    height={70}
-                    className="mr-1"
-                  />
-                </Tooltip>
-              
-                
-                <h3 className="text-3xl font-bold text-white">
-                  Nous croyons à l'égalité des chances
-                </h3>
-              </div>
-              
-                {/* <p className="text-white text-sm md:text-base text-justify mt-8" >
-                  Notre mission est de fournir à nos employés des opportunités
-                  d'épanouissement et de croissance personnelle. Nous nous
-                  engageons à partager nos connaissances, à fournir une formation
-                  et un soutien, permettant la croissance professionnelle de nos
-                  employés. Nous garantissons des opportunités équitables, offrant
-                  un développement professionnel à long terme, accueillant la
-                  diversité et valorisant toutes les cultures.
-                </p> */}
-                
-              
-               
-              </div>
-              <div className="relative flex flex-col gap-2 mt-20">
-              {/* <div
-                className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
-                data-point
-              ></div>
-              <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
-              
-                 
-              <div className="flex flex-row items-center">
-                <Tooltip 
-                className="bg-[var(--foreground)]"
-                content="À travers des solutions de transport fiables et durables, nous
-                facilitons les échanges internationaux, stimulons les économies
-                locales et œuvrons pour une logistique plus responsable.">
-                <Image
-                  src="/images/evolution.png"
-                  alt="Medlog"
-                  width={70}
-                  height={70}
-                  className="mr-1"
-                />
-                </Tooltip>
-              
-               <h3 className="text-3xl font-bold text-white">
-                  Nous évoluons constamment
-                </h3> 
-                
-              </div>
-               {/* <p className="text-white text-sm md:text-base text-justify mt-8">
-                À travers des solutions de transport fiables et durables, nous
-                facilitons les échanges internationaux, stimulons les économies
-                locales et œuvrons pour une logistique plus responsable.
-              </p>  */}
-              </div>
-              <div className="relative flex flex-col gap-4 mt-24">
-                {/* <div
-                  className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
-                  data-point
-                ></div>
-                <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
-                <div className="flex flex-row items-center">
-                  <Tooltip 
-                  className="bg-[var(--foreground)]"
-                  content="Chez TOM, nous cultivons un esprit de famille qui inspire
-                    confiance, dévouement et sentiment d' appartenance. Nous croyons
-                    en la force des relations humaines et en l'importance de créer
-                    un environnement où chacun se sent valorisé et soutenu. Cet
-                    esprit familial nous pousse à agir avec courage et
-                    responsabilité, dans l'intérêt de nos clients et de nos
-                    collaborateurs.">
-                     <Image
-                    src="/images/famille.png"
-                    alt="Medlog"
-                    width={70}
-                    height={70}
-                    className="mr-4"
-                  />
-                  </Tooltip>
-                 
-                  <h3 className="text-3xl font-bold text-white">
-                    Nous sommes une famille
-                  </h3>
-                </div>
-                  {/* <p className="text-white text-sm md:text-base text-justify mt-8">
-                    Chez TOM, nous cultivons un esprit de famille qui inspire
-                    confiance, dévouement et sentiment d' appartenance. Nous croyons
-                    en la force des relations humaines et en l'importance de créer
-                    un environnement où chacun se sent valorisé et soutenu. Cet
-                    esprit familial nous pousse à agir avec courage et
-                    responsabilité, dans l'intérêt de nos clients et de nos
-                    collaborateurs.
-                  </p>  */}
-              </div> 
-              <div className="relative flex flex-col gap-2 mt-24">
-                {/* <div className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
-                data-point></div>
-                <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
-                <div className="flex flex-row items-center">
-                  <Tooltip 
-                    className="bg-[var(--foreground)]"
-                    content="Nous sommes passionnés par ce que nous faisons. Cette passion se
-                    traduit par un engagement quotidien à fournir des services d'
-                    excellence, à surmonter les défis avec persévérance et à offrir
-                    à nos clients une expérience unique. Chaque membre de notre
-                    équipe est animé par cette volonté de dépassement et de
-                    satisfaction client.">
-                    <Image
-                      src="/images/passion.png"
-                      alt="Medlog"
-                      width={70}
-                      height={70}
-                      className="mr-4"
-                    />
-                  </Tooltip>
-                  
-                  <h3 className="text-3xl font-bold text-white">
-                    Nous sommes passionnés et engagés
-                  </h3>
-                </div>
-                {/* <p className="text-white text-sm md:text-base text-justify mt-8">
-                
-                </p>  */}
-              </div>  
-                <div className="relative flex flex-col gap-2 mt-20">
-                  {/* <div
-                    className="absolute -left-6 w-4 h-4 rounded-full bg-[var(--primary)] group-[.active]:bg-white"
-                    data-point
-                  ></div>
-                  <div className="absolute -left-[18px] top-1 w-[2px] h-full bg-[var(--primary)]" /> */}
-                  <div className="flex flex-row items-center">
-                  <Tooltip 
-                    className="bg-[var(--foreground)]"
-                    content="Nous pensons que chaque personne apporte une valeur unique. Nous
-                    développons des relations authentiques fondées sur l'éthique, le
-                    respect et l' esprit d'équipe. Nous nous soucions vraiment de la
-                    satisfaction et de la fidélité de nos clients et collaborateurs.">
-                       <Image
-                        src="/images/soucieux.png"
-                        alt="Medlog"
-                        width={70}
-                        height={70}
-                        className="mr-4"
-                      />
-                    </Tooltip>
-                 
-                  <h3 className="text-3xl font-bold text-white">
-                    Nous nous soucions des gens
-                  </h3>
-                  </div>
-                   {/* <p className="text-white text-sm md:text-base text-justify mt-8">
-                    Nous pensons que chaque personne apporte une valeur unique. Nous
-                    développons des relations authentiques fondées sur l'éthique, le
-                    respect et l' esprit d'équipe. Nous nous soucions vraiment de la
-                    satisfaction et de la fidélité de nos clients et collaborateurs.
-                  </p>  */}
-                </div>
-            </div>   
+          <div
+            id="valeurs"
+            className="w-full mt-16 md:mt-0 flex flex-row md:flex-col items-center justify-center directed-scroll"
+          >
+            <Image
+              src="/images/evolution.png"
+              alt="Medlog"
+              width={70}
+              height={70}
+              className="mr-1"
+            />
+            <h3 className="text-xl font-bold text-[#222221] mt-4">
+              Nous évoluons constamment
+            </h3> 
+          </div>
+          <div
+            id="valeurs"
+            className="w-full mt-16 md:mt-0 flex flex-row md:flex-col items-center justify-center directed-scroll"
+          >
+            <Image
+              src="/images/famille.png"
+              alt="Medlog"
+              width={70}
+              height={70}
+              className="mr-1"
+            />
+            <h3 className="text-xl font-bold text-[#222221] mt-4">
+              Nous sommes une famille
+            </h3>
+          </div>
+          <div
+            id="valeurs"
+            className="w-full mt-16 md:mt-0 flex flex-row md:flex-col items-center justify-center directed-scroll"
+          >
+            <Image
+              src="/images/passion.png"
+              alt="Medlog"
+              width={70}
+              height={70}
+              className="mr-1"
+            />
+            <h3 className="text-xl font-bold text-[#222221] mt-4">
+              Nous sommes passionnés et engagés
+            </h3>
+          </div>
+          <div
+            id="valeurs"
+            className="w-full mt-16 md:mt-0 flex flex-row md:flex-col items-center justify-center directed-scroll"
+          >
+            <Image
+              src="/images/soucieux.png"
+              alt="Medlog"
+              width={70}
+              height={70}
+              className="mr-1"
+            />
+            <h3 className="text-xl font-bold text-[#222221] mt-4">
+              Nous nous soucions des gens
+            </h3>
+          </div>
           </div>
         </div>
      
 
       {/* Team Section */}
-      <div className="bg-[var(--primary)] py-16 px-4 md:px-32 lg:px-48 relative my-48">
+      <div className="bg-[#222221] py-16 px-4 md:px-32 lg:px-48 relative my-48">
         <div className="absolute bg-[#222221] w-full h-1/2 left-0 bottom-0"></div>
         <div className="container mx-auto">
           <div
             className="flex flex-col gap-4 items-center mb-16 directed-scroll"
             id="team"
           >
-            <h2 className="text-4xl text-[#222221] font-bold mb-4 md:mb-6 text-center">
+            <h2 className="text-4xl text-white font-bold mb-4 md:mb-6 text-center">
               UNE ÉQUIPE D'EXPERTS
             </h2>
             {/* <p className="text-gray-700 text-sm md:text-base text-justify">

@@ -22,7 +22,7 @@ export default function ServicesPage() {
   }, []);
   const sliderImages = [
     {
-      src: "/images/banner_transport.png",
+      src: "/images/banner_transport_new.png",
       alt: "Transport",
       iconSrc:"/images/other_services/transport.png",
       tagLink:"transport"
@@ -34,7 +34,7 @@ export default function ServicesPage() {
       tagLink:"depot"
     },
     {
-      src: "/images/service_entreposage.png",
+      src: "/images/service_depot_new.png",
       alt: "Entreposage / Distribution marchandises",
       iconSrc:"/images/other_services/entreposage.png",
       tagLink:"entreposage"
@@ -79,10 +79,10 @@ export default function ServicesPage() {
           />
         </div>
         <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-2 leading-tight text-white z-10">
+        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-2 leading-tight text-white z-10">
           UNE EXPERTISE DÉDIÉE À
         </h1>
-        <h1 className="absolute text-[var(--primary)] top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight z-10">
+        <h1 className="absolute text-[var(--primary)] top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight z-10">
           VOS BESOINS
         </h1>
         <div className="absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-144 text-center z-10">

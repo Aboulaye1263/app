@@ -70,7 +70,7 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-center text-sm mt-8 text-gray-400">
-            Copyright © 2024, Tom Medlog
+            Copyright © 2024, TOM
             <br />
             2024. All rights reserved
           </div>

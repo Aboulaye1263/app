@@ -11,7 +11,7 @@ import { useParams } from "next/navigation";
 const serviceDetails = {
   transport: {
     title: "Services Transport",
-    heroImage: "/images/banner_transport.png", // You'll need to add these images
+    heroImage: "/images/banner_transport_new.png", // You'll need to add these images
     description:
       "Nos solutions de transport multimodal garantissent l’acheminement sécurisé et rapide des marchandises, en combinant différents modes de transport tels que le camion, le rail et les solutions frigorifiques (GENSET). Grâce à notre expertise, nous assurons une chaîne logistique fluide et performante à nos clients dans les principaux secteurs d’activités tels que l’Agroalimentaire, pharmaceutique, industrie manufacturière, grande distribution, commerce et services.",
     features: [
@@ -19,24 +19,24 @@ const serviceDetails = {
         title: "Transport multimodal",
         description:
           "Nous proposons des solutions de transport multimodal intégrées, combinant les différents modes de transport pour optimiser les flux logistiques. Cette approche permet d'adapter chaque solution aux spécifiques géographiques et réglementaires des marchandises transportées.",
-        icon: "/icons/multimodal.png", // Add corresponding icons
+        icon: "/icons/transport.png", // Add corresponding icons
       },
       {
         title: "Transport frigorifique",
         description:
           "Pour les produits sensibles, nous proposons des solutions frigorifiques complètes intégrant la technologie GENSET. Ces groupes électrogènes embarqués assurent un maintien parfait de la chaîne du froid tout au long du transport.",
-        icon: "/icons/frigo.png",
+        icon: "/icons/frigorifique.png",
       },
       {
         title: "Transport par camion",
         description:
           "Le transport par camion constitue l'un des piliers de notre offre, avec une flotte moderne et polyvalente capable de répondre aux besoins les plus exigeants. Nos véhicules sont équipés de systèmes de suivi en temps réel pour garantir une parfaite traçabilité des marchandises.",
-        icon: "/icons/truck.png",
+        icon: "/icons/transport.png",
       },
       {
         title: "Transport ferroviaire",
-        description: "Elle offre une alternative durable et performante pour les trajets longs. MEDLOG assure des liaisons fiables entre les ports et les hubs logistiques intérieurs, réduisant ainsi l'empreinte carbone tout en optimisant les coûts.",
-        icon: "/icons/rail.png",
+        description: "Elle offre une alternative durable et performante pour les trajets longs. TOM assure des liaisons fiables entre les ports et les hubs logistiques intérieurs, réduisant ainsi l'empreinte carbone tout en optimisant les coûts.",
+        icon: "/icons/SERVICE_HINTERLAND.png",
       },
     ],
     stats: [
@@ -55,33 +55,33 @@ const serviceDetails = {
         title: "Stockage sous douane",
         description:
           "Avec 34 500 m² d'entrepôts sous douane, nous offrons des solutions sécurisées pour les matières premières telles que le riz, le sucre et les céréales. Notre capacité de stockage dépasse 120 000 tonnes, garantissant une gestion optimale de vos stocks.",
-        icon: "/icons/customs.png",
+        icon: "/icons/douane.png",
       },
       {
         title: "Dépôt de conteneurs vides",
         description: "Les dépôts de conteneurs vides sont conçus pour une gestion rationnelle des équipements de transport. Nous proposons des solutions de stockage sécurisées et organisées permettant une rotation optimale des conteneurs.",
-        icon: "/icons/container.png",
+        icon: "/icons/empotage_depotage.png",
       },
       {
         title: "CFS",
         description: "Nos Container Freight Stations (CFS) permettent les opérations de groupage et dégroupage avec une grande efficacité. Ces plateformes sont équipées pour manipuler tous types de marchandises dans le respect des normes les plus strictes.",
-        icon: "/icons/container.png",
+        icon: "/icons/conteneurs.png",
       },
       {
         title: "Stockage Reefers",
         description:
           "Le stockage reefers bénéficie d'infrastructures spécialisées, avec des échafaudages équipés de plus de 200 prises frigorifiques. Cette capacité importante nous permet de répondre aux besoins saisonniers des produits frais et congelés.",
-        icon: "/icons/reefer.png",
+        icon: "/icons/frigorifique.png",
       },
     ],
     stats: [
-      { value: "10000+", label: "EVP capacité" },
-      { value: "200+", label: "Prises frigorifiques" },
+      { value: "+10000 EVP", label: "Capacité de stockage" },
+      { value: "+200", label: "Prises frigorifiques" },
     ],
   },
   entreposage: {
     title: "Services Entreposage / Distribution de Marchandises",
-    heroImage: "/images/entreposage-hero.jpg",
+    heroImage: "/images/service_depot_new.png",
     description:
       "Nos entrepôts offrent des espaces de stockage sous douane, à sec ou à température contrôlée, adaptés aux besoins de chaque client.",
     features: [
@@ -89,7 +89,7 @@ const serviceDetails = {
         title: "Stockage sous douane",
         description:
           "Avec 34 500 m² d'entrepôts sous douane, nous offrons des solutions sécurisées pour les matières premières telles que le riz, le sucre et les céréales. Notre capacité de stockage dépasse 120 000 tonnes, garantissant une gestion optimale de vos stocks.",
-        icon: "/icons/customs-warehouse.png",
+        icon: "/icons/douane.png",
       },
       {
         title: "Entreposage à sec",
@@ -101,13 +101,13 @@ const serviceDetails = {
           "redistribution des conteneurs et marchandises. " +
           "En réduisant les délais et les coûts d'acheminement, il " +
           "garantit une logistique plus efficace, agile et compétitive.",
-        icon: "/icons/dry-storage.png",
+        icon: "/icons/distribution_marchandise.png",
       },
       {
         title: "Entreposage température contrôlée",
         description:
           "Maintenez l'intégrité de vos produits sensibles grâce à nos installations à température contrôlée, garantissant une conservation optimale.",
-        icon: "/icons/temp-control.png",
+        icon: "/icons/conteneurs.png",
       },
     ],
     stats: [
@@ -118,7 +118,7 @@ const serviceDetails = {
   },
   solution: {
     title: "Solutions Logistiques à Valeur Ajoutée",
-    heroImage: "/images/solutions-hero.jpg",
+    heroImage: "/images/solutions.JPG",
     description:
       "Nous proposons des services spécialisés pour ajouter de la valeur à vos opérations logistiques, allant de la gestion frigorifique à la manutention de project cargo.",
     features: [
@@ -126,7 +126,7 @@ const serviceDetails = {
         title: "Services frigorifiques",
         description:
           "Nos solutions services frigorifiques intègrent un ensemble complet de prestations : inspections préalables (PTI), paramétrages précis des équipements, branchement professionnel et suivi continu des températures. Cette approche globale garantit une parfaite maîtrise de la chaîne du froid.",
-        icon: "/icons/frigo-service.png",
+        icon: "/icons/frigorifique.png",
       },
       {
         title: "Maintenance et réparation",
@@ -138,7 +138,7 @@ const serviceDetails = {
         title: "Project Cargo",
         description:
           "Nous disposons des équipements et de l'expertise nécessaire pour la manutention de charges diverses et hors gabarit.",
-        icon: "/icons/project-cargo.png",
+        icon: "/icons/cargo.png",
       },
       {
         title: "Pesage VGM",
@@ -146,7 +146,7 @@ const serviceDetails = {
           "Le pesage VGM, conforme à la convention SOLAS, est réalisé " +
           "avec des équipements certifiés. Cette prestation essentielle " +
           "garantit la sécurité des opérations de transport maritime.",
-        icon: "/icons/vgm.png",
+        icon: "/icons/chandling.png",
       },
       {
         title: "Fumigation",
@@ -165,7 +165,7 @@ const serviceDetails = {
           "procédures administratives. Nos experts accompagnent les " +
           "clients dans toutes les étapes du dédouanement, " +
           "garantissant une fluidité optimale des opérations.",
-        icon: "/icons/customs-transit.png",
+        icon: "/icons/douane.png",
       },
       {
         title: "Flexibags/Flexitanks",
@@ -174,13 +174,13 @@ const serviceDetails = {
           "réalisées par des équipes expérimentées. Ces solutions " +
           "innovantes permettent le transport de liquides alimentaires " +
           "ou chimiques en conteneurs standards.",
-        icon: "/icons/flexitank.png",
+        icon: "/icons/flexitanks.png",
       },
       {
         title: "Empotage/Dépotage",
         description:
           "Les opérations d'empotage et dépotage des conteneurs sont effectuées avec soin et professionnalisme. Nous disposons des équipements adaptés pour manipuler tous types de marchandises en toute sécurité.",
-        icon: "/icons/stuffing.png",
+        icon: "/icons/empotage_depotage.png",
       },
       {
         title: "Station de lavage",
@@ -189,7 +189,7 @@ const serviceDetails = {
           "une remise en état complète des équipements. Ces " +
           "installations permettent d'éliminer toute trace des " +
           "marchandises précédemment transportées.",
-        icon: "/icons/washing.png",
+        icon: "/icons/lavage.png",
       },
       {
         title: "Ship chandling",
@@ -201,7 +201,7 @@ const serviceDetails = {
           "que la coordination des escales. Notre équipe dédiée travaille " +
           "24h/24 et 7j/7 pour garantir une prise en charge fluide et " +
           "efficace.",
-        icon: "/icons/ship-chandling.png",
+        icon: "/icons/chandling.png",
       },
     ],
     stats: [
@@ -234,16 +234,16 @@ export default function ServiceDetail() {
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
         <Image
-          src="/images/banner_transport.png"
+          src={service.heroImage}
           alt={service.title}
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-[var(--secondary)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1
-            className="text-4xl md:text-6xl text-white font-bold text-center max-w-4xl px-4"
+            className="text-4xl md:text-6xl text-white font-normal text-center max-w-4xl px-4"
             data-aos="fade-up"
           >
             {service.title}
@@ -254,7 +254,7 @@ export default function ServiceDetail() {
       {/* Description Section */}
       <div className="max-w-7xl mx-auto px-4 py-16">
         <p
-          className="text-xl text-gray-700 text-center max-w-3xl mx-auto"
+          className="text-xl text-gray-700 text-center  mx-auto"
           data-aos="fade-up"
         >
           {service.description}
@@ -268,12 +268,23 @@ export default function ServiceDetail() {
             {service.features.map((feature, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+                className=" bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
-                <p className="text-gray-600">{feature.description}</p>
+               
+                
+                <h3 className="flex text-xl font-bold items-center mb-7">
+                <Image
+                  src={feature.icon}
+                  alt={service.title}
+                  width={60}
+                  height={60}
+                  className="object-cover mr-5"
+                  priority
+                />{feature.title}</h3>
+               
+                <p className="text-gray-600 text-justify">{feature.description}</p>
               </div>
             ))}
           </div>
@@ -291,10 +302,10 @@ export default function ServiceDetail() {
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <div className="text-4xl font-bold text-white mb-2">
+                <div className="text-4xl font-bold text-[var(--foreground)] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-white opacity-80">{stat.label}</div>
+                <div className="text-[var(--foreground)] opacity-80">{stat.label}</div>
               </div>
             ))}
           </div>

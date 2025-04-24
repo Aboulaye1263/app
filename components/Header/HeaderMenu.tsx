@@ -185,25 +185,25 @@ export default function HeaderMenu({
 
           <div className="submenu absolute hidden mt-2 w-64 bg-white rounded-lg shadow-lg py-2 z-50">
             <Link
-              href="/services#transport"
+              href="/services/transport"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
               Transport
             </Link>
             <Link
-              href="/services#depot"
+              href="/services/depot"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
               Dépôt conteneurs
             </Link>
             <Link
-              href="/services#entreprosage"
+              href="/services/entreposage"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
               Entreposage / Distribution marchandises
             </Link>
             <Link
-              href="/services#solutions"
+              href="/services/solution"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
               Solutions logistiques à valeurs ajoutées
