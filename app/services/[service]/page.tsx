@@ -11,7 +11,7 @@ import { useParams } from "next/navigation";
 const serviceDetails = {
   transport: {
     title: "Services Transport",
-    heroImage: "/images/transport-hero.jpg", // You'll need to add these images
+    heroImage: "/images/banner_transport.png", // You'll need to add these images
     description:
       "Nos solutions de transport multimodal garantissent l’acheminement sécurisé et rapide des marchandises, en combinant différents modes de transport tels que le camion, le rail et les solutions frigorifiques (GENSET). Grâce à notre expertise, nous assurons une chaîne logistique fluide et performante à nos clients dans les principaux secteurs d’activités tels que l’Agroalimentaire, pharmaceutique, industrie manufacturière, grande distribution, commerce et services.",
     features: [
@@ -47,7 +47,7 @@ const serviceDetails = {
   },
   depot: {
     title: "Services de Dépôt de Conteneurs",
-    heroImage: "/images/depot-hero.jpg",
+    heroImage: "/images/service_depot.png",
     description:
       "Nous offrons des solutions complètes pour le stockage et la gestion des conteneurs vides et pleins, sous douane ou déclarés. Notre infrastructure moderne garantit la sécurité et la conformité réglementaire.",
     features: [
@@ -234,7 +234,7 @@ export default function ServiceDetail() {
       {/* Hero Section */}
       <div className="relative h-[60vh] w-full">
         <Image
-          src={service.heroImage}
+          src="/images/banner_transport.png"
           alt={service.title}
           fill
           className="object-cover"

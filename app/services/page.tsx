@@ -22,25 +22,25 @@ export default function ServicesPage() {
   }, []);
   const sliderImages = [
     {
-      src: "/images/carousel.png",
+      src: "/images/banner_transport.png",
       alt: "Transport",
       iconSrc:"/images/other_services/transport.png",
       tagLink:"transport"
     },
     {
-      src: "/images/medlog_3.jpg",
+      src: "/images/service_depot.png",
       alt: "Dépôt conteneurs",
       iconSrc:"/images/other_services/conteneur.png",
       tagLink:"depot"
     },
     {
-      src: "/images/mission_stockage.png",
+      src: "/images/service_entreposage.png",
       alt: "Entreposage / Distribution marchandises",
       iconSrc:"/images/other_services/entreposage.png",
       tagLink:"entreposage"
     },
     {
-      src: "/images/objectif.png",
+      src: "/images/solutions.JPG",
       alt: "Solutions logistiques à valeurs ajoutées",
       iconSrc:"/images/other_services/value.png",
       tagLink:"solution"
@@ -72,7 +72,7 @@ export default function ServicesPage() {
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
-            src="/images/medlog_3.jpg"
+            src="/images/banner_services.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"

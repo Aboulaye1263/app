@@ -78,7 +78,7 @@ export default function About() {
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
-            src="/images/medlog_3.jpg"
+            src="/images/new images/header.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"
@@ -238,9 +238,9 @@ export default function About() {
       <div className="container mx-auto py-16 px-4 md:px-32 lg:px-48">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center mb-16">
           <Image
-            src="/images/about/xp_year.jpg"
+            src="/images/new images/a-propos.png"
             alt="Medlog"
-            width={600}
+            width={800}
             height={600}
             className="bg-gray-100 rounded-lg object-cover opacity-100"
             data-aos="fade-right"
@@ -296,7 +296,7 @@ export default function About() {
                 <td className="w-1/3 px-4 relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <Image
-                    src="/images/counter_arr.png"
+                    src="/images/chiffres_cles.png"
                     alt="Countries"
                     height={400}
                     width={400}
@@ -425,7 +425,7 @@ export default function About() {
               </p>
             </div>
             <Image
-              src="/images/vision_mission/Stockage.jpg"
+              src="/images/new images/notre_mission.png"
               alt="Medlog"
               width={800}
               height={600}
@@ -438,7 +438,7 @@ export default function About() {
             className="flex flex-col-reverse md:flex-row gap-6 md:gap-12 items-center mt-24"
           >
             <Image
-              src="/images/vision_mission/m.png"
+              src="/images/notre_objectif.png"
               alt="Medlog"
               width={800}
               height={600}
@@ -486,7 +486,7 @@ export default function About() {
               </p>
             </div>
             <Image
-              src="/images/vision_mission/notre_vision_ok.jpg"
+              src="/images/new images/notre_vision.png"
               alt="Medlog"
               width={600}
               height={600}

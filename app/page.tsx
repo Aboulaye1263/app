@@ -33,7 +33,7 @@ export default function Home() {
       className="carousel-slide object-cover brightness-50 transition-all duration-1000"
     />,
     <Image
-      src="/images/banners/banner_3.jpg"
+      src="/images/new images/header.png"
       alt="TOM MEDLOG Carousel Image 2"
       fill
       key={3}
@@ -136,7 +136,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 ml-auto w-[95%]">
                   <Image
-                    src="/images/vision_mission/mission.jpg"
+                    src="/images/new images/notre_mission.png"
                     alt="Mission"
                     fill
                     className="object-cover"
@@ -160,7 +160,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 w-[95%]">
                   <Image
-                    src="/images/vision_mission/vision.jpg"
+                    src="/images/new images/notre_vision.png"
                     alt="Vision"
                     fill
                     className="object-cover"
@@ -348,9 +348,9 @@ export default function Home() {
         <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
           <div className="relative w-full md:w-2/3" data-aos="fade-right">
             <Image
-              src="/images/africa_map.png"
+              src="/images/new images/carte-accueil.png"
               alt="Carte de présence en Afrique"
-              width={900}
+              width={700}
               height={400}
               className="object-cover rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500"
             />
