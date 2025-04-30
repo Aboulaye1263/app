@@ -171,6 +171,7 @@ export default function WhyJoinUs() {
 
         
       </div>
+<<<<<<< HEAD
       <div 
       className="h-[50vh] flex flex-col justify-center items-end mb-32"
       style={{
@@ -221,6 +222,50 @@ export default function WhyJoinUs() {
           </div> */}
       </div>
     
+=======
+     {/* <div className="relative h-1/2 flex flex-col justify-end items-center pb-32">
+              <div className="absolute top-20 left-0 right-0 -z-99 h-full">
+                <Image
+                  src="/images/cv-section.png"
+                  alt="TOM MEDLOG Image header"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute w-full h-screen top-20 bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
+              <Image
+                src="/images/Couronne_Laurier.png"
+                alt="Medlog"
+                width={300}
+                height={100}
+                className="object-cover rounded-lg opacity-70"
+                
+              />
+              <h1 className="w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
+                UNE ENTREPRISE <span className="text-[#F3DFA2]">SÉNÉGALAISE</span>
+              </h1>
+              <div className="w-80 md:w-auto text-center z-10">
+                <span className="text-white text-sm md:text-xl text-center mb-6">
+                  TOM est avant tout une entreprise sénégalaise et fière de ses racines. 
+                  Créée, développée et dirigée localement, nous sommes le champion national de la logistique et un véritable pionnier,
+                  premier opérateur à implanter un port à sec en Afrique de l’Ouest. 
+                  Depuis, nous avons établi la norme pour toute l’industrie.
+                </span>
+              </div>
+             <div className="animate-[updown_2s_ease-in-out_infinite] relative z-10">
+                <svg
+                  width="80"
+                  height="52"
+                  viewBox="0 0 24 24"
+                  fill="#F3DFA2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="rotate-3600 animate-[downward_2s_ease-in-out_infinite]"
+                >
+                  <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+                </svg>
+              </div>
+            </div>*/}
+>>>>>>> 3511d0b8f2b86993083f8fe735613a9f72ffcaef
 
       <Footer />
     </main>
