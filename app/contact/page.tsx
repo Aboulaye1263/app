@@ -1,6 +1,8 @@
 "use client";
+import Image from "next/image";
 import Footer from "@/components/Footer";
 import HeaderMenu from "@/components/Header/HeaderMenu";
+import { Card } from "flowbite-react";
 
 export default function Contact() {
   return (
@@ -8,10 +10,77 @@ export default function Contact() {
       <HeaderMenu isScrolledAndImmutable />
 
       {/* Contact Section */}
-      <div className="bg-[#222221] pt-48 pb-32">
+      <div 
+      className=" pt-48 pb-32"
+      style={{
+        backgroundImage: `linear-gradient(to right, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('/images/contact-banner.jpg')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+      >
         <h1 className="text-4xl md:text-5xl text-[var(--primary)] font-normal text-center mb-16 ">
           Contactez-nous
         </h1>
+
+        {/* <div className="flex max-w-5xl mx-auto px-4 mb-16 gap-20">
+          <Image 
+              src="/icons/tom-telephone.png"
+              alt="TOM"
+              width={80}
+              height={80}
+              className="absolute left-[42vh] top-[305px] mx-auto flex-col z-20"
+            />
+          <Card className="dark:bg-[var(--primary)] w-full flex-col gap-8 items-center rounded-3xl hover:animate-pulse">
+            
+            <p className="text-2xl font-medium flex">Tel : (+221) 77 573 78 47</p>
+          </Card>
+          <Image 
+              src="/icons/tom-mail.png"
+              alt="TOM"
+              width={80}
+              height={80}
+              className="absolute left-[97vh] top-[305px] mx-auto flex-col z-20"
+            />
+          <Card className="dark:bg-[var(--primary)] w-full flex-col gap-8 items-center rounded-3xl hover:animate-pulse">
+          
+            <p className="text-2xl font-medium">E-mail : accueil@tom.sn</p>
+          </Card>
+        
+
+        </div> */}
+        <div className="max-w-5xl mx-auto px-4 mb-16">
+  <div className="flex flex-col md:flex-row gap-20 relative items-center justify-center">
+    {/* Bloc téléphone */}
+    <div className="flex flex-col items-center relative">
+      <Image 
+        src="/icons/tom-telephone.png"
+        alt="TOM"
+        width={80}
+        height={80}
+        className="mb-4 md:mb-0 md:absolute md:-top-0 md:-left-10"
+      />
+      <Card className="dark:bg-[var(--primary)] w-full md:w-[350px] flex flex-col items-center gap-4 rounded-3xl hover:animate-pulse">
+        <p className="text-xl md:text-2xl font-medium">Tel : (+221) 77 573 78 47</p>
+      </Card>
+    </div>
+
+    {/* Bloc e-mail */}
+    <div className="flex flex-col items-center relative">
+      <Image 
+        src="/icons/tom-mail.png"
+        alt="TOM"
+        width={80}
+        height={80}
+        className="mb-4 md:mb-0 md:absolute md:-top-0 md:-left-10"
+      />
+      <Card className="dark:bg-[var(--primary)] w-full md:w-[350px] flex flex-col items-center gap-4 rounded-3xl hover:animate-pulse">
+        <p className="text-xl md:text-2xl font-medium">E-mail : accueil@tom.sn</p>
+      </Card>
+    </div>
+  </div>
+</div>
+
 
         {/* World Map */}
         <div className="max-w-5xl mx-auto px-4 mb-16">
@@ -27,6 +96,7 @@ export default function Contact() {
             ></iframe>
           </div>
         </div>
+       
       </div>
 
       {/* Form Section */}

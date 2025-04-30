@@ -438,7 +438,7 @@ export default function About() {
               alt="Medlog"
               width={800}
               height={600}
-              className="w-fullbg-gray-100 rounded-lg h-[300px] opacity-100"
+              className="w-fullbg-gray-100 rounded-lg h-full opacity-100"
             />
           </div>
           {/* Objectif Section */}
@@ -451,7 +451,7 @@ export default function About() {
               alt="Medlog"
               width={800}
               height={600}
-              className="w-full md:w-1/2 bg-gray-100 rounded-lg h-[300px] opacity-100"
+              className=" md:w-1/2 bg-gray-100 rounded-lg h-full opacity-100"
             />
             <div id="objectif" className="flex flex-col md:w-1/2 directed-scroll">
               <div>
@@ -497,7 +497,7 @@ export default function About() {
             <Image
               src="/images/new images/notre_vision.png"
               alt="Medlog"
-              width={600}
+              width={800}
               height={600}
               className="h-full rounded-lg opacity-100"
             />
