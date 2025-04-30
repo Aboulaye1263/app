@@ -171,7 +171,7 @@ export default function WhyJoinUs() {
 
         
       </div>
-<<<<<<< HEAD
+`
       <div 
       className="h-[50vh] flex flex-col justify-center items-end mb-32"
       style={{
