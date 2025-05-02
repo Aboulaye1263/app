@@ -34,7 +34,7 @@ export default function ServicesPage() {
       tagLink:"depot"
     },
     {
-      src: "/images/service_depot_new.png",
+      src: "/images/other_services/entrepot_sac_jaune.png",
       alt: "Entreposage / Distribution marchandises",
       iconSrc:"/images/other_services/entreposage.png",
       tagLink:"entreposage"
