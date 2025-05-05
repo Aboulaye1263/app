@@ -18,25 +18,25 @@ const serviceDetails = {
       {
         title: "Transport multimodal",
         description:
-          "Nous proposons des solutions de transport multimodal intégrées, combinant les différents modes de transport pour optimiser les flux logistiques. Cette approche permet d'adapter chaque solution aux spécifiques géographiques et réglementaires des marchandises transportées.",
-        icon: "/icons/transport.png", // Add corresponding icons
+          "Une réduction des coûts logistiques grâce aux solutions combinées Camion/Rail pour une flexibilité optimale. Cette approche permet d'adapter chaque solution aux spécificités géographiques et réglementaires des marchandises transportées.",
+        icon: "/icons/SERVICE_HINTERLAND.png", // Add corresponding icons
       },
       {
-        title: "Transport frigorifique",
+        title: "Transport frigorifique (Solutions GENSET)",
         description:
-          "Pour les produits sensibles, nous proposons des solutions frigorifiques complètes intégrant la technologie GENSET. Ces groupes électrogènes embarqués assurent un maintien parfait de la chaîne du froid tout au long du transport.",
+          "Pour les produits sensibles et périssables, nous proposons des solutions frigorifiques complètes intégrant la technologie GENSET. Ces groupes électrogènes embarqués assurent un  maintien parfait de la chaîne du froid tout au long du transport.",
         icon: "/icons/frigorifique.png",
       },
       {
         title: "Transport par camion",
         description:
-          "Le transport par camion constitue l'un des piliers de notre offre, avec une flotte moderne et polyvalente capable de répondre aux besoins les plus exigeants. Nos véhicules sont équipés de systèmes de suivi en temps réel pour garantir une parfaite traçabilité des marchandises.",
+          "Le transport par camion constitue l'un des piliers de notre offre, avec une flotte moderne et polyvalente de plus de 100 camions capable de répondre aux besoins les plus exigeants. Nos véhicules sont équipés de systèmes de suivi en temps réel pour garantir une parfaite traçabilité des marchandises.",
         icon: "/icons/transport.png",
       },
       {
         title: "Transport ferroviaire",
-        description: "Elle offre une alternative durable et performante pour les trajets longs. TOM assure des liaisons fiables entre les ports et les hubs logistiques intérieurs, réduisant ainsi l'empreinte carbone tout en optimisant les coûts.",
-        icon: "/icons/SERVICE_HINTERLAND.png",
+        description: "Grâce à une expertise mondiale reconnue à travers MEDWAY. TOM assure des liaisons fiables entre les ports et les hubs logistiques intérieurs, réduisant ainsi l'empreinte carbone tout en optimisant les coûts.",
+        icon: "/icons/ferroviaire.png",
       },
     ],
     stats: [
@@ -54,12 +54,12 @@ const serviceDetails = {
       {
         title: "Stockage sous douane",
         description:
-          "Avec 34 500 m² d'entrepôts sous douane, nous offrons des solutions sécurisées pour les matières premières telles que le riz, le sucre et les céréales. Notre capacité de stockage dépasse 120 000 tonnes, garantissant une gestion optimale de vos stocks.",
+          "Pour une gestion optimisée et sécurisée des marchandises sous douane.",
         icon: "/icons/douane.png",
       },
       {
         title: "Dépôt de conteneurs vides",
-        description: "Les dépôts de conteneurs vides sont conçus pour une gestion rationnelle des équipements de transport. Nous proposons des solutions de stockage sécurisées et organisées permettant une rotation optimale des conteneurs.",
+        description: "Avec une capacité de plus de 10 000 EVP.",
         icon: "/icons/empotage_depotage.png",
       },
       {
@@ -70,7 +70,13 @@ const serviceDetails = {
       {
         title: "Stockage Reefers",
         description:
-          "Le stockage reefers bénéficie d'infrastructures spécialisées, avec des échafaudages équipés de plus de 200 prises frigorifiques. Cette capacité importante nous permet de répondre aux besoins saisonniers des produits frais et congelés.",
+          "Le stockage reefers bénéficie d'infrastructures spécialisées, avec des échafaudages équipés de plus de 250 prises frigorifiques. Cette capacité importante nous permet de répondre aux besoins saisonniers des produits frais et congelés.",
+        icon: "/icons/frigorifique.png",
+      },
+      {
+        title: "Maintenance conteneurs (Dry/reefer)",
+        description:
+          "Afin d’assurer une réduction des risques de détérioration, nous proposons l’entretien, les réparations et le suivi de qualité des conteneurs.",
         icon: "/icons/frigorifique.png",
       },
     ],
@@ -81,14 +87,14 @@ const serviceDetails = {
   },
   entreposage: {
     title: "Services Entreposage / Distribution de Marchandises",
-    heroImage: "/images/service_depot_new.png",
+    heroImage: "/images/other_services/entrepot_sac_jaune.png",
     description:
       "Nos entrepôts offrent des espaces de stockage sous douane, à sec ou à température contrôlée, adaptés aux besoins de chaque client.",
     features: [
       {
         title: "Stockage sous douane",
         description:
-          "Avec 34 500 m² d'entrepôts sous douane, nous offrons des solutions sécurisées pour les matières premières telles que le riz, le sucre et les céréales. Notre capacité de stockage dépasse 120 000 tonnes, garantissant une gestion optimale de vos stocks.",
+          "Stockage en entrepôt ou sur terreplein de marchandises en conformité avec la réglementation douanière.",
         icon: "/icons/douane.png",
       },
       {
@@ -118,7 +124,7 @@ const serviceDetails = {
   },
   solution: {
     title: "Solutions Logistiques à Valeur Ajoutée",
-    heroImage: "/images/solutions.JPG",
+    heroImage: "/images/reefers_new.png",
     description:
       "Nous proposons des services spécialisés pour ajouter de la valeur à vos opérations logistiques, allant de la gestion frigorifique à la manutention de project cargo.",
     features: [
@@ -137,70 +143,64 @@ const serviceDetails = {
       {
         title: "Project Cargo",
         description:
-          "Nous disposons des équipements et de l'expertise nécessaire pour la manutention de charges diverses et hors gabarit.",
+          "Nous disposons des équipements et de l'expertise nécessaire pour la manutention de charges diverses et hors gabarit adaptée aux projets complexes.",
         icon: "/icons/cargo.png",
       },
       {
         title: "Pesage VGM",
         description:
-          "Le pesage VGM, conforme à la convention SOLAS, est réalisé " +
-          "avec des équipements certifiés. Cette prestation essentielle " +
-          "garantit la sécurité des opérations de transport maritime.",
+          "Le pesage Verified Gross Mass (VGM) conforme à la convention "+
+          "SOLAS, est réalisé avec des équipements certifiés. Cette prestation essentielle "+
+          "garantit la sécurité et la conformité de vos expéditions.",
         icon: "/icons/chandling.png",
       },
       {
-        title: "Fumigation",
+        title: "Fumigation des conteneurs",
         description:
-          "La fumigation des conteneurs est effectuée selon les " +
-          "protocoles les plus stricts, notamment pour le traitement des " +
-          "bois d'emballage contre les insectes xylophages. Nos équipes " +
-          "spécialisées utilisent des méthodes approuvées au niveau " +
-          "international.",
+          "Nos services de fumigation assurent la désinfection de vos "+
+          "conteneurs, prévenant la prolifération de parasites et garantissant la qualité de "+
+          "vos marchandises.",
         icon: "/icons/fumigation.png",
       },
       {
-        title: "Transit douanier",
+        title: "Transit et formalités douanières complètes",
         description:
-          "Les services de transit et formalités douanières simplifient les " +
-          "procédures administratives. Nos experts accompagnent les " +
-          "clients dans toutes les étapes du dédouanement, " +
-          "garantissant une fluidité optimale des opérations.",
+          "Ce service simplifie les procédures douanières en "+
+          "prenant en charge l’ensemble des formalités nécessaires. Nos experts "+
+          "accompagnent les clients dans toutes les étapes du dédouanement, "+
+          "garantissant une fluidité optimale des opérations pour un transit sans accroc.",
         icon: "/icons/douane.png",
       },
       {
         title: "Flexibags/Flexitanks",
         description:
-          "La préparation et l'installation de flexibags/flexitanks sont " +
-          "réalisées par des équipes expérimentées. Ces solutions " +
-          "innovantes permettent le transport de liquides alimentaires " +
-          "ou chimiques en conteneurs standards.",
+          "Nos experts préparent et installent des flexibags et flexitanks pour le "+
+          "transport sécurisé de produits liquides, offrant une solution alternative fiable "+
+          "aux conteneurs traditionnels.",
         icon: "/icons/flexitanks.png",
       },
       {
-        title: "Empotage/Dépotage",
+        title: "Empotage/Dépotage des conteneurs",
         description:
-          "Les opérations d'empotage et dépotage des conteneurs sont effectuées avec soin et professionnalisme. Nous disposons des équipements adaptés pour manipuler tous types de marchandises en toute sécurité.",
+          "Nous assurons l’empotage et le dépotage de "+
+          "conteneurs avec des équipements spécialisés, garantissant un traitement "+
+          "rapide et sécurisé de vos marchandises.",
         icon: "/icons/empotage_depotage.png",
       },
       {
-        title: "Station de lavage",
+        title: "Station de lavage et nettoyage des conteneurs",
         description:
-          "Nos stations de lavage et nettoyage de conteneurs assurent " +
-          "une remise en état complète des équipements. Ces " +
-          "installations permettent d'éliminer toute trace des " +
-          "marchandises précédemment transportées.",
+          "Nos stations de lavage permettent un "+
+          "nettoyage complet et efficace de vos conteneurs, assurant ainsi leur conformité "+
+          "et leur propreté avant une nouvelle utilisation.",
         icon: "/icons/lavage.png",
       },
       {
-        title: "Ship chandling",
+        title: "Consignation et ship chandling ",
         description:
-          "En tant qu'agent consignataire, nous offrons une gestion " +
-          "maritime complète pour optimiser le passage de vos navires en " +
-          "toute sérénité. Nos services couvrent l'avitaillement en " +
-          "carburant, la fourniture d'équipements et de provisions, ainsi " +
-          "que la coordination des escales. Notre équipe dédiée travaille " +
-          "24h/24 et 7j/7 pour garantir une prise en charge fluide et " +
-          "efficace.",
+          "En tant que partenaires logistiques, nous offrons "+
+          "des services de ship chandling et consignation, fournissant tout le nécessaire à "+
+          "bord pour assurer le confort et le bon fonctionnement des opérations maritimes.",
         icon: "/icons/chandling.png",
       },
     ],

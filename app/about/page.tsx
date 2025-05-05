@@ -196,7 +196,7 @@ export default function About() {
                 <div className="w-1/2 pr-8 text-right">
                   <h3 className="text-2xl font-bold mb-2">2024</h3>
                   <p className="text-gray-700 text-justify">
-                    Record établis en décembre 2024 de 3500 TEUS dépoter dans la
+                    Record établis en décembre 2024 de 3500 EVP dépotés dans la
                     zone unique de dépotage en un seul mois.
                   </p>
                 </div>

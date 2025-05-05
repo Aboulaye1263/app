@@ -40,7 +40,7 @@ export default function ServicesPage() {
       tagLink:"entreposage"
     },
     {
-      src: "/images/solutions.JPG",
+      src: "/images/reefers_new.png",
       alt: "Solutions logistiques à valeurs ajoutées",
       iconSrc:"/images/other_services/value.png",
       tagLink:"solution"
