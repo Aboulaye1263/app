@@ -40,7 +40,7 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "100+", label: "Camions" },
+      { value: "+100", label: "Camions" },
       { value: "24/7", label: "Suivi en temps réel" },
       { value: "4", label: "Modes de transport" },
     ],
@@ -81,8 +81,8 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "+10000 EVP", label: "Capacité de stockage" },
-      { value: "+200", label: "Prises frigorifiques" },
+      { value: "65 000  m²", label: "Espace de stockage de conteneurs" },
+      { value: "+250", label: "Prises réfrigérées et groupes électrogènes neufs" },
     ],
   },
   entreposage: {
@@ -117,9 +117,9 @@ const serviceDetails = {
       },
     ],
     stats: [
+      { value: "+120 000 tonnes", label: "Capacité de stockage" },
+      { value: "100 %", label: "Sécurisé" },
       { value: "3", label: "Types de stockage" },
-      { value: "24/7", label: "Surveillance" },
-      { value: "100%", label: "Sécurisé" },
     ],
   },
   solution: {
@@ -205,7 +205,7 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "10+", label: "Services spécialisés" },
+      { value: "+10", label: "Services spécialisés" },
       { value: "24/7", label: "Support technique" },
       { value: "100%", label: "Satisfaction client" },
     ],

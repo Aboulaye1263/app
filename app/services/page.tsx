@@ -166,7 +166,7 @@ export default function ServicesPage() {
               className="inline-block text-3xl md:text-4xl font-bold border-2 border-[var(--primary)] 
                          px-8 py-4 rounded-md hover:bg-[var(--primary)] hover:text-black transition-colors"
             >
-              SOLUTIONS À VALEURS AJOUTÉS
+              SOLUTIONS À VALEURS AJOUTÉES
             </h2>
           </div>
 

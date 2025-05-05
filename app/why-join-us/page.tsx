@@ -173,7 +173,7 @@ export default function WhyJoinUs() {
       </div>
 `
       <div 
-      className="h-[50vh] flex flex-col justify-center items-end mb-32 px-10"
+      className="h-[50vh] flex flex-col justify-center items-end mb-0 px-10"
       style={{
         backgroundImage: `linear-gradient(to left, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)), url('/images/cv-section.png')`,
         backgroundSize: 'cover',
