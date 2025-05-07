@@ -2,10 +2,13 @@
 import Image from "next/image";
 import Footer from "@/components/Footer";
 import HeaderMenu from "@/components/Header/HeaderMenu";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import Link from "next/link";
+import { Button, Modal, ModalBody, ModalFooter, ModalHeader, modalTheme } from "flowbite-react";
+import localFont from "next/font/local";
+import { normalize } from "path";
 
 export default function WhyJoinUs() {
   useEffect(() => {
@@ -14,6 +17,9 @@ export default function WhyJoinUs() {
       once: true,
     });
   }, []);
+
+  const [openModal, setOpenModal] = useState(false);
+
 
   return (
     <main className="min-h-screen mt-32">
@@ -200,13 +206,52 @@ export default function WhyJoinUs() {
           <h1 className="w-30 md:w-4/12 text-center text-5xl md:text-5xl font-normal mb-8 leading-tight text-white z-10">
             Rejoignez-nous
           </h1>
-          <div className="w-30 md:w-4/12 text-center z-10">
+          {/* <div className="w-30 md:w-4/12 text-center z-10">
             <Link
             href="#"
             className="bg-[var(--primary)] text-black font-normal text-2xl px-10 py-3 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg"
-          >
+            >
               Postulez maintenant        
             </Link>
+          </div> */}
+          <div className="flex w-30 md:w-4/12 text-center z-10 justify-center">
+            <Button
+              outline={true}
+              onClick={() => setOpenModal(true)} 
+              className="bg-[var(--primary)] text-black focus:right-0 hover:bg-[var(--foreground)] hover:text-white border-neutral-900 hover:border-gray-100 font-normal text-2xl py-7 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg">
+              Postuler maintenant
+            </Button>
+            <Modal show={openModal} onClose={() => setOpenModal(false)}>
+            <ModalHeader style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
+            <ModalBody>
+              <form className="space-y-4">
+                <div>
+                  <label htmlFor="prenom" className="block text-sm font-medium text-gray-700">Prénom</label>
+                  <input type="text" id="prenom" name="prenom" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+                </div>
+                <div>
+                  <label htmlFor="nom" className="block text-sm font-medium text-gray-700">Nom</label>
+                  <input type="text" id="nom" name="nom" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+                </div>
+                <div>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
+                  <input type="email" id="email" name="email" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+                </div>
+                {/* <div>
+                  <label htmlFor="telephone" className="block text-sm font-medium text-gray-700">Téléphone</label>
+                  <input type="tel" id="telephone" name="telephone" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+                </div> */}
+                <div>
+                  <label htmlFor="cv" className="block text-sm font-medium text-gray-700">Téléverser votre CV</label>
+                  <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
+                </div>
+              </form>
+            </ModalBody>
+            <ModalFooter>
+              <Button className="bg-[var(--primary)] text-black hover:bg-gray-800 hover:text-white" onClick={() => setOpenModal(false)}>Envoyer</Button>
+              {/* <Button color="alternative hover:text-gray-500" onClick={() => setOpenModal(false)}>Annuler</Button> */}
+            </ModalFooter>
+          </Modal>
           </div>
           {/* <div className="animate-[updown_2s_ease-in-out_infinite] relative z-10">
             <svg

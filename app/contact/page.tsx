@@ -86,7 +86,9 @@ export default function Contact() {
         <div className="max-w-5xl mx-auto px-4 mb-16">
           <div className="rounded-2xl overflow-hidden shadow-lg">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.166894568351!2d-17.432954533743622!3d14.703152153435221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1736212991e8d%3A0x4778e579a34a2b6b!2sTom%20-%20plateforme%20de%20distribution%20-%20Facturation!5e0!3m2!1sfr!2ssn!4v1742868443306!5m2!1sfr!2ssn"
+              // src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3859.166894568351!2d-17.432954533743622!3d14.703152153435221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec1736212991e8d%3A0x4778e579a34a2b6b!2sTom%20-%20plateforme%20de%20distribution%20-%20Facturation!5e0!3m2!1sfr!2ssn!4v1742868443306!5m2!1sfr!2ssn"
+              // src="https://www.google.com/maps/place/TOM+SA/@14.7013967,-17.4615637,17z/data=!4m6!3m5!1s0xec1731ff6ffffff:0x7d86c755b38eb58f!8m2!3d14.7080675!4d-17.4312717!16s%2Fg%2F11kj909r67?entry=ttu&g_ep=EgoyMDI1MDQzMC4xIKXMDSoASAFQAw%3D%3D"
+              src="https://www.google.com/maps/d/u/0/embed?mid=1QlLd8xQsTwPhDwzcTShWT9FPmzaM3po&ehbc=2E312F" 
               width="100%"
               height="450"
               style={{ border: 0 }}

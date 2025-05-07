@@ -152,7 +152,7 @@ const serviceDetails = {
           "Le pesage Verified Gross Mass (VGM) conforme à la convention "+
           "SOLAS, est réalisé avec des équipements certifiés. Cette prestation essentielle "+
           "garantit la sécurité et la conformité de vos expéditions.",
-        icon: "/icons/chandling.png",
+        icon: "/icons/service_pesage_VGM.png",
       },
       {
         title: "Fumigation des conteneurs",
