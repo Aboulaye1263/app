@@ -160,7 +160,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 w-[95%]">
                   <Image
-                    src="/images/new images/notre_vision.png"
+                    src="/images/notre_objectif.png"
                     alt="Vision"
                     fill
                     className="object-cover"
@@ -171,19 +171,16 @@ export default function Home() {
             {/* Vision Text */}
             <div className="flex flex-col w-full md:w-1/2">
               <h2 className="text-4xl font-bold mt-8 md:mt-0">
-                NOTRE VISION
+                NOTRE OBJECTIF
               </h2>
               {/* Text Card */}
               <div className="py-8">
                 <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                  Notre vision est d'être le leader continental des services
-                  logistiques intégrés et de dépôt de conteneurs, tout en créant
-                  un environnement de travail enrichissant qui valorise l'esprit
-                  d'équipe, le respect mutuel et le développement professionnel
-                  de nos collaborateurs.
+                Renforcer notre position de leader régional et de devenir un hub 
+                logistique incontournable au Sénégal et en Afrique de l'Ouest.
                 </p>
                 <Link
-                  href="/about#vision"
+                  href="/about#objectif"
                   className="inline-flex items-center gap-2 bg-[var(--primary)] text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
                 >
                   En savoir plus
@@ -205,6 +202,63 @@ export default function Home() {
               </div>
             </div>
           </div>
+
+          {/* Vision Column */}
+          <div className="flex flex-col md:flex-row mt-24"  data-aos="fade-right">
+            <div className="flex flex-col w-full md:w-1/2">
+              <h2 className="text-4xl font-bold">
+                NOTRE VISION
+              </h2>
+              {/* Text Card */}
+              <div className="py-8">
+                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
+                Notre vision est d'être le leader continental des services
+                  logistiques intégrés et de dépôt de conteneurs, tout en créant
+                  un environnement de travail enrichissant qui valorise l'esprit
+                  d'équipe, le respect mutuel et le développement professionnel
+                  de nos collaborateurs.
+                </p>
+                <Link
+                  href="/about#vision"
+                  className="inline-flex bg-[var(--primary)] items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
+                >
+                  En savoir plus
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    strokeWidth={2}
+                    stroke="currentColor"
+                    className="w-5 h-5"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                    />
+                  </svg>
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative w-full md:w-1/2">
+              <div className="absolute right-[-10%] w-[100%] h-[100%] top-[15%] bg-[var(--primary)]" />
+
+              {/* Content */}
+              <div className="relative flex flex-col gap-6">
+                {/* Image */}
+                <div className="relative h-80 ml-auto w-[95%]">
+                  <Image
+                    src="/images/new images/notre_vision.png"
+                    alt="Mission"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
 

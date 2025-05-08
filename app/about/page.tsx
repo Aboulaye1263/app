@@ -296,10 +296,10 @@ export default function About() {
                 <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                   <CountUp end={34500} duration={2} /> m²
+                   <CountUp end={150000} duration={2} /> EVP
                   </div>
                   <div className="text-[#222221]">
-                    Entrepôts dédiés aux matières premières
+                  Traitées par an
                   </div>
                  
                 </td>
@@ -310,10 +310,10 @@ export default function About() {
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl text-white font-bold mb-2">
                     
-                    <CountUp end={150000} duration={2} /> EVP
+                    <CountUp end={34500} duration={2} /> m²
                   </div>
                   <div className="text-white">
-                  Traitées par an
+                  Entrepôts dédiés aux matières premières
                   </div>
                 </td>
                 <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">

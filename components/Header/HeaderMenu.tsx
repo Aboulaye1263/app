@@ -72,10 +72,14 @@ export default function HeaderMenu({
 
       {/* Hamburger Menu Button (Mobile) */}
       <button
-        className="md:hidden text-4xl z-50 transition-transform duration-300 hover:scale-110 text-white md:text-black"
+        className={`
+          md:hidden text-4xl z-50 transition-transform duration-300 
+          hover:scale-110 md:text-black
+          ${isScrolled ? "text-black" : "text-white"}`}
+        
         onClick={() => setIsMenuOpen(!isMenuOpen)}
       >
-        {isMenuOpen ? "✕" : "☰"}
+        {isMenuOpen ? "x" : "☰"}
       </button>
 
       {/* Navigation Links */}

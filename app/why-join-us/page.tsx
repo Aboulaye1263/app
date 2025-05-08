@@ -38,9 +38,9 @@ export default function WhyJoinUs() {
               <Image
                 src="/images/couronne.png"
                 alt="Medlog"
-                width={250}
+                width={210}
                 height={50}
-                className="absolute top-5 left-1/2object-cover rounded-lg opacity-70"
+                className="absolute top-4 left-1/2object-cover rounded-lg opacity-70"
                 
               />
               <h1 className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
@@ -109,7 +109,7 @@ export default function WhyJoinUs() {
           <div id="entreprise-familiale" className="w-full md:w-1/2 space-y-6 directed-scroll">
             <div className="flex items-center gap-2">
               <h2 className="text-2xl font-bold ">
-              UNE ENTREPRISE FAMILIALE, À TAILLE HUMAINE
+              UNE ENTREPRISE FAMILIALE
               </h2>
             </div>
             <div className="w-20 h-1 bg-yellow-400"></div>
@@ -237,10 +237,10 @@ export default function WhyJoinUs() {
                   <label htmlFor="email" className="block text-sm font-medium text-gray-700">Email</label>
                   <input type="email" id="email" name="email" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
                 </div>
-                {/* <div>
+                <div>
                   <label htmlFor="telephone" className="block text-sm font-medium text-gray-700">Téléphone</label>
                   <input type="tel" id="telephone" name="telephone" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
-                </div> */}
+                </div> 
                 <div>
                   <label htmlFor="cv" className="block text-sm font-medium text-gray-700">Téléverser votre CV</label>
                   <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
@@ -248,7 +248,7 @@ export default function WhyJoinUs() {
               </form>
             </ModalBody>
             <ModalFooter>
-              <Button className="bg-[var(--primary)] text-black hover:bg-gray-800 hover:text-white" onClick={() => setOpenModal(false)}>Envoyer</Button>
+              <Button className="bg-[var(--primary)] text-black hover:bg-gray-800 hover:text-white" onClick={() => setOpenModal(false)}>ENVOYER</Button>
               {/* <Button color="alternative hover:text-gray-500" onClick={() => setOpenModal(false)}>Annuler</Button> */}
             </ModalFooter>
           </Modal>
