@@ -98,14 +98,16 @@ export default function Contact() {
             ></iframe>
           </div>
         </div>
-       
+        <h2 className="text-4xl text-white font-bold text-center mb-4 directed-scroll">
+          Besoin d’aide ? Laissez nous un message !
+          </h2>
       </div>
-
+      
       {/* Form Section */}
       <div className="max-w-2xl mx-auto px-4 -mt-20 mb-32">
         <div className="bg-gray-100 rounded-lg p-8 shadow-lg">
           <h2 className="text-xl font-semibold text-center mb-8">
-            Remplissez le formulaire ci-dessous
+          Remplissez le formulaire ci-dessous
           </h2>
 
           <form className="space-y-6">

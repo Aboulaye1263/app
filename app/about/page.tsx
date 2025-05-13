@@ -7,6 +7,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 import { Tooltip } from "flowbite-react";
+import { title } from "process";
 
 
 function CountUp({
@@ -505,7 +506,7 @@ export default function About() {
         </div>
       </div>
 
-      <div
+      {/* <div
         data-aos="zoom-in"
         className="bg-[var(--primary)] relative w-full h-[60vh] px-4 md:px-32 lg:px-4 text-center "
       >
@@ -537,7 +538,7 @@ export default function About() {
           </div>
           <div
             id="valeurs"
-            className="w-full mt-16 md:mt-0 flex flex-row md:flex-col items-center justify-center directed-scroll"
+            className="w-full mt-16 md:mt-0 flex flex-row md:flex md:flex-col items-center justify-center directed-scroll"
           >
             <Image
               src="/images/evolution.png"
@@ -596,7 +597,180 @@ export default function About() {
             </h3>
           </div>
           </div>
+        </div> */}
+
+        <div   data-aos="zoom-in" className="bg-gray-200 relative w-full h-[90vh] px-4 md:px-32 lg:px-4 text-center ">
+          <div>
+            <h2 className="text-5xl text-[var(--foreground)] font-bold mb-20 md:mb-20 mt-14">
+              NOS VALEURS
+            </h2>
+          </div>
+
+          <div className="relative overflow-hidden">
+            <div
+                className="pl-0 flex overflow-x-auto scrollbar-hide scroll-smooth transition-transform duration-500 ease-in-out mx-12 directed-scroll"
+                id="carousel-container"
+                style={{ gap: "1rem" }}
+              >
+                {[{
+                  icon: "/images/chance.png", 
+                  title:"Nous croyons à l'égalité des chances", 
+                  content: "Notre mission est de fournir à nos employés des opportunités d'épanouissement et de croissance personnelle."+
+                          " Nous nousengageons à partager nos connaissances, à fournir une formationet un soutien, "+
+                          "permettant la croissance professionnelle de nosemployés. "+
+                          "Nous garantissons des opportunités équitables, offrantun développement professionnel à long terme, "+
+                          "accueillant ladiversité et valorisant toutes les cultures."
+                  },
+                  {
+                    icon: "/images/evolution.png", 
+                    title:"Nous évoluons constamment", 
+                    content: "À travers des solutions de transport fiables et durables, nous"+
+                            " facilitons les échanges internationaux, stimulons les économies "+
+                            "locales et œuvrons pour une logistique plus responsable. "
+                    },
+                    {
+                      icon: "/images/famille.png", 
+                      title:"Nous sommes une famille", 
+                      content: "Chez TOM, nous cultivons un esprit de famille qui inspire confiance,"+
+                              " dévouement et sentiment d' appartenance. Nous croyons en la force des relations humaines "+
+                              "et en l'importance de créer un environnement où chacun se sent valorisé et soutenu. "
+                    },
+                    {
+                      icon: "/images/passion.png",
+                      title: "Nous sommes passionnés et engagés",
+                      content: "Nous sommes passionnés par ce que nous faisons. Cette passion se traduit par un engagement quotidien"+
+                              "à fournir des services d'excellence, à surmonter les défis"+
+                              "avec persévérance et à offrir à nos clients une expérience unique."+
+                              "Chaque membre de notre équipe est animé par cette volonté de dépassement et de satisfaction client."
+                    },
+                    {
+                      icon:"/images/soucieux.png",
+                      title:"Nous nous soucions des gens",
+                      content:"Nous pensons que chaque personne apporte une valeur unique. Nous"+
+                              "développons des relations authentiques fondées sur l'éthique, le"+
+                              "respect et l' esprit d'équipe. Nous nous soucions vraiment de la"+
+                              "satisfaction et de la fidélité de nos clients et collaborateurs."
+                    }
+
+                ].map((valeurs, index) => (
+                  <div key={index} className="flex-none w-full md:w-1/3 px-2">
+                    <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center h-full w-96">
+                      <div className="mb-6 hover:animate-[bell_1s_ease-in-out]">
+                        <Image
+                          src={valeurs.icon}
+                          alt={valeurs.title}
+                          width={70}
+                          height={70}
+                          className="mr-1"
+                        />
+                      </div>
+                      <h3 className="text-xl font-bold mb-4">{valeurs.title}</h3>
+                      <p className="text-black text-sm md:text-base text-justify mt-8">{valeurs.content}</p>
+                    </div>
+                  </div>
+                ))}
+               
+                
+            </div>
+            {/* Navigation Arrows */}
+            <button
+              onClick={() => {
+                const container = document.getElementById("carousel-container");
+                if (container) {
+                  // Get container width to determine screen size
+                  const containerWidth = container.clientWidth;
+                  let visibleItems;
+
+                  // Determine number of items based on screen size
+                  if (containerWidth >= 1024) {
+                    // lg breakpoint
+                    visibleItems = 5;
+                  } else if (containerWidth >= 768) {
+                    // md breakpoint
+                    visibleItems = 4;
+                  } else {
+                    visibleItems = 1;
+                  }
+
+                  // Calculate total width of items to scroll
+                  const totalItemWidth = container.scrollWidth;
+                  const itemWidth = totalItemWidth / 11; // Total number of items (11)
+                  const scrollAmount = itemWidth * visibleItems;
+
+                  container.scrollTo({
+                    left: container.scrollLeft - scrollAmount,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--primary)] rounded-full hover:scale-125 transition-transform duration-300"
+              aria-label="Previous slide"
+            >
+              <div className="relative w-8 h-12 md:h-8">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    className="md:w-[54px] md:h-[54px]"
+                    viewBox="0 0 24 24"
+                    fill="#000000"
+                  >
+                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+                  </svg>
+                </div>
+              </div>
+            </button>
+
+            <button
+              onClick={() => {
+                const container = document.getElementById("carousel-container");
+                if (container) {
+                  // Get container width to determine screen size
+                  const containerWidth = container.clientWidth;
+                  let visibleItems;
+
+                  // Determine number of items based on screen size
+                  if (containerWidth >= 1024) {
+                    // lg breakpoint
+                    visibleItems = 5;
+                  } else if (containerWidth >= 768) {
+                    // md breakpoint
+                    visibleItems = 4;
+                  } else {
+                    visibleItems = 1;
+                  }
+
+                  // Calculate total width of items to scroll
+                  const totalItemWidth = container.scrollWidth;
+                  const itemWidth = totalItemWidth / 11; // Total number of items (11)
+                  const scrollAmount = itemWidth * visibleItems;
+
+                  container.scrollTo({
+                    left: container.scrollLeft + scrollAmount,
+                    behavior: "smooth",
+                  });
+                }
+              }}
+              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--primary)] rounded-full hover:scale-125 transition-transform duration-300"
+              aria-label="Next slide"
+            >
+              <div className="relative w-8 h-12 md:h-8">
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <svg
+                    width="24"
+                    height="24"
+                    className="md:w-[54px] md:h-[54px]"
+                    viewBox="0 0 24 24"
+                    fill="#000000"
+                  >
+                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+                  </svg>
+                </div>
+              </div>
+            </button>
+          </div>
         </div>
+
      
 
       {/* Team Section */}

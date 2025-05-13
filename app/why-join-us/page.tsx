@@ -49,7 +49,8 @@ export default function WhyJoinUs() {
               <div className="absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
                 <span className="text-white text-sm md:text-xl text-center mb-6">
                   TOM est avant tout une entreprise sénégalaise et fière de ses racines. 
-                  Créée, développée et dirigée localement, nous sommes le champion national de la logistique et un véritable pionnier,
+                  Créée, développée et dirigée localement, nous sommes pionniers et
+                  champions de la logistique sénégalaise,
                   premier opérateur à implanter un port à sec en Afrique de l’Ouest. 
                   Depuis, nous avons établi la norme pour toute l’industrie.
                 </span>
