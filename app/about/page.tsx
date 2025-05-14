@@ -599,7 +599,7 @@ export default function About() {
           </div>
         </div> */}
 
-        <div   data-aos="zoom-in" className="bg-[#FAFAFA] relative w-full h-[90vh] px-4 md:px-32 lg:px-4 text-center ">
+        <div id="valeurs"  data-aos="zoom-in" className="bg-[#FAFAFA] relative w-full h-[90vh] px-4 md:px-32 lg:px-4 text-center ">
           <div>
             <h2 className="text-5xl text-[var(--foreground)] font-bold mb-20 md:mb-20 mt-14">
               NOS VALEURS
