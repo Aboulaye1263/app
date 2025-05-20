@@ -126,34 +126,34 @@ export default function HeaderMenu({
 
           <div className="submenu absolute hidden mt-2 w-64 bg-white rounded-lg shadow-lg py-2 z-50">
             <Link
-              href="/about#mission"
+              href="/about#histoire"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
-              Notre mission
+              Notre histoire
             </Link>
             <Link
               href="/about#objectif"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
-              Notre objectif
+              Objectif, Mission, Vision
             </Link>
-            <Link
+            {/* <Link
               href="/about#vision"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
               Notre vision
-            </Link>
+            </Link>*/}
             <Link
               href="/about#valeurs"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
               Nos valeurs
-            </Link>
+            </Link> 
             <Link
               href="/about#team"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
-              Une équipe d'experts
+              Nos experts
             </Link>
           </div>
         </div>
@@ -210,7 +210,7 @@ export default function HeaderMenu({
               href="/services/solution"
               className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
             >
-              Solutions logistiques à valeurs ajoutées
+              Services à valeurs ajoutées
             </Link>
           </div>
         </div>

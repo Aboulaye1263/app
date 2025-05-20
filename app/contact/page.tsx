@@ -7,7 +7,7 @@ import { Card } from "flowbite-react";
 export default function Contact() {
   return (
     <main className="min-h-screen">
-      <HeaderMenu isScrolledAndImmutable />
+      <HeaderMenu isScrolledAndImmutable/>
 
       {/* Contact Section */}
       <div 

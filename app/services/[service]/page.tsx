@@ -10,7 +10,7 @@ import { useParams } from "next/navigation";
 // Service details map
 const serviceDetails = {
   transport: {
-    title: "Services Transport",
+    title: "Transport",
     heroImage: "/images/banner_transport_new.png", // You'll need to add these images
     description:
       "Nos solutions de transport multimodal garantissent l’acheminement sécurisé et rapide des marchandises, en combinant différents modes de transport tels que le camion, le rail et les solutions frigorifiques (GENSET). Grâce à notre expertise, nous assurons une chaîne logistique fluide et performante à nos clients dans les principaux secteurs d’activités tels que l’Agroalimentaire, pharmaceutique, industrie manufacturière, grande distribution, commerce et services.",
@@ -46,7 +46,7 @@ const serviceDetails = {
     ],
   },
   depot: {
-    title: "Services de Dépôt de Conteneurs",
+    title: "Dépôt de Conteneurs",
     heroImage: "/images/service_depot.png",
     description:
       "Nous offrons des solutions complètes pour le stockage et la gestion des conteneurs vides et pleins, sous douane ou déclarés. Notre infrastructure moderne garantit la sécurité et la conformité réglementaire.",
@@ -86,7 +86,7 @@ const serviceDetails = {
     ],
   },
   entreposage: {
-    title: "Services Entreposage / Distribution de Marchandises",
+    title: "Entreposage / Distribution de Marchandises",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
     description:
       "Nos entrepôts offrent des espaces de stockage sous douane, à sec ou à température contrôlée, adaptés aux besoins de chaque client.",
@@ -123,7 +123,7 @@ const serviceDetails = {
     ],
   },
   solution: {
-    title: "Solutions Logistiques à Valeur Ajoutée",
+    title: "Services à Valeur Ajoutée",
     heroImage: "/images/reefers_new.png",
     description:
       "Nous proposons des services spécialisés pour ajouter de la valeur à vos opérations logistiques, allant de la gestion frigorifique à la manutention de project cargo.",

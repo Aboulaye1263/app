@@ -33,8 +33,8 @@ des cargaisons sensibles à la température. Nous offrons
   },
   {
     id: 4,
-    title: "Solutions logistiques à valeurs ajoutées",
-    image: "/images/other_services/value.png",
+    title: "Services à valeurs ajoutées",
+    image: "/images/other_services/solution.png",
     description: `Nous sommes leaders dans la maintenance, la réparation et le
 dépotage de conteneurs, avec une capacité de traitement de 3
 millions de conteneurs secs et 600 000 conteneurs frigorifiques

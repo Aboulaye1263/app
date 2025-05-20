@@ -33,7 +33,7 @@ export default function Home() {
       className="carousel-slide object-cover brightness-50 transition-all duration-1000"
     />,
     <Image
-      src="/images/new images/header.png"
+      src="/images/banners/banner_home.png"
       alt="TOM MEDLOG Carousel Image 2"
       fill
       key={3}
@@ -50,17 +50,17 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
           <div className="max-w-5xl" data-aos="fade-up">
-            <h1 className="text-5xl md:text-7xl font-bold mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
-              Leader de la logistique en{" "}
-              <span className="text-[var(--primary)]">Afrique de l'Ouest</span>
+            <h1 className="text-5xl md:text-7xl font-medium mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
+              Premier port sec en
+              <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-justify">
-              Fondé en 2008, Le Terminal des Opérations Maritimes (TOM) est un opérateur logistique spécialisé pionnier en Afrique
-              de l&apos;Ouest, ayant établi sa marque grâce à sa fiabilité. Nous
-              avons établi la norme pour les dépôts de conteneurs grâce à notre
-              engagement envers l&apos;excellence opérationnelle,
-              l&apos;intégration technologique et l&apos;optimisation des
-              processus.
+              Fondé en 2008, le Terminal des Opérations Maritimes
+              (TOM) est un opérateur logistique spécialisé en Afrique de l’ouest,
+              ayant établi sa marque grâce à sa fiabilité. Nous avons établi la norme
+              pour les dépôts de conteneurs grâce à notre engagement envers
+              l’excellence opérationnelle, l’intégration technologique et
+              l’optimisation des processus.
             </p>
             <Link
               href="/about#histoire"
@@ -136,7 +136,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 ml-auto w-[95%]">
                   <Image
-                    src="/images/new images/notre_mission.png"
+                    src="/images/notre_mission.jpg"
                     alt="Mission"
                     fill
                     className="object-cover"
@@ -212,11 +212,10 @@ export default function Home() {
               {/* Text Card */}
               <div className="py-8">
                 <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                Notre vision est d'être le leader continental des services
-                  logistiques intégrés et de dépôt de conteneurs, tout en créant
-                  un environnement de travail enrichissant qui valorise l'esprit
-                  d'équipe, le respect mutuel et le développement professionnel
-                  de nos collaborateurs.
+                  Etre un leader Africain des services
+                  logistiques intégrés, tout en créant un environnement de travail
+                  enrichissant qui valorise l'esprit d'équipe, le respect mutuel et le
+                  développement professionnel de nos collaborateurs.
                 </p>
                 <Link
                   href="/about#vision"

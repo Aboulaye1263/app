@@ -42,7 +42,7 @@ export default function ServicesPage() {
     {
       src: "/images/reefers_new.png",
       alt: "Solutions logistiques à valeurs ajoutées",
-      iconSrc:"/images/other_services/value.png",
+      iconSrc:"/images/other_services/solution.png",
       tagLink:"solution"
     }
 
@@ -50,7 +50,7 @@ export default function ServicesPage() {
 
   return (
     <main className="min-h-screen bg-[#FAFAFA] overflow-x-hidden">
-      <HeaderMenu isScrolledAndImmutable />
+      <HeaderMenu isScrolledAndImmutable/>
 
       {/* Hero Section */}
       {/* <div className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
@@ -166,20 +166,20 @@ export default function ServicesPage() {
               className="inline-block text-3xl md:text-4xl font-bold border-2 border-[var(--primary)] 
                          px-8 py-4 rounded-md hover:bg-[var(--primary)] hover:text-black transition-colors"
             >
-              SOLUTIONS À VALEURS AJOUTÉES
+              SERVICES À VALEURS AJOUTÉES
             </h2>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: "/icons/dropper.png", title: "Dépotage" },
+              { icon: "/icons/empotage_depotage.png", title: "Dépotage" },
               { icon: "/icons/empotage.png", title: "Empotage" },
               { icon: "/icons/man_coll.png", title: "Gestion collatérale" },
-              { icon: "/icons/trailer.png", title: "Cargo de projet" },
-              { icon: "/icons/agent.png", title: "Agent portuaire" },
-              { icon: "/icons/vmg.png", title: "VMG, pesage et fumigation" },
+              { icon: "/icons/transport.png", title: "Cargo de projet" },
+              { icon: "/icons/douane.png", title: "Agent portuaire" },
+              { icon: "/icons/service_pesage_VGM.png", title: "VMG, pesage et fumigation" },
               { icon: "/icons/improve.png", title: "Amélioration" },
-              { icon: "/icons/flexybags.png", title: "Flexibags" },
+              { icon: "/icons/flexitanks.png", title: "Flexibags" },
             ].map((solution, index) => (
               <div
                 key={index}

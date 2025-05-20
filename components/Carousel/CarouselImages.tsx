@@ -115,13 +115,13 @@ export default function CarouselImages({
       {/* Dots Navigation */}
       {fetchSlideCount ? (
         <div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2"
-          data-aos="fade-up"
+          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex gap-2 z-10"
+          
         >
           {[0, 1, 2].map((index) => (
             <span 
               key={index}
-              className={`w-2 h-2 ${currentIndex === index ? 'bg-white' : 'bg-white/50'} rounded-full hover:scale-150 transition-transform`}
+              className={`w-3 h-3 ${currentIndex === index ? 'bg-white' : 'border-2 border-[var(--primary)]'} rounded-full hover:scale-150 transition-transform`}
             ></span>
           ))}
         </div>

@@ -3,65 +3,14 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import HeaderMenu from "@/components/Header/HeaderMenu";
 import { useEffect, useState } from "react";
+import CountUp from "react-countup";
 import AOS from "aos";
 import "aos/dist/aos.css";
-
-import { Tooltip } from "flowbite-react";
+import { Button, Modal, ModalBody, ModalHeader, Tooltip } from "flowbite-react";
 import { title } from "process";
+import { Content } from "next/font/google";
+import TeamCarousel from "@/components/Carousel/TeamCarousel";
 
-
-function CountUp({
-  end,
-  duration = 2,
-  delay = 0,
-  fontColor = "font-black",
-  prefix = "",
-  fontWeightSize = "text-4xl font-bold mb-2",
-}: {
-  end: number;
-  duration?: number;
-  fontColor?: string;
-  delay?: number;
-  prefix?: string;
-  fontWeightSize?: string;
-}) {
-  const [count, setCount] = useState(0);
-
-  useEffect(() => {
-    const startTime = Date.now() + delay * 1000;
-    let animationFrameId: number;
-
-    const updateCount = () => {
-      const now = Date.now();
-      if (now < startTime) {
-        animationFrameId = requestAnimationFrame(updateCount);
-        return;
-      }
-
-      const progress = Math.min((now - startTime) / (duration * 1000), 1);
-      const currentCount = Math.floor(end * progress);
-
-      setCount(currentCount);
-
-      if (progress < 1) {
-        animationFrameId = requestAnimationFrame(updateCount);
-      }
-    };
-
-    animationFrameId = requestAnimationFrame(updateCount);
-
-    return () => {
-      cancelAnimationFrame(animationFrameId);
-    };
-  }, [end, duration, delay]);
-
-  return (
-    <span className={`font-[ubuntu] ${fontColor} ${fontWeightSize}`}>
-      {prefix}
-      {count}
-    </span>
-  );
-}
 
 export default function About() {
   useEffect(() => {
@@ -71,9 +20,11 @@ export default function About() {
     });
   }, []);
 
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <main className="min-h-screen flex flex-col">
-      <HeaderMenu />
+      <HeaderMenu isScrolledAndImmutable/>
 
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
@@ -104,14 +55,26 @@ export default function About() {
       </div>
 
       {/* Timeline Section */}
-      <div className="bg-gray-50 py-16 px-4 md:px-32 lg:px-48">
-        <div className="container mx-auto px-4">
-          <h2 id="histoire" className="text-4xl font-bold text-center mb-12 directed-scroll">
+      <div className="relative py-16 w-full md:pt-10">
+      <div className="absolute top-0 left-0 right-0 -z-99 h-full">
+          <Image
+            src="/images/plt1.png"
+            alt="TOM MEDLOG Image header"
+            fill
+            className="object-cover -z-1"
+          />
+        </div> 
+        <div className="absolute w-full h-full bottom-0 right-0 left-0 bg-gradient-to-r from-white/80 to-white/30 -z-1" />
+        <div className="container mx-auto px-4 z-20">
+          <div id="histoire" className="relative text-4xl font-bold text-center pt-12 mb-12 directed-scroll text-black">
+          <h2>
             NOTRE HISTOIRE
           </h2>
+          </div>
+          
           <div
             data-aos="fade-up"
-            className="flex flex-col gap-4 items-center mb-16"
+            className="flex flex-col gap-4 items-center mb-4"
           >
             <p className="text-gray-700 text-sm md:text-base text-center">
               Parce que la logistique en Afrique de l'Ouest méritait mieux que
@@ -124,7 +87,7 @@ export default function About() {
             <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#F3DFA2]"></div>
 
             {/* 2008 Entry */}
-            <div className="mb-16 relative" data-aos="fade-right">
+            <div className="mb-4 relative" data-aos="fade-right">
               <div className="flex items-center">
                 <div className="w-1/2 pr-8 text-right">
                   <h3 className="text-2xl font-bold mb-2">2008</h3>
@@ -139,7 +102,7 @@ export default function About() {
             </div>
 
             {/* 2014 Entry */}
-            <div className="mb-16 relative" data-aos="fade-left">
+            <div className="mb-4 relative" data-aos="fade-left">
               <div className="flex items-center">
                 <div className="w-1/2 pr-8"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
@@ -147,7 +110,7 @@ export default function About() {
                   <h3 className="text-2xl font-bold mb-2">2015</h3>
                   <p className="text-gray-700 text-justify">
                     On démarre la plateforme logistique portuaire à 1 Km à vol
-                    d’oiseau du port, avec 210 000 m2. On devient le plus grand
+                    d’oiseau du port, avec 210.000 m². On devient le plus grand
                     port sec du Sénégal. Une alliance stratégique avec le Port
                     Autonome de Dakar pour repenser les infrastructures et
                     accélérer le commerce international.
@@ -175,7 +138,7 @@ export default function About() {
             </div>
 
             {/* 2022 Entry */}
-            <div className="mb-16 mt-16 relative" data-aos="fade-left">
+            <div className="mb-4 mt-4 relative" data-aos="fade-left">
               <div className="flex items-center">
                 <div className="w-1/2 pr-8"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
@@ -207,7 +170,7 @@ export default function About() {
             </div>
 
             {/* Today Entry */}
-            <div className="mb-16 mt-16 relative" data-aos="fade-left">
+            <div className="mb-4 mt-4 relative" data-aos="fade-left">
               <div className="flex items-center">
                 <div className="w-1/2 pr-8"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
@@ -224,7 +187,7 @@ export default function About() {
           </div>
           <div
             data-aos="fade-up"
-            className="flex flex-col gap-4 items-center mt-16"
+            className="flex flex-col gap-4 items-center mt-16 pb-4"
           >
             <p className="text-gray-700 text-sm md:text-base text-center">
               Ce qu'on construit, ce n'est pas juste des entrepôts : On facilite
@@ -253,7 +216,7 @@ export default function About() {
                   className="text-6xl font-bold text-[#F3DFA2] "
                   style={{ animationDelay: "0.5s" }}
                 >
-                  +17
+                  18
                 </span>
               </div>
               <span className="ml-4 text-[#222221] font-bold">
@@ -290,14 +253,14 @@ export default function About() {
                 <td className="w-1/3 px-4 py-28 bg-[var(--primary)] border-gray-300 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                    +<CountUp end={10000} duration={2} /> EVP
+                    <CountUp end={10000} duration={2} prefix="+" separator="."/> EVP
                   </div>
                   <div className="text-black">Capacité de stockage</div>
                 </td>
                 <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                   <CountUp end={150000} duration={2} /> EVP
+                   <CountUp end={150000} duration={2} prefix="+" separator="."/> EVP
                   </div>
                   <div className="text-[#222221]">
                   Traitées par an
@@ -311,7 +274,7 @@ export default function About() {
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl text-white font-bold mb-2">
                     
-                    <CountUp end={34500} duration={2} /> m²
+                    <CountUp end={40000} duration={2} prefix="+" separator="."/> m²
                   </div>
                   <div className="text-white">
                   Entrepôts dédiés aux matières premières
@@ -337,10 +300,10 @@ export default function About() {
                 <td className="w-1/3 border-gray-300 px-4 py-28 bg-[#222221] text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2 text-white">
-                    <CountUp end={21} fontColor="text-white" duration={2} /> hectares
+                    <CountUp end={250000} duration={2} prefix="+" separator="."/> m²
                   </div>
                   <div className="text-white">
-                    De plateforme logistique portuaire
+                    De surface logistique portuaire
                   </div>
                 </td>
               </tr>
@@ -354,7 +317,7 @@ export default function About() {
               <tr className="h-48">
                 <td className="border-r-2 border-gray-300 bg-[#222221] text-center px-4 w-1/2 h-48">
                   <div className="text-black">
-                    <CountUp end={250000} fontColor="text-white" duration={2} />
+                    <CountUp end={250000}  duration={2} />
                   </div>
                   <div className="text-white">
                     M² Surfaces logistiques dédiées
@@ -379,7 +342,7 @@ export default function About() {
                 </td>
                 <td className="border-t-2 px-4 bg-[#222221] text-center w-1/2 h-48">
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={34500} fontColor="text-white" duration={2} />
+                    <CountUp end={34500} duration={2} />
                   </div>
                   <div className="text-white">
                     M² entrepôts dédiés aux matières premières
@@ -389,7 +352,7 @@ export default function About() {
               <tr className="h-48">
                 <td className="border-r-2 border-t-2 border-gray-300 px-4 bg-[#222221] text-center w-1/2 h-48">
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={210000} fontColor="text-white" duration={2} />
+                    <CountUp end={210000} duration={2} />
                   </div>
                   <div className="text-white">
                     M² plateforme logistique portuaire
@@ -422,24 +385,22 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-sm md:text-base text-justify">
-                Notre mission est de transformer la logistique en Afrique de
-                l&apos;Ouest en répondant aux besoins de nos clients avec des
-                solutions sur mesure, innovantes et intégrées. Nous visons
-                l&apos;excellence à chaque étape de la chaîne
-                d&apos;approvisionnement. Comment ? En optimisant les processus
-                tout en respectant les normes les plus élevées de durabilité et
-                de responsabilité environnementale. Animés par une quête
-                constante d&apos;innovation, nous nous engageons à créer une
-                valeur durable pour nos clients, nos partenaires et les
-                communautés que nous servons.
+                Transformer la logistique en Afrique de
+                l'Ouest en répondant aux besoins de nos clients avec des solutions sur
+                mesure, innovantes et intégrées. Nous visons l'excellence à chaque
+                étape de la chaîne d'approvisionnement. En optimisant les processus
+                tout en respectant les normes les plus élevées de durabilité et de
+                responsabilité environnementale. Animés par une quête constante
+                d'innovation, nous nous engageons à créer une valeur ajoutée pour
+                nos clients, nos partenaires et les communautés que nous servons.
               </p>
             </div>
             <Image
-              src="/images/new images/notre_mission.png"
+              src="/images/notre_mission.jpg"
               alt="Medlog"
               width={800}
               height={600}
-              className="w-fullbg-gray-100 rounded-lg h-full opacity-100"
+              className="w-auto bg-gray-100 rounded-lg h-full opacity-100"
             />
           </div>
           {/* Objectif Section */}
@@ -461,13 +422,11 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-sm md:text-base text-justify">
-                Renforcer notre position de leader régional et de devenir un hub
-                logistique incontournable au Sénégal et en Afrique de
-                l&apos;Ouest, tout en contribuant activement au développement
-                économique du continent. Nous facilitons le commerce, la
-                manutention, et le transport des marchandises avec efficacité et
-                sécurité, en nous inspirant des meilleures pratiques
-                internationales.
+                Renforcer notre position de leader régional et 
+                devenir un hub logistique incontournable au Sénégal et en Afrique de l'Ouest,
+                en contribuant activement au développement économique du continent. Nous
+                facilitons le commerce, la manutention, et le transport des marchandises avec
+                efficacité et sécurité, tout en respectant les standards internationaux.
               </p>
             </div>
           </div>
@@ -483,16 +442,14 @@ export default function About() {
                 </h2>
               </div>
               <p className="text-sm md:text-base text-justify">
-                Nous aspirons à devenir le référent continental en matière de
-                logistique intégrée et de gestion de conteneurs, tout en créant
-                un environnement de travail épanouissant, fondé sur la
-                collaboration et le respect. Solidement ancrés au Sénégal, nous
-                accélérons la croissance de l&apos;Afrique de l&apos;Ouest en
-                connectant les territoires isolés grâce à notre réseau routier
-                et maritime. Partenaire de confiance, nous relevons chaque défi
-                logistique avec efficacité et engagement, garantissant à nos
-                clients une chaîne d&apos;approvisionnement performante et
-                agile.
+                Etre un leader Africain des services logistiques
+                intégrés, tout en créant un environnement de travail enrichissant qui valorise
+                l'esprit d'équipe, le respect mutuel et le développement professionnel de nos
+                collaborateurs. Solidement ancrés au Sénégal, nous accélérons la croissance
+                en connectant les territoires isolés grâce à notre réseau routier et maritime.
+                Partenaire de confiance, nous relevons chaque défi logistique avec efficacité et
+                engagement, garantissant à nos clients une chaîne d'approvisionnement 
+                performante et agile.
               </p>
             </div>
             <Image
@@ -599,62 +556,62 @@ export default function About() {
           </div>
         </div> */}
 
-        <div id="valeurs"  data-aos="zoom-in" className="bg-[#FAFAFA] relative w-full h-[90vh] px-4 md:px-32 lg:px-4 text-center ">
+        <div id="valeurs"  data-aos="zoom-in" className="bg-[#FAFAFA] relative w-full h-full px-4 md:px-32 lg:px-4 text-center flex flex-col">
           <div>
             <h2 className="text-5xl text-[var(--foreground)] font-bold mb-20 md:mb-20 mt-14">
               NOS VALEURS
             </h2>
           </div>
 
-          <div className="relative overflow-hidden">
+          <div className="relative flex w-full">
             <div
-                className="pl-0 flex overflow-x-auto scrollbar-hide scroll-smooth transition-transform duration-500 ease-in-out mx-12 directed-scroll"
+                className="flex flex-wrap overflow-x-auto scrollbar-hide scroll-smooth transition-transform duration-500 ease-in-out mx-0 directed-scroll justify-center"
                 id="carousel-container"
-                style={{ gap: "1rem" }}
+                style={{ gap: "2.5rem" }}
               >
                 {[{
                   icon: "/images/chance.png", 
-                  title:"Nous croyons à l'égalité des chances", 
-                  content: "Notre mission est de fournir à nos employés des opportunités d'épanouissement et de croissance personnelle."+
-                          " Nous nousengageons à partager nos connaissances, à fournir une formationet un soutien, "+
-                          "permettant la croissance professionnelle de nosemployés. "+
-                          "Nous garantissons des opportunités équitables, offrantun développement professionnel à long terme, "+
-                          "accueillant ladiversité et valorisant toutes les cultures."
+                  title:"Nous croyons à l'égalité des chances",
+                  content: "Nous partageons nos connaissances, offrons formation et soutien pour favoriser la croissance professionnelle de nos employés."+
+                          " Nous garantissons des opportunités équitables, "+
+                          "un développement à long terme, et valorisons la diversité culturelle."
+                         
                   },
                   {
                     icon: "/images/evolution.png", 
                     title:"Nous évoluons constamment", 
-                    content: "À travers des solutions de transport fiables et durables, nous"+
-                            " facilitons les échanges internationaux, stimulons les économies "+
-                            "locales et œuvrons pour une logistique plus responsable. "
+                    content: "Grâce à des solutions de transport fiables et durables,"+
+                            " nous facilitons les échanges internationaux, "+
+                            "soutenons les économies locales et encourageons une logistique responsable. "+
+                            "Nous intégrons les nouvelles technologies pour répondre aux besoins du marché."
                     },
                     {
                       icon: "/images/famille.png", 
                       title:"Nous sommes une famille", 
-                      content: "Chez TOM, nous cultivons un esprit de famille qui inspire confiance,"+
-                              " dévouement et sentiment d' appartenance. Nous croyons en la force des relations humaines "+
-                              "et en l'importance de créer un environnement où chacun se sent valorisé et soutenu. "
+                      content: "nous cultivons un esprit familial basé sur la confiance,"+
+                              " le dévouement et l'appartenance. "+
+                              "Cela nous pousse à agir avec courage et responsabilité pour le bien de nos clients et collaborateurs. "
                     },
                     {
                       icon: "/images/passion.png",
                       title: "Nous sommes passionnés et engagés",
-                      content: "Nous sommes passionnés par ce que nous faisons. Cette passion se traduit par un engagement quotidien"+
-                              "à fournir des services d'excellence, à surmonter les défis"+
-                              "avec persévérance et à offrir à nos clients une expérience unique."+
-                              "Chaque membre de notre équipe est animé par cette volonté de dépassement et de satisfaction client."
+                      content: "Nous sommes animés par une passion qui nous pousse à offrir des services d'excellence,"+
+                              "à relever les défis avec persévérance et à offrir une expérience unique à nos clients."+
+                              "Chaque membre de notre équipe partage cette volonté de dépassement et de satisfaction."
+                          
                     },
                     {
                       icon:"/images/soucieux.png",
                       title:"Nous nous soucions des gens",
-                      content:"Nous pensons que chaque personne apporte une valeur unique. Nous"+
-                              "développons des relations authentiques fondées sur l'éthique, le"+
-                              "respect et l' esprit d'équipe. Nous nous soucions vraiment de la"+
-                              "satisfaction et de la fidélité de nos clients et collaborateurs."
+                      content:"Nous valorisons chaque individu pour sa contribution unique."+
+                              "Nous établissons des relations authentiques basées sur l'éthique"+
+                              "le respect et l'esprit d'équipe, en nous préoccupant sincèrement de"+
+                              "la satisfaction et fidélité de nos clients et collaborateurs."
                     }
 
                 ].map((valeurs, index) => (
-                  <div key={index} className="flex-none w-full md:w-1/3 px-2">
-                    <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center h-full w-96">
+                  <div key={index} className="flex-wrap w-full md:w-[25%] px-2">
+                    <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center h-full w-auto">
                       <div className="mb-6 hover:animate-[bell_1s_ease-in-out]">
                         <Image
                           src={valeurs.icon}
@@ -672,102 +629,7 @@ export default function About() {
                
                 
             </div>
-            {/* Navigation Arrows */}
-            <button
-              onClick={() => {
-                const container = document.getElementById("carousel-container");
-                if (container) {
-                  // Get container width to determine screen size
-                  const containerWidth = container.clientWidth;
-                  let visibleItems;
-
-                  // Determine number of items based on screen size
-                  if (containerWidth >= 1024) {
-                    // lg breakpoint
-                    visibleItems = 5;
-                  } else if (containerWidth >= 768) {
-                    // md breakpoint
-                    visibleItems = 4;
-                  } else {
-                    visibleItems = 1;
-                  }
-
-                  // Calculate total width of items to scroll
-                  const totalItemWidth = container.scrollWidth;
-                  const itemWidth = totalItemWidth / 11; // Total number of items (11)
-                  const scrollAmount = itemWidth * visibleItems;
-
-                  container.scrollTo({
-                    left: container.scrollLeft - scrollAmount,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-              className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--primary)] rounded-full hover:scale-125 transition-transform duration-300"
-              aria-label="Previous slide"
-            >
-              <div className="relative w-8 h-12 md:h-8">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    width="24"
-                    height="24"
-                    className="md:w-[54px] md:h-[54px]"
-                    viewBox="0 0 24 24"
-                    fill="#000000"
-                  >
-                    <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
-                  </svg>
-                </div>
-              </div>
-            </button>
-
-            <button
-              onClick={() => {
-                const container = document.getElementById("carousel-container");
-                if (container) {
-                  // Get container width to determine screen size
-                  const containerWidth = container.clientWidth;
-                  let visibleItems;
-
-                  // Determine number of items based on screen size
-                  if (containerWidth >= 1024) {
-                    // lg breakpoint
-                    visibleItems = 5;
-                  } else if (containerWidth >= 768) {
-                    // md breakpoint
-                    visibleItems = 4;
-                  } else {
-                    visibleItems = 1;
-                  }
-
-                  // Calculate total width of items to scroll
-                  const totalItemWidth = container.scrollWidth;
-                  const itemWidth = totalItemWidth / 11; // Total number of items (11)
-                  const scrollAmount = itemWidth * visibleItems;
-
-                  container.scrollTo({
-                    left: container.scrollLeft + scrollAmount,
-                    behavior: "smooth",
-                  });
-                }
-              }}
-              className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-[var(--primary)] rounded-full hover:scale-125 transition-transform duration-300"
-              aria-label="Next slide"
-            >
-              <div className="relative w-8 h-12 md:h-8">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <svg
-                    width="24"
-                    height="24"
-                    className="md:w-[54px] md:h-[54px]"
-                    viewBox="0 0 24 24"
-                    fill="#000000"
-                  >
-                    <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
-                  </svg>
-                </div>
-              </div>
-            </button>
+            
           </div>
         </div>
 
@@ -778,11 +640,11 @@ export default function About() {
         <div className="absolute bg-[#222221] w-full h-1/2 left-0 bottom-0"></div>
         <div className="container mx-auto">
           <div
-            className="flex flex-col gap-4 items-center mb-16 directed-scroll"
+            className="flex flex-col gap-1 items-center mb-16 directed-scroll"
             id="team"
           >
             <h2 className="text-4xl text-white font-bold mb-4 md:mb-6 text-center">
-              UNE ÉQUIPE D'EXPERTS
+              NOS EXPERTS
             </h2>
             {/* <p className="text-gray-700 text-sm md:text-base text-justify">
               Notre équipe combine expertise internationale et compréhension
@@ -790,51 +652,8 @@ export default function About() {
               globale et maîtrise du terrain.
             </p> */}
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                name: "Nom Prénom",
-                role: "Directeur Général",
-                image: "/images/team/pp.jpeg",
-              },
-              {
-                name: "Nom Prénom",
-                role: "Directeur Commercial",
-                image: "/images/team/pp.jpeg",
-              },
-              {
-                name: "Nom Prénom",
-                role: "Directeur Opérations",
-                image: "/images/team/pp.jpeg",
-              },
-              {
-                name: "Nom Prénom",
-                role: "Directeur Financier",
-                image: "/images/team/pp.jpeg",
-              },
-            ].map((member, index) => (
-              <div
-                key={index}
-                className="flex flex-col items-center"
-                data-aos={index % 2 === 0 ? "fade-right" : "fade-left"}
-              >
-                <div className="relative w-48 h-48 mb-4">
-                  <div className="absolute inset-0 rounded-full"></div>
-                  <div className="absolute inset-2 overflow-hidden rounded-full bg-white">
-                    <Image
-                      src={member.image}
-                      alt={member.name}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                </div>
-                <h3 className="text-xl font-bold text-white mb-1">
-                  {member.name}
-                </h3>
-                <p className="text-white text-sm">{member.role}</p>
-              </div>
-            ))}
+          <div className="container mx-auto py-8 px-4">
+            <TeamCarousel />
           </div>
         </div>
       </div>

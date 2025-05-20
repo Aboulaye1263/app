@@ -22,11 +22,11 @@ export default function WhyJoinUs() {
 
 
   return (
-    <main className="min-h-screen mt-32">
-      <HeaderMenu isScrolledAndImmutable />
+    <main className="min-h-screen">
+      <HeaderMenu isScrolledAndImmutable/>
       {/* Hero Section */}
             <div className="relative h-screen flex flex-col justify-end items-center pb-32">
-              <div className="absolute -top-20 left-0 right-0 -z-99 h-full">
+              <div className="absolute top-0 left-0 right-0 -z-99 h-full">
                 <Image
                   src="/images/joinUs-banner.png"
                   alt="TOM MEDLOG Image header"
@@ -34,19 +34,19 @@ export default function WhyJoinUs() {
                   className="object-cover"
                 />
               </div>
-              <div className="absolute w-full h-screen -top-20 bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
+              <div className="absolute w-full h-screen top-0 bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
               <Image
                 src="/images/couronne.png"
                 alt="Medlog"
                 width={210}
                 height={50}
-                className="absolute top-4 left-1/2object-cover rounded-lg opacity-70"
+                className="absolute top-40 left-1/2object-cover rounded-lg opacity-70"
                 
               />
-              <h1 className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
+              <h1 className="absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
                 UNE ENTREPRISE <span className="text-[#F3DFA2]">SÉNÉGALAISE</span>
               </h1>
-              <div className="absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
+              <div className="absolute bottom-36 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
                 <span className="text-white text-sm md:text-xl text-center mb-6">
                   TOM est avant tout une entreprise sénégalaise et fière de ses racines. 
                   Créée, développée et dirigée localement, nous sommes pionniers et
