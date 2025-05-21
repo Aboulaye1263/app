@@ -76,7 +76,7 @@ const TeamCarousel: React.FC = () => {
             <img 
               src={activeMember.image} 
               alt={activeMember.name} 
-              className="h-[60vh] object-cover"
+              className="md:h-[70vh] object-cover"
             />
           </div>
           

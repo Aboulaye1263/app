@@ -43,6 +43,7 @@ const serviceDetails = {
       { value: "+100", label: "Camions" },
       { value: "24/7", label: "Suivi en temps réel" },
       { value: "4", label: "Modes de transport" },
+      { value: "X", label: "Conteneurs transprotés" },
     ],
   },
   depot: {
@@ -77,12 +78,13 @@ const serviceDetails = {
         title: "Maintenance conteneurs (Dry/reefer)",
         description:
           "Afin d’assurer une réduction des risques de détérioration, nous proposons l’entretien, les réparations et le suivi de qualité des conteneurs.",
-        icon: "/icons/frigorifique.png",
+        icon: "/icons/maintenance.png",
       },
     ],
     stats: [
-      { value: "65 000  m²", label: "Espace de stockage de conteneurs" },
-      { value: "+250", label: "Prises réfrigérées et groupes électrogènes neufs" },
+      { value: "+90.000 m²", label: "Capacité de stockage sous douane" },
+      { value: "+250", label: "Prises refeers" },
+      { value: "X", label: "Capacité de de conteneurs à réparer" },
     ],
   },
   entreposage: {
@@ -117,9 +119,10 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "+120 000 tonnes", label: "Capacité de stockage" },
+      { value: "+120.000 tonnes", label: "Capacité de stockage" },
       { value: "100 %", label: "Sécurisé" },
       { value: "3", label: "Types de stockage" },
+      { value: "0,1 %", label: " Taux de freinte magasin" },
     ],
   },
   solution: {

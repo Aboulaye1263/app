@@ -173,12 +173,12 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { icon: "/icons/empotage_depotage.png", title: "Dépotage" },
-              { icon: "/icons/empotage.png", title: "Empotage" },
-              { icon: "/icons/man_coll.png", title: "Gestion collatérale" },
-              { icon: "/icons/transport.png", title: "Cargo de projet" },
+              { icon: "/icons/chandling.png", title: "Consignation et Ship chandling" },
+              { icon: "/icons/SERVICE_COLLATERAL MANAGEMENT.png", title: "Gestion collatérale" },
+              { icon: "/icons/cargo.png", title: "Project Cargo" },
               { icon: "/icons/douane.png", title: "Agent portuaire" },
-              { icon: "/icons/service_pesage_VGM.png", title: "VMG, pesage et fumigation" },
-              { icon: "/icons/improve.png", title: "Amélioration" },
+              { icon: "/icons/service_pesage_VGM.png", title: "Pesage VGM" },
+              { icon: "/icons/maintenance.png", title: "Amélioration" },
               { icon: "/icons/flexitanks.png", title: "Flexibags" },
             ].map((solution, index) => (
               <div
