@@ -228,7 +228,7 @@ export default function WhyJoinUs() {
               Postuler maintenant
             </Button>
             <Modal show={openModal} onClose={() => setOpenModal(false)}>
-            <ModalHeader className="dark:bg-white" style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
+            <ModalHeader className="dark:bg-white text-gray-700" style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
             <ModalBody className="dark:bg-white">
               <form className="space-y-4">
                 <div>
