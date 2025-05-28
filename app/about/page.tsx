@@ -625,7 +625,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className=" h-full md:h-auto">
+      <div className="relative h-screen">
       <h2
           className="text-3xl font-bold text-center mb-2"
           data-aos="fade-up"
@@ -634,7 +634,7 @@ export default function About() {
         </h2>
           <Carousel pauseOnHover
           indicators={true}
-          className="h-full md:h-[40%]">
+          className="h-full md:h-[50%] ">
             {testimonials.map((item, index) => (
             <div key={index} className="w-1/2 flex flex-col rounded-xl shadow-lg bg-[var(--primary)] items-center justify-center space-y-4 p-8">
               {/* <Image

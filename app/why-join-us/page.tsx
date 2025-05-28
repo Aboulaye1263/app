@@ -224,12 +224,12 @@ export default function WhyJoinUs() {
               outline={true}
               color={"gray"}
               onClick={() => setOpenModal(true)} 
-              className="bg-[var(--primary)] dark:bg-[#eed484] text-black focus:right-0 hover:bg-[var(--foreground)] hover:text-white dark:border-neutral-900 hover:border-gray-100 font-normal text-2xl py-7 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg">
+              className="bg-[var(--primary)] dark:bg-[#eed484] text-black focus:right-0 hover:bg-[var(--foreground)] hover:text-white dark:border-neutral-700 hover:border-gray-100 font-normal text-2xl py-7 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg">
               Postuler maintenant
             </Button>
-            <Modal className="bg-white dark:bg-white" show={openModal} onClose={() => setOpenModal(false)}>
-            <ModalHeader  style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
-            <ModalBody>
+            <Modal show={openModal} onClose={() => setOpenModal(false)}>
+            <ModalHeader className="dark:bg-white" style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
+            <ModalBody className="dark:bg-white">
               <form className="space-y-4">
                 <div>
                   <label htmlFor="prenom" className="block text-sm font-medium text-gray-700">Prénom</label>
@@ -253,7 +253,7 @@ export default function WhyJoinUs() {
                 </div>
               </form>
             </ModalBody>
-            <ModalFooter>
+            <ModalFooter className="dark:bg-white">
               <Button className="bg-[var(--primary)] dark:bg-[#eed484] text-black hover:bg-gray-800 hover:dark:bg-gray-700 hover:text-white" onClick={() => setOpenModal(false)}>ENVOYER</Button>
               {/* <Button color="alternative hover:text-gray-500" onClick={() => setOpenModal(false)}>Annuler</Button> */}
             </ModalFooter>
