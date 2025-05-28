@@ -227,7 +227,7 @@ export default function WhyJoinUs() {
               className="bg-[var(--primary)] dark:bg-[#eed484] text-black focus:right-0 hover:bg-[var(--foreground)] hover:text-white dark:border-neutral-900 hover:border-gray-100 font-normal text-2xl py-7 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg">
               Postuler maintenant
             </Button>
-            <Modal className="bg-white" show={openModal} onClose={() => setOpenModal(false)}>
+            <Modal className="bg-white dark:bg-white" show={openModal} onClose={() => setOpenModal(false)}>
             <ModalHeader  style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
             <ModalBody>
               <form className="space-y-4">
