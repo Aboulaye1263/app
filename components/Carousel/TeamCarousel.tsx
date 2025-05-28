@@ -18,7 +18,11 @@ const teamMembers: TeamMember[] = [
     name: 'Maurice NDONG',
     position: 'Directeur Général Adjoint',
     since: 'Mai 2009',
-    description: 'Professionnel expérimenté avec plus de 15 ans dans le secteur. Expert en gestion opérationnelle et optimisation des processus. Passionné par l\'innovation et le développement des équipes.',
+    description: 'TOM MEDLOG est le fruit d’une ambition forte : transformer durablement le secteur logistique au Sénégal, en proposant des solutions intégrées, fiables et compétitives, au service des économies locales.'+
+                 'Notre action s’inscrit pleinement dans les objectifs de transformation du Port Autonome de Dakar à l’horizon 2035, visant à positionner le Sénégal comme un hub logistique incontournable en Afrique de l’Ouest.'+
+                 'Adossés au Groupe MSC, leader mondial du transport maritime, nous combinons une vision globale à une présence de proximité. Notre modèle repose sur une expertise de terrain, une culture de la performance, et une capacité à nous adapter aux besoins spécifiques du territoire.'+
+                 'Chez TOM MEDLOG, nous croyons que la performance passe par l’humain, par l’excellence opérationnelle et par la rigueur au quotidien. Mon rôle est de mobiliser nos équipes autour de ces valeurs pour bâtir, chaque jour, une logistique plus fluide, plus intelligente, et porteuse de développement.'+
+                 'Nous sommes prêts à relever vos défis logistiques avec réactivité, fiabilité et engagement. N’hésitez pas à nous faire confiance. Nous mettrons tout en œuvre pour vous satisfaire.',
     image: '/images/team/maurice-ndong.png',
   },
   {
@@ -26,7 +30,11 @@ const teamMembers: TeamMember[] = [
     name: 'Raoul DAGBA',
     position: 'Directeur Financier et Comptable',
     since: 'Date absente',
-    description: 'Experte en finance avec un parcours solide dans la gestion stratégique des ressources. Responsable de la planification financière et des analyses de performance de l\'entreprise.',
+    description: 'TOM MEDLOG est le fruit d’une ambition forte : transformer durablement le secteur logistique au Sénégal, en proposant des solutions intégrées, fiables et compétitives, au service des économies locales.'+
+                 'Notre action s’inscrit pleinement dans les objectifs de transformation du Port Autonome de Dakar à l’horizon 2035, visant à positionner le Sénégal comme un hub logistique incontournable en Afrique de l’Ouest.'+
+                 'Adossés au Groupe MSC, leader mondial du transport maritime, nous combinons une vision globale à une présence de proximité. Notre modèle repose sur une expertise de terrain, une culture de la performance, et une capacité à nous adapter aux besoins spécifiques du territoire.'+
+                 'Chez TOM MEDLOG, nous croyons que la performance passe par l’humain, par l’excellence opérationnelle et par la rigueur au quotidien. Mon rôle est de mobiliser nos équipes autour de ces valeurs pour bâtir, chaque jour, une logistique plus fluide, plus intelligente, et porteuse de développement.'+
+                 'Nous sommes prêts à relever vos défis logistiques avec réactivité, fiabilité et engagement. N’hésitez pas à nous faire confiance. Nous mettrons tout en œuvre pour vous satisfaire.',
     image: '/images/team/raul-dagba.png',
   },
   {
@@ -42,7 +50,15 @@ const teamMembers: TeamMember[] = [
     name: 'Alain Dos REIS',
     position: 'Secrétaire Général',
     since: 'Avril 2008',
-    description: 'Spécialiste de la gestion de projets complexes avec une approche méthodique et orientée résultats. Fort d\'une expérience variée dans différents domaines d\'expertise.',
+    description: 'Premier port sec du Sénégal, et référence logistique pour toute l’Afrique de l’Ouest, TOM MEDLOG est un acteur structurant du secteur depuis 2008,'+
+                'avec une ambition claire : faire de la logistique un accélérateur de croissance.'+
+                'Entreprise profondément sénégalaise, portée par des équipes locales engagées, nous accompagnons chaque jour les importateurs, exportateurs, '+
+                'industriels et grands distributeurs à travers des solutions sur mesure — fiables, réactives et compétitives.'+
+                'Filiale du Groupe MSC, nous combinons l’expertise d’un leader mondial à une connaissance fine des réalités du territoire national,'+
+                'pour répondre avec justesse et efficacité aux besoins du terrain.'+
+                'Chez TOM MEDLOG, la performance commerciale passe par la rigueur, la proximité et l’humain.'+
+                'Notre engagement est clair : transformer la logistique en véritable levier de développement pour nos clients comme pour le pays.'+
+                'Nous croyons fermement qu’ensemble, nous pouvons transformer vos défis en opportunités et faire avancer vos projets avec maîtrise et succès.',
     image: '/images/team/alain-dos-reis.png',
   }
 ];
@@ -69,20 +85,20 @@ const TeamCarousel: React.FC = () => {
   return (
     
       <div className="relative w-full">
-        <div className="flex flex-col md:flex-row overflow-hidden">
+        <div className="flex flex-col md:flex-row md:w-full">
         
           {/* Photo Section (Center) */}
-          <div className="bg-gray-100 md:w-[60%] items-center justify-center flex">
+          <div className="bg-gray-100 md:w-full items-center justify-center flex">
             <img 
               src={activeMember.image} 
               alt={activeMember.name} 
-              className="md:h-[70vh] object-cover"
+              className="md:h-full  object-cover"
             />
           </div>
           
           {/* Description Section (Right) */}
           <div className="bg-[var(--primary)] p-6 md:w-[40%] text-justify">
-            <div className="h-40 mb-4">
+            <div className="mb-4">
               <p className="text-sm">
                 {activeMember.description}
               </p>

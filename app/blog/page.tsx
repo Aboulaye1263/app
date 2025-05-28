@@ -29,10 +29,23 @@ export default function BlogPage() {
     <main className="min-h-screen">
         <HeaderMenu isScrolledAndImmutable/>
       {/* Header Section */}
-      <div className="bg-[#222221] text-white py-12 px-4 text-center pt-40">
-        <h1 className="text-2xl md:text-4xl font-normal max-w-4xl mx-auto leading-tight">
-          RESTEZ INFORMÉ DES DERNIÈRES TENDANCES ET INNOVATIONS DANS LE SECTEUR DE LA LOGISTIQUE, AINSI QUE DES ACTUALITÉS DE TOM SÉNÉGAL.
+      <div className="relative h-screen bg-[#222221] text-white py-12 px-4 text-center pt-40">
+        <div className="absolute top-0 left-0 right-0 -z-99 h-full">
+          <Image
+            src="/images/banner-news.png"
+            alt="TOM MEDLOG Image header"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
+        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
+          Actualités et <span className="text-[#F3DFA2]">Annonces</span>
         </h1>
+        
+        <p className="absolute bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-center">
+        RESTEZ INFORMÉ DES DERNIÈRES TENDANCES ET INNOVATIONS DANS LA LOGISTIQUE AU SÉNÉGAL.   
+        </p>
       </div>
 
       {/* Blog Grid */}

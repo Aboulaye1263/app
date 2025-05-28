@@ -20,17 +20,17 @@ export default function Footer() {
 
           {/* Contact Info Column */}
           <div>
-            <h3 className="font-bold mb-4 ">TOM S.A - Siège Social</h3>
+            <h3 className="font-bold mb-4 ">TOM S.A</h3>
             {/* <h3 className="font-bold mb-4 ">Siège Social</h3> */}
             <p className="text-sm mb-4">
-            Immeuble MSC – 2ème étage, Route des Hydrocarbures, Hann Bel-Air
+            <span className='font-bold'>Siège Social : </span>Immeuble MSC – 2ème étage, Route des Hydrocarbures, Hann Bel-Air
             Dakar - Sénégal
             </p>
             <p className="text-sm">
               Tel: (+221) 33 859 06 06
             </p>
             
-            <a href="mailto:accueil@tom.sn" className="text-sm">
+            <a href="mailto:accueil@tom.sn" className="text-sm" style={{textDecoration: "underline"}}>
               accueil@tom.sn
             </a>
           </div>
@@ -39,9 +39,10 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">À PROPOS DE NOUS</h3>
             <p className="text-sm text-justify">
-              En tant qu’acteur majeur de la logistique en
-              Afrique de l’Ouest, TOM contribue au développement économique du
-              Sénégal grâce à des infrastructures modernes et à son expertise.
+            Acteur de référence en logistique en Afrique de l’Ouest,
+             TOM contribue activement au développement économique du Sénégal 
+             et de la région en s’appuyant sur des infrastructures modernes, 
+             une expertise reconnue et une vision tournée vers l’avenir.
             </p>
           </div>
         </div>

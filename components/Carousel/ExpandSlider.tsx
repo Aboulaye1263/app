@@ -100,10 +100,11 @@ type SliderImage = {
                 
                 {expandedIndex === index && (
                   <p className="text-white/80 mt-2 max-w-md text-sm md:text-base">
-                    {index === 0 && "Notre flotte moderne de 70 camions et 150 remorques, équipée de systèmes GPS avancés, assure un transport fiable et optimisé. Avec 30 nouveaux camions dédiés aux transferts de conteneurs, nous maximisons l'efficacité et la traçabilité."}
-                    {index === 1 && "Avec 34 500 m² d'entrepôts sous douane, nous offrons des solutions sécurisées pour les matières premières telles que le riz, le sucre et les céréales. Notre capacité de stockage dépasse 120 000 tonnes, garantissant une gestion optimale de vos stocks."}
-                    {index === 2 && "Notre terminal est équipé de 350 prises réfrigérées et de 15 groupes électrogènes neufs, permettant une gestion optimale des cargaisons sensibles à la température. Nous offrons également des services d'inspection préalable au transport (PTI) pour garantir la sécurité de vos marchandises."}
-                    {index === 3 && "Nous sommes leaders dans la maintenance, la réparation et le dépotage de conteneurs, avec une capacité de traitement de 3 millions de conteneurs secs et 600 000 conteneurs frigorifiques par an. Nos équipes techniques hautement qualifiées assurent des services de qualité, conformes aux normes internationales."}
+                    {index === 0 && "Notre flotte moderne de plus de 100 camions et plus 150 remorques, équipée de systèmes GPS avancés, assure un transport fiable et optimisé. Avec plus de 30 nouveaux camions uniquement dédiés aux transferts de conteneurs, nous maximisons l'efficacité, la durabilité et la traçabilité."}
+                    {index === 1 && "Notre terminal à conteneurs, d’une surface + de 95.000 m² de capacité de stockage sous douane, offre une capacité de stockage de plus de 10 000 EVP garantissant une gestion optimale des flux. Il est également équipé de 350 prises réfrigérées et 10 groupes électrogènes neufs, permettant un contrôle total sur les cargaisons sensibles à la température."}
+                    {index === 2 && "Avec plus de 50.000 m² d'entrepôts sous douane, nous proposons des solutions d’entreposage sécurisées et flexibles pour une large gamme de marchandises, qu’il s’agisse de produits de base (riz, sucre, céréales), de produits périssables, ou d’autres biens importés ou en transit."+
+                                    "Notre capacité de stockage de plus de 150.000 tonnes permet une gestion optimisée et évolutive des flux, adaptée aux besoins spécifiques de chaque client."}
+                    {index === 3 && "Nous proposons une gamme complète de services spécialisés pour maximiser la performance et la durabilité de vos flux : maintenance, réparation, dépotage, pesage, flexibags… Nos équipes techniques certifiées aux standards internationaux interviennent sur une capacité annuelle de plus de xxx EVP"}
                  
                   </p>
                 )}

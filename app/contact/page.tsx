@@ -104,7 +104,7 @@ export default function Contact() {
       </div>
       
       {/* Form Section */}
-      <div className="max-w-2xl mx-auto px-4 -mt-20 mb-32">
+      <div data-aos="fade-up" id="form" className="max-w-2xl mx-auto px-4 -mt-20 mb-32">
         <div className="bg-gray-100 rounded-lg p-8 shadow-lg">
           <h2 className="text-xl font-semibold text-center mb-8">
           Remplissez le formulaire ci-dessous

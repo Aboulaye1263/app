@@ -48,11 +48,10 @@ export default function WhyJoinUs() {
               </h1>
               <div className="absolute bottom-36 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
                 <span className="text-white text-sm md:text-xl text-center mb-6">
-                TOM est avant tout une entreprise
-                sénégalaise et fière de ses racines. Créée, développée et dirigée
-                localement, nous sommes pionniers et champions de la logistique,
-                premier opérateur à implanter un port à sec en Afrique de l’Ouest.
-                Depuis, nous avons établi la norme pour toute l’industrie.
+                  TOM est une entreprise sénégalaise et fière de ses racines. 
+                  Créée, développée, et dirigée localement, nous sommes un véritable pionnier, 
+                  premier opérateur à implanter un port à sec en Afrique de l’Ouest. 
+                  Depuis, nous avons établi la norme pour tout le secteur et sommes devenus le champion de la logistique Sénégalaise.
                 </span>
               </div>
               {/* <div className="animate-[updown_2s_ease-in-out_infinite] relative z-10">
@@ -223,12 +222,13 @@ export default function WhyJoinUs() {
           <div className="flex w-30 md:w-4/12 text-center z-10 justify-center">
             <Button
               outline={true}
+              color={"gray"}
               onClick={() => setOpenModal(true)} 
-              className="bg-[var(--primary)] text-black focus:right-0 hover:bg-[var(--foreground)] hover:text-white border-neutral-900 hover:border-gray-100 font-normal text-2xl py-7 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg">
+              className="bg-[var(--primary)] dark:bg-[#eed484] text-black focus:right-0 hover:bg-[var(--foreground)] hover:text-white dark:border-neutral-900 hover:border-gray-100 font-normal text-2xl py-7 hover:brightness-95 transition-all duration-300 rounded-full hover:scale-105 hover:shadow-lg">
               Postuler maintenant
             </Button>
-            <Modal show={openModal} onClose={() => setOpenModal(false)}>
-            <ModalHeader style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
+            <Modal className="bg-white" show={openModal} onClose={() => setOpenModal(false)}>
+            <ModalHeader  style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
             <ModalBody>
               <form className="space-y-4">
                 <div>
@@ -254,7 +254,7 @@ export default function WhyJoinUs() {
               </form>
             </ModalBody>
             <ModalFooter>
-              <Button className="bg-[var(--primary)] text-black hover:bg-gray-800 hover:text-white" onClick={() => setOpenModal(false)}>ENVOYER</Button>
+              <Button className="bg-[var(--primary)] dark:bg-[#eed484] text-black hover:bg-gray-800 hover:dark:bg-gray-700 hover:text-white" onClick={() => setOpenModal(false)}>ENVOYER</Button>
               {/* <Button color="alternative hover:text-gray-500" onClick={() => setOpenModal(false)}>Annuler</Button> */}
             </ModalFooter>
           </Modal>

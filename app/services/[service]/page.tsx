@@ -7,13 +7,16 @@ import Footer from "@/components/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useParams } from "next/navigation";
+import Link from "next/link";
 // Service details map
 const serviceDetails = {
   transport: {
     title: "Transport",
+    heroText: "Soyez livrez partout. Sans rupture. Sans retard. Sans compromis.",
     heroImage: "/images/banner_transport_new.png", // You'll need to add these images
     description:
-      "Nos solutions de transport multimodal garantissent l’acheminement sécurisé et rapide des marchandises, en combinant différents modes de transport tels que le camion, le rail et les solutions frigorifiques (GENSET). Grâce à notre expertise, nous assurons une chaîne logistique fluide et performante à nos clients dans les principaux secteurs d’activités tels que l’Agroalimentaire, pharmaceutique, industrie manufacturière, grande distribution, commerce et services.",
+      "Camion, rail ou froid embarqué (GENSET) : nos solutions multimodales garantissent un transport sécurisé, rapide et fluide pour tous vos secteurs : agroalimentaire, pharma, industrie, grande distribution et services."+
+      " Un besoin logistique ? Une urgence ? Demandez votre devis express et laissez-nous optimiser votre chaîne de transport.",
     features: [
       {
         title: "Transport multimodal",
@@ -22,9 +25,10 @@ const serviceDetails = {
         icon: "/icons/SERVICE_HINTERLAND.png", // Add corresponding icons
       },
       {
-        title: "Transport frigorifique (Solutions GENSET)",
+        title: "Transport frigorifique (Solutions Reefer & GENSET)",
         description:
-          "Pour les produits sensibles et périssables, nous proposons des solutions frigorifiques complètes intégrant la technologie GENSET. Ces groupes électrogènes embarqués assurent un  maintien parfait de la chaîne du froid tout au long du transport.",
+          "Nous assurons le transport sécurisé des marchandises sensibles et périssables grâce à des conteneurs réfrigérés (reefer), équipés de groupes électrogènes autonomes (GENSET)."+
+          " Cette technologie garantit une régulation thermique continue et précise, permettant ainsi de maintenir strictement les conditions requises de température tout au long de la chaîne logistique, indépendamment des contraintes externes ou de la durée du transport.",
         icon: "/icons/frigorifique.png",
       },
       {
@@ -48,36 +52,50 @@ const serviceDetails = {
   },
   depot: {
     title: "Dépôt de Conteneurs",
+    heroText: "Votre partenaire de confiance pour la gestion de conteneurs.",
     heroImage: "/images/service_depot.png",
     description:
-      "Nous offrons des solutions complètes pour le stockage et la gestion des conteneurs vides et pleins, sous douane ou déclarés. Notre infrastructure moderne garantit la sécurité et la conformité réglementaire.",
+      "Avec plus de 50.000 m² d’espace et de solutions complètes pour le stockage et la gestion de conteneurs sous douane, qu’ils soient vides, pleins, ou spéciaux comme les réfrigérés, nos infrastructures et équipements modernes garantissent sécurité et conformité."+
+      " Optimisez vos opérations logistiques dès aujourd’hui. Contactez-nous pour une solution personnalisée.",
     features: [
       {
-        title: "Stockage sous douane",
+        title: "Stockage sous douane de conteneurs pleins",
         description:
-          "Pour une gestion optimisée et sécurisée des marchandises sous douane.",
+          "Nous offrons des solutions sécurisées et performantes de stockage sous douane spécialement dédiée aux conteneurs pleins."+
+          " Nos espaces sont agréés par les autorités douanières, garantissant une gestion optimisée des formalités administratives, "+
+          "une traçabilité totale des flux, ainsi qu'une sécurité renforcée de vos marchandises.",
         icon: "/icons/douane.png",
       },
       {
         title: "Dépôt de conteneurs vides",
-        description: "Avec une capacité de plus de 10 000 EVP.",
+        description: "Avec une capacité de stockage supérieure à 10.000 EVP,"+
+        " notre dépôt de conteneurs vides garantit une disponibilité immédiate pour les besoins opérationnels des compagnies maritimes,"+
+        " transporteurs et opérateurs économiques. Nos procédures rigoureuses et équipements assurent une rotation rapide des conteneurs, "+
+        "facilitant la gestion optimisée des flux.",
         icon: "/icons/empotage_depotage.png",
       },
       {
-        title: "CFS",
-        description: "Nos Container Freight Stations (CFS) permettent les opérations de groupage et dégroupage avec une grande efficacité. Ces plateformes sont équipées pour manipuler tous types de marchandises dans le respect des normes les plus strictes.",
+        title: "Container Freight Stations (CFS)",
+        description: "Nos plateformes CFS (Container Freight Stations) offrent une efficacité maximale pour les opérations de groupage et dégroupage."+
+        " Grâce à nos équipes expérimentées et à des équipements spécialisés, nous assurons des opérations sécurisées, rapides et conformes aux normes internationales,"+
+        " adaptées à tout type de marchandise (produits manufacturés, agroalimentaires, électroniques, etc.).",
         icon: "/icons/conteneurs.png",
       },
       {
         title: "Stockage Reefers",
         description:
-          "Le stockage reefers bénéficie d'infrastructures spécialisées, avec des échafaudages équipés de plus de 250 prises frigorifiques. Cette capacité importante nous permet de répondre aux besoins saisonniers des produits frais et congelés.",
+          "Nos installations spécialisées pour conteneurs frigorifiques (reefer) sont équipées de plus de 300 prises"+
+          " frigorifiques et plus de 10 groupes électrogènes neufs, permettant une gestion optimale et sécurisée des cargaisons à température dirigée des produits périssables frais ou surgelés."+
+          " Notre capacité d’accueil étendue répond efficacement aux pics saisonniers et aux besoins spécifiques des importateurs et exportateurs.",
         icon: "/icons/frigorifique.png",
       },
       {
-        title: "Maintenance conteneurs (Dry/reefer)",
+        title: "Maintenance des conteneurs (Dry & Reefer)",
         description:
-          "Afin d’assurer une réduction des risques de détérioration, nous proposons l’entretien, les réparations et le suivi de qualité des conteneurs.",
+          "Pour garantir l’intégrité et la disponibilité optimale de vos équipements,"+
+          " nous proposons des services professionnels d’entretien préventif, réparation et contrôle qualité des conteneurs Dry et Reefer."+
+          " Notre personnel certifié réalise des interventions techniques rapides et précises,"+
+          " permettant une réduction significative des risques opérationnels et une meilleure préservation de vos actifs.",
         icon: "/icons/maintenance.png",
       },
     ],
@@ -89,33 +107,40 @@ const serviceDetails = {
   },
   entreposage: {
     title: "Entreposage / Distribution de Marchandises",
+    heroText: "Stockez en toute confiance. Quelles que soient vos marchandises, nous avons l’espace, la sécurité et la solution.",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
     description:
-      "Nos entrepôts offrent des espaces de stockage sous douane, à sec ou à température contrôlée, adaptés aux besoins de chaque client.",
+      "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client, quelles que soient la nature ou la complexité de vos produits."+
+      "Besoin d’un espace de stockage adapté ? Contactez nos équipes pour plus d’informations.",
     features: [
       {
         title: "Stockage sous douane",
         description:
-          "Stockage en entrepôt ou sur terreplein de marchandises en conformité avec la réglementation douanière.",
+          "Nous mettons à votre disposition des espaces dédiés, sécurisés et agréés par les autorités douanières, permettant de stocker vos marchandises en entrepôt ou sur terre-plein sous régime suspensif. "+
+          "Ce service vous permet d’optimiser vos flux financiers en différant le paiement des droits et taxes, tout en respectant strictement la réglementation douanière en vigueur.",
         icon: "/icons/douane.png",
       },
       {
         title: "Entreposage à sec",
         description:
-          "Le port à sec est une infrastructure stratégique, conçue pour " +
-          "optimiser la gestion des flux logistiques en Afrique de l'Ouest. " +
-          "Véritable alternative aux infrastructures portuaires " +
-          "traditionnelles, ce hub optimise le stockage, la gestion et la " +
-          "redistribution des conteneurs et marchandises. " +
-          "En réduisant les délais et les coûts d'acheminement, il " +
-          "garantit une logistique plus efficace, agile et compétitive.",
+          "Nos infrastructures modernes offrent des espaces sécurisés adaptés au stockage de marchandises non périssables. " +
+          "Nous assurons une gestion optimale des flux grâce à un système avancé de suivi des stocks, " +
+          "des contrôles réguliers d'inventaire, ainsi qu’une organisation efficace des mouvements d’entrée et de sortie. ",
         icon: "/icons/distribution_marchandise.png",
       },
       {
-        title: "Entreposage température contrôlée",
+        title: "Entreposage à température contrôlée pour produits sensibles",
         description:
-          "Maintenez l'intégrité de vos produits sensibles grâce à nos installations à température contrôlée, garantissant une conservation optimale.",
+          "Nous assurons une parfaite conservation de vos marchandises sensibles ou périssables (agroalimentaire, pharmaceutique, cosmétique), grâce à des installations spécialisées équipées de systèmes précis de contrôle thermique. "+
+          "La surveillance permanente des températures garantit l’intégrité et la conformité totale aux normes de la chaîne du froid.",
         icon: "/icons/conteneurs.png",
+      },
+      {
+        title: "Manutention d’entrepôt",
+        description:
+          "Gestion complète des flux entrants et sortants avec des équipes qualifiées assurant chargement, déchargement, palettisation et dépalettisation, empotage et dépotage, ainsi que transfert interne sécurisé des marchandises."+
+          " Services complets incluant le picking, l’emballage, l’étiquetage, l'inspection et la consolidation de vos commandes pour expédition, garantissant exactitude, rapidité et traçabilité.",
+        icon: "/icons/cargo.png",
       },
     ],
     stats: [
@@ -127,21 +152,17 @@ const serviceDetails = {
   },
   solution: {
     title: "Services à Valeur Ajoutée",
+    heroText: "Plus que du stockage : de la valeur à chaque étape",
     heroImage: "/images/reefers_new.png",
     description:
-      "Nous proposons des services spécialisés pour ajouter de la valeur à vos opérations logistiques, allant de la gestion frigorifique à la manutention de project cargo.",
+      "Dépotage, réparation, maintenance, Genset, conditionnement… Nos solutions spécialisées optimisent vos flux, prolongent la durée de vie des équipements et marchandises, et renforcent votre compétitivité. "+
+      "Gagnez en efficacité dès maintenant. Contactez nos équipes pour une solution sur mesure ou un audit de vos besoins.",
     features: [
       {
         title: "Services frigorifiques",
         description:
           "Nos solutions services frigorifiques intègrent un ensemble complet de prestations : inspections préalables (PTI), paramétrages précis des équipements, branchement professionnel et suivi continu des températures. Cette approche globale garantit une parfaite maîtrise de la chaîne du froid.",
         icon: "/icons/frigorifique.png",
-      },
-      {
-        title: "Maintenance et réparation",
-        description:
-          "Nous sommes leaders dans la maintenance, la réparation et le dépotage de conteneurs, avec une capacité de traitement de 3 millions de conteneurs secs et 600 000 conteneurs frigorifiques par an. Nos équipes techniques hautement qualifiées assurent des services de qualité, conformes aux normes internationales.",
-        icon: "/icons/maintenance.png",
       },
       {
         title: "Project Cargo",
@@ -206,6 +227,17 @@ const serviceDetails = {
           "bord pour assurer le confort et le bon fonctionnement des opérations maritimes.",
         icon: "/icons/chandling.png",
       },
+      {
+        title: "Maintenance et réparations",
+        description:
+          "Nous sommes pour l’entretien et la réparation des conteneurs, secs comme frigorifiques, avec une capacité de xxx"+
+          "Nous combinons expertise technique, réactivité et conformité aux standards internationaux. Nos ateliers équipés et nos équipes certifiées interviennent avec précision pour assurer :"+
+          "\t- Réparations structurelles, esthétiques et techniques. "+
+          "\t- Contrôles de sécurité et de conformité. "+
+          "\t- Entretien préventif pour prolonger la durée de vie des conteneurs. "+
+          "\t- Préparation des reefers avant mise à disposition client.",
+        icon: "/icons/maintenance.png",
+      },
     ],
     stats: [
       { value: "+10", label: "Services spécialisés" },
@@ -251,17 +283,46 @@ export default function ServiceDetail() {
           >
             {service.title}
           </h1>
+          
+          <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
+            <span className="text-white text-sm md:text-xl text-center mb-6">
+              {service.heroText}
+            </span>
+          </div>
         </div>
       </div>
 
       {/* Description Section */}
-      <div className="max-w-7xl mx-auto px-4 py-16">
+      <div className="flex flex-col max-w-7xl mx-auto px-4 py-16 items-center">
         <p
-          className="text-xl text-gray-700 text-center  mx-auto"
+          className="text-xl text-gray-700 text-center  mx-auto mb-8"
           data-aos="fade-up"
         >
           {service.description}
         </p>
+        <Link
+              href="/contact#form"
+              className="inline-flex gap-4 bg-[var(--primary)] text-black font-semibold 
+                       px-8 py-4 rounded-md hover:bg-gray-600 hover:text-white hover:scale-105
+                       transition-all duration-300 ease-out shadow-lg
+                       text-base min-w-[200px] group"
+            >
+              Demandez un devis
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg> */}
+            </Link>
       </div>
 
       {/* Features Grid */}
@@ -289,7 +350,9 @@ export default function ServiceDetail() {
                
                 <p className="text-gray-600 text-justify">{feature.description}</p>
               </div>
+
             ))}
+            
           </div>
         </div>
       </div>
@@ -297,7 +360,7 @@ export default function ServiceDetail() {
       {/* Stats Section */}
       <div className="bg-[var(--primary)] py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-4 md:grid-cols-3 gap-8 items-center justify-center">
             {service.stats.map((stat, index) => (
               <div
                 key={index}
@@ -308,7 +371,7 @@ export default function ServiceDetail() {
                 <div className="text-4xl font-bold text-[var(--foreground)] mb-2">
                   {stat.value}
                 </div>
-                <div className="text-[var(--foreground)] opacity-80">{stat.label}</div>
+                <div className="text-[var(--foreground)] opacity-80 text-2xl">{stat.label}</div>
               </div>
             ))}
           </div>

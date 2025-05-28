@@ -9,6 +9,7 @@ import "aos/dist/aos.css";
 import { services } from "@/constants/services";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import { url } from "inspector";
 
 // bg-gradient-to-br from-[var(--primary)] to-[var(--primary)]/70
 
@@ -159,7 +160,13 @@ export default function ServicesPage() {
       </div>
 
       {/* Solutions Section */}
-      <div className="py-20 px-4 sm:px-6 lg:px-8 bg-white">
+      <div className="py-20 px-4 sm:px-6 lg:px-8" style={{
+        backgroundImage: `linear-gradient(to bottom, rgba(34, 34, 33, 0.3), rgba(34, 34, 33, 0.35)), url(/images/section_values.jpg)`,
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover"
+      }}>
+
+        
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2

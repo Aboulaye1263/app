@@ -55,12 +55,11 @@ export default function Home() {
               <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>
             </h1>
             <p className="text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-justify">
-              Fondé en 2008, le Terminal des Opérations Maritimes
-              (TOM) est un opérateur logistique spécialisé en Afrique de l’ouest,
-              ayant établi sa marque grâce à sa fiabilité. Nous avons établi la norme
-              pour les dépôts de conteneurs grâce à notre engagement envers
-              l’excellence opérationnelle, l’intégration technologique et
-              l’optimisation des processus.
+              Fondé en 2007, TOM (Terminal des Opérations Maritimes) est un acteur stratégique et incontournable de la chaîne logistique en Afrique de l’Ouest. 
+ 
+              <br></br>
+              <br></br>Pionnier dans son domaine, TOM a établi la norme pour la logistique au Sénégal et en Afrique de l’ouest grâce à son engagement envers l’excellence opérationnelle,
+              ses innovations et intégrations technologiques, et son offre de services à forte valeur ajoutée moteur de la performance économique régionale.
             </p>
             <Link
               href="/about#histoire"
@@ -70,7 +69,7 @@ export default function Home() {
                        text-base min-w-[200px] group"
             >
               Découvrez notre histoire
-              <svg
+              {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -83,7 +82,7 @@ export default function Home() {
                   strokeLinejoin="round"
                   d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
                 />
-              </svg>
+              </svg> */}
             </Link>
           </div>
         </div>
@@ -101,9 +100,8 @@ export default function Home() {
               {/* Text Card */}
               <div className="py-8">
                 <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                  Transformer la logistique en Afrique de l'Ouest en répondant
-                  aux besoins de nos clients avec des solutions sur mesure,
-                  innovantes et intégrées.
+                Réinventer la logistique en Afrique de l’Ouest en proposant des solutions innovantes, 
+                intégrées et personnalisées, pour optimiser les chaînes d'approvisionnement et accompagner durablement la croissance de nos clients.
                 </p>
                 <Link
                   href="/about#mission"
@@ -160,7 +158,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 w-[95%]">
                   <Image
-                    src="/images/notre_objectif.png"
+                    src="/images/notre-objectif.jpg"
                     alt="Vision"
                     fill
                     className="object-cover"
@@ -176,8 +174,8 @@ export default function Home() {
               {/* Text Card */}
               <div className="py-8">
                 <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                Renforcer notre position de leader régional et de devenir un hub 
-                logistique incontournable au Sénégal et en Afrique de l'Ouest.
+                Devenir le hub logistique de référence au Sénégal, et renforcer durablement notre position de leader sur 
+                l'ensemble de la région ouest-africaine en structurant une logistique d'excellence au service des flux du continent.
                 </p>
                 <Link
                   href="/about#objectif"
@@ -212,10 +210,9 @@ export default function Home() {
               {/* Text Card */}
               <div className="py-8">
                 <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                  Etre un leader Africain des services
-                  logistiques intégrés, tout en créant un environnement de travail
-                  enrichissant qui valorise l'esprit d'équipe, le respect mutuel et le
-                  développement professionnel de nos collaborateurs.
+                Bâtir un leader africain de la logistique intégrée,
+                reconnu pour son excellence opérationnelle tout en créant un environnement de travail épanouissant fondé sur l’esprit d’équipe,
+                le respect mutuel, et la progression professionnel de chacun.
                 </p>
                 <Link
                   href="/about#vision"
@@ -416,11 +413,10 @@ export default function Home() {
               PRÉSENCE EN AFRIQUE
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6 text-justify">
-              Notre présence stratégique en Afrique de l'Ouest nous permet
-              d'offrir des services logistiques intégrés et efficaces à travers
-              la région. Nous disposons d'infrastructures modernes et d'équipes
-              expérimentées pour répondre aux besoins spécifiques de chaque
-              marché.
+            Ancrés stratégiquement en Afrique de l’Ouest,
+             nous déployons des solutions logistiques intégrées et performantes à l’échelle régionale.
+              Grâce à nos infrastructures de pointe et à nos équipes locales expérimentées, 
+              nous adaptons chaque service aux réalités et exigences de chaque marché.
             </p>
           </div>
         </div>
@@ -429,12 +425,12 @@ export default function Home() {
       {/* References Section */}
       <div className="pb-16 my-24 pt-8 px-4 md:px-8 lg:px-16 overflow-hidden">
         <h2
-          className="text-3xl font-bold text-center mb-16 "
+          className="text-3xl font-bold text-center mb-16"
           data-aos="fade-up"
         >
           ILS NOUS FONT CONFIANCE
         </h2>
-        <div className="flex whitespace-nowrap animate-[scroll_20s_linear_infinite]">
+        <div className="flex whitespace-nowrap animate-[scroll_10s_linear_infinite]">
           {/* First set of images */}
           {refs.map((ref, index) => (
             <div
