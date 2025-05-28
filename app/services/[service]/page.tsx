@@ -267,7 +267,7 @@ export default function ServiceDetail() {
       <HeaderMenu isScrolledAndImmutable />
 
       {/* Hero Section */}
-      <div className="relative h-[60vh] w-full">
+      <div className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full">
         <Image
           src={service.heroImage}
           alt={service.title}
@@ -278,13 +278,13 @@ export default function ServiceDetail() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute inset-0 flex items-center justify-center">
           <h1
-            className="text-4xl md:text-6xl text-white font-normal text-center max-w-4xl px-4"
+            className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl text-white text-center max-w-8xl px-4"
             data-aos="fade-up"
           >
             {service.title}
           </h1>
           
-          <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
+          <div className="absolute top-[55%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-72 md:w-auto text-center z-10">
             <span className="text-white text-sm md:text-xl text-center mb-6">
               {service.heroText}
             </span>
@@ -302,7 +302,7 @@ export default function ServiceDetail() {
         </p>
         <Link
               href="/contact#form"
-              className="inline-flex gap-4 bg-[var(--primary)] text-black font-semibold 
+              className="w-full sm:w-auto inline-flex gap-4 bg-[var(--primary)] text-black font-semibold 
                        px-8 py-4 rounded-md hover:bg-gray-600 hover:text-white hover:scale-105
                        transition-all duration-300 ease-out shadow-lg
                        text-base min-w-[200px] group"
@@ -328,7 +328,7 @@ export default function ServiceDetail() {
       {/* Features Grid */}
       <div className="bg-gray-50 py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-3 gap-8">
             {service.features.map((feature, index) => (
               <div
                 key={index}
@@ -360,7 +360,7 @@ export default function ServiceDetail() {
       {/* Stats Section */}
       <div className="bg-[var(--primary)] py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-4 md:grid-cols-3 gap-8 items-center justify-center">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-8 text-center content-center justify-center">
             {service.stats.map((stat, index) => (
               <div
                 key={index}
@@ -368,7 +368,7 @@ export default function ServiceDetail() {
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <div className="text-4xl font-bold text-[var(--foreground)] mb-2">
+                <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-2">
                   {stat.value}
                 </div>
                 <div className="text-[var(--foreground)] opacity-80 text-2xl">{stat.label}</div>

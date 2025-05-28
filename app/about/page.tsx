@@ -58,7 +58,7 @@ export default function About() {
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
-            src="/images/new images/header.png"
+            src="/images/banners/banner_home.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"
@@ -625,7 +625,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="relative flex-row w-full h-1/2 md:h-screen max-w-screen-xl mx-auto px-4 mt-4 items-center">
+      <div className=" h-full md:h-auto">
       <h2
           className="text-3xl font-bold text-center mb-2"
           data-aos="fade-up"

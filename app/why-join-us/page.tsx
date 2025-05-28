@@ -22,7 +22,7 @@ export default function WhyJoinUs() {
 
 
   return (
-    <main className="min-h-screen">
+    <main className="relative min-h-screen w-full">
       <HeaderMenu isScrolledAndImmutable/>
       {/* Hero Section */}
             <div className="relative h-screen flex flex-col justify-end items-center pb-32">
@@ -40,14 +40,14 @@ export default function WhyJoinUs() {
                 alt="Medlog"
                 width={210}
                 height={50}
-                className="absolute top-40 left-1/2object-cover rounded-lg opacity-70"
+                className="absolute top-[15%] md:top[15%] sm:[25%] left-1/2 -translate-x-1/2 object-cover rounded-lg opacity-70"
                 
               />
-              <h1 className="absolute top-2/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
+              <h1 className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-3xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
               Un pionnier <span className="text-[#F3DFA2]">SÉNÉGALAIS</span>
               </h1>
-              <div className="absolute bottom-36 left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
-                <span className="text-white text-sm md:text-xl text-center mb-6">
+              <div className="absolute top-[60%] md:top-[60%] lg:top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-full md:w-auto text-center z-10">
+                <span className="w-full text-white text-sm md:text-xl text-center mb-6">
                   TOM est une entreprise sénégalaise et fière de ses racines. 
                   Créée, développée, et dirigée localement, nous sommes un véritable pionnier, 
                   premier opérateur à implanter un port à sec en Afrique de l’Ouest. 
