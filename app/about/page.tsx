@@ -12,6 +12,7 @@ import { Content } from "next/font/google";
 import TeamCarousel from "@/components/Carousel/TeamCarousel";
 import Testimonial from "@/components/Carousel/TestimonialSlider";
 import TeamSection from "@/components/Carousel/TeamSection";
+import SliderValue from "@/components/Carousel/ValueSlider";
 
 
 export default function About() {
@@ -32,7 +33,7 @@ export default function About() {
           },
     {
       name: "Vincent HUET",
-      role: "Responsable Achats et Transit - Supply Chain Agroline SA",
+      role: "Responsable Achats et Transit - Agroline SA",
       image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=300&h=300",
       text: "En qualité de Responsable Achats et Transit/supply chain d’Agroline SA, une des plus grandes entreprises agro-alimentaires du Sénégal, je tiens à exprimer notre entière satisfaction quant à notre collaboration avec TOM MEDLOG. Leurs services de transport, de logistique et de stockage de conteneurs sont essentiels pour notre chaîne d’approvisionnement, garantissant la qualité et la fraîcheur de nos produits. TOM MEDLOG allie professionnalisme et réactivité, nous permettant ainsi de rester compétitifs sur le marché ouest-africain. Grâce à leur expertise et leur disponibilité, nous pouvons nous concentrer sur notre mission : offrir des produits authentiques inspirés des saveurs traditionnelles du Sénégal.",
           },
@@ -58,7 +59,7 @@ export default function About() {
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
-            src="/images/banners/banner_home.png"
+            src="/images/new images/header.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"
@@ -74,7 +75,7 @@ export default function About() {
           </span>
         </div>
         <div className="animate-[updown_2s_ease-in-out_infinite] relative z-10">
-          <svg
+          {/* <svg
             width="80"
             height="52"
             viewBox="0 0 24 24"
@@ -83,6 +84,21 @@ export default function About() {
             className="rotate-3600 animate-[downward_2s_ease-in-out_infinite]"
           >
             <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+          </svg> */}
+
+          <svg 
+          id="Capa_1" 
+          enable-background="new 0 0 512 512" 
+          height="52" viewBox="0 0 512 512" 
+          width="52" 
+          xmlns="http://www.w3.org/2000/svg" 
+          version="1.1" 
+         >
+            <g width="100%" height="100%" transform="matrix(1,0,0,1,0,0)"><g>
+            <path d="m301.213 58.168c0-14.278-11.616-25.894-25.894-25.894h-38.639c-14.278 0-25.894 11.616-25.894 25.894v38.713h90.427z" fill="#eed484" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/>
+            <path d="m259.792 194.274 150.095 39.218v-96.789c0-5.416-4.406-9.822-9.822-9.822h-288.129c-5.416 0-9.822 4.406-9.822 9.822v96.789l150.095-39.218c2.485-.649 5.097-.649 7.583 0z" fill="#eed484" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/>
+            <path d="m497 449.725c-16.555 0-24.023-3.719-33.479-8.428-4.439-2.21-9.12-4.541-14.706-6.526-7.755-2.757-17.259-4.848-30.282-5.031l54.92-138.253c1.216-3.283.244-6.016-.449-7.359-.698-1.354-2.381-3.759-5.814-4.656l-211.19-55.181-211.189 55.181c-3.434.897-5.117 3.302-5.814 4.656-.693 1.344-1.666 4.08-.447 7.364l54.797 138.25c-13.018.196-22.512 2.3-30.262 5.067-5.539 1.977-10.19 4.292-14.601 6.489-9.457 4.708-16.926 8.428-33.483 8.428-8.284 0-15 6.716-15 15s6.716 15 15 15c23.612 0 35.96-6.148 46.854-11.572 4.245-2.113 8.094-4.023 12.539-5.491 5.459-1.803 11.818-2.936 20.944-2.936 2.083 0 4.021.059 5.839.172 12.628.78 19.377 4.14 27.644 8.256 10.894 5.424 23.242 11.572 46.854 11.572 23.611 0 35.958-6.148 46.853-11.572 9.456-4.708 16.925-8.428 33.48-8.428s24.023 3.719 33.479 8.428c10.894 5.424 23.241 11.572 46.852 11.572s35.958-6.148 46.852-11.572c8.293-4.129 15.06-7.496 27.764-8.263 1.782-.107 3.679-.165 5.716-.165 9.026 0 15.344 1.111 20.762 2.88 4.52 1.475 8.417 3.407 12.717 5.548 10.894 5.424 23.241 11.572 46.852 11.572 8.284 0 15-6.716 15-15s-6.718-15.002-15.002-15.002zm-379.677-148.67 134.885-35.244c2.486-.649 5.098-.649 7.584 0l134.885 35.244c8.015 2.094 12.815 10.29 10.721 18.305-1.762 6.744-7.844 11.212-14.502 11.212-1.255 0-2.531-.159-3.802-.491l-131.094-34.253-131.093 34.253c-8.015 2.094-16.211-2.706-18.305-10.721s2.706-16.211 10.721-18.305z" fill="#eed484" fill-opacity="1" data-original-color="#000000ff" stroke="none" stroke-opacity="1"/>
+            </g></g>
           </svg>
         </div>
       </div>
@@ -109,7 +125,7 @@ export default function About() {
             data-aos="fade-up"
             className="flex flex-col gap-4 items-center mb-4"
           >
-            <p className="text-gray-700 text-sm md:text-base text-center">
+            <p className="text-black font-bold text-sm md:text-base text-center">
               Depuis 2007, TOM construit bien plus qu’un réseau logistique mais une vision, 
               une ambition et une référence continentale. Chaque étape franchie renforce notre position : 
               celle d’un acteur structurant, visionnaire et profondément ancré en Afrique de l’Ouest.
@@ -124,7 +140,7 @@ export default function About() {
               <div className="flex items-center">
                 <div className="w-1/2 pr-8 text-right">
                   <h3 className="text-2xl font-bold mb-2">2007</h3>
-                  <p className="text-gray-700 text-end">
+                  <p className="text-black text-end">
                   <span className="font-medium">Naissance d’un acteur à part : TOM</span><br></br>
                   Nous avons décidé de mettre en œuvre notre vision : 
                   réinventer la logistique au Sénégal à travers des opérations intégrées, 
@@ -143,7 +159,7 @@ export default function About() {
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
                 <div className="w-1/2 pl-8">
                   <h3 className="text-2xl font-bold mb-2">2015</h3>
-                  <p className="text-gray-700 text-justify">
+                  <p className="text-black text-justify">
                   <span className="font-medium">Alliance avec le Port Autonome de Dakar</span><br></br>
                   Installation sur une plateforme logistique de 210.000 m², à 1 km du Port Autonome de Dakar.
                   Une infrastructure unique au Sénégal par sa taille et sa proximité.
@@ -154,27 +170,36 @@ export default function About() {
             </div>
 
             {/* 2017 Entry */}
-            <div className="relative" data-aos="fade-right">
+            <div className="relative mt-8" data-aos="fade-right">
               <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
+                <div className=" w-full pr-8 text-right">
                   <h3 className="text-2xl font-bold mb-2">2017</h3>
-                  <p className="text-gray-700 text-end">
-                  <span className="font-medium">Mars 2017 - Lancement de la Zone Unique de Dépotage (ZUD)</span><br></br>
+                  <p className="text-black text-end align-top">
+                  <span className="font-medium">Lancement de la Zone Unique de Dépotage (ZUD)</span><br></br>
                   Création de la ZUD, initiative pionnière visant à centraliser les opérations de dépotage, 
                   fluidifier les contrôles douaniers et accélérer les flux entre le port et l’hinterland, 
                   notamment vers le Mali via corridor Dakar-Bamako.
                   </p>
                 </div>
+                <div className="w-full pl-8 text-right">
+                  
+                  <p className="text-black text-start align-top mt-16">
+                  <span className="font-medium">Démarrage des entrepôts et services logistiques spécialisés</span><br></br>
+                  TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
+                  de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
+                  répondant aux besoins concrets des grands importateurs nationaux.
+                  </p>
+                </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                <div className="w-1/2 pl-8"></div>
+                {/* <div className="w-1/2 pl-8"></div> */}
               </div>
             </div>
 
-            <div className="relative mt-8" data-aos="fade-right">
+            {/* <div className="relative mt-8" data-aos="fade-right">
               <div className="flex items-center">
                 <div className="w-1/2 pr-8 text-right">
                   <h3 className="text-2xl font-bold mb-2"></h3>
-                  <p className="text-gray-700 text-end">
+                  <p className="text-black text-end">
                   <span className="font-medium">Mi 2017 - Démarrage des entrepôts et services logistiques spécialisés</span><br></br>
                   TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
                   de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
@@ -184,17 +209,17 @@ export default function About() {
                 <div className="absolute left-1/2 top-4 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
                 <div className="w-1/2 pl-8"></div>
               </div>
-            </div>
+            </div> */}
 
             
             {/* Today Entry */}
-            <div className="mb-4 mt-4 relative" data-aos="fade-left">
+            <div className="mb-4 mt-12 relative" data-aos="fade-left">
               <div className="flex items-center">
                 <div className="w-1/2 pr-8"></div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
                 <div className="w-1/2 pl-8">
                   <h3 className="text-2xl font-bold mb-2">Aujourd'hui</h3>
-                  <p className="text-gray-700 text-justify">
+                  <p className="text-black text-justify">
                   <span className="font-medium">Champion national, pionnier régional</span><br></br>
                   TOM est devenu le champion Sénégalais de la logistique et acteur stratégique et incontournable de l’industrie en Afrique de l’Ouest.
                   </p>
@@ -206,9 +231,9 @@ export default function About() {
             data-aos="fade-up"
             className="flex flex-col gap-4 items-center mt-16 pb-4"
           >
-            <p className="text-gray-700 text-sm md:text-base text-center">
-            TOM, <span className="font-bold">c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,</span>
-            et la puissance d’un réseau logistique global, partenaire et relais régional de <span className="font-bold"> MEDLOG et MSC: premier armateur mondial.</span>
+            <p className="text-black font-bold text-sm md:text-base text-center">
+            TOM, c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,
+            et la puissance d’un réseau logistique global, partenaire et relais régional de MEDLOG et MSC: premier armateur mondial.
             </p>
           </div>
         </div>
@@ -425,7 +450,7 @@ export default function About() {
             className="flex flex-col-reverse md:flex-row gap-6 md:gap-12 items-center mt-24"
           >
             <Image
-              src="/images/notre-objectif.jpg"
+              src="/images/notre_objectif.png"
               alt="Medlog"
               width={800}
               height={600}
@@ -492,63 +517,7 @@ export default function About() {
                 id="carousel-container"
                 style={{ gap: "2.5rem" }}
               >
-                {[{
-                  icon: "/images/chance.png", 
-                  title:"Nous croyons à l'égalité des chances",
-                  content: "Nous partageons nos connaissances, offrons formation et soutien pour favoriser la croissance professionnelle de nos employés."+
-                          " Nous garantissons des opportunités équitables, "+
-                          "un développement à long terme, et valorisons la diversité culturelle."
-                         
-                  },
-                  {
-                    icon: "/images/evolution.png", 
-                    title:"Nous évoluons constamment", 
-                    content: "Grâce à des solutions de transport fiables et durables,"+
-                            " nous facilitons les échanges internationaux, "+
-                            "soutenons les économies locales et encourageons une logistique responsable. "+
-                            "Nous intégrons les nouvelles technologies pour répondre aux besoins du marché."
-                    },
-                    {
-                      icon: "/images/famille.png", 
-                      title:"Nous sommes une famille", 
-                      content: "nous cultivons un esprit familial basé sur la confiance,"+
-                              " le dévouement et l'appartenance. "+
-                              "Cela nous pousse à agir avec courage et responsabilité pour le bien de nos clients et collaborateurs. "
-                    },
-                    {
-                      icon: "/images/passion.png",
-                      title: "Nous sommes passionnés et engagés",
-                      content: "Nous sommes animés par une passion qui nous pousse à offrir des services d'excellence,"+
-                              "à relever les défis avec persévérance et à offrir une expérience unique à nos clients."+
-                              "Chaque membre de notre équipe partage cette volonté de dépassement et de satisfaction."
-                          
-                    },
-                    {
-                      icon:"/images/soucieux.png",
-                      title:"Nous nous soucions des gens",
-                      content:"Nous valorisons chaque individu pour sa contribution unique."+
-                              "Nous établissons des relations authentiques basées sur l'éthique"+
-                              "le respect et l'esprit d'équipe, en nous préoccupant sincèrement de"+
-                              "la satisfaction et fidélité de nos clients et collaborateurs."
-                    }
-
-                ].map((valeurs, index) => (
-                  <div key={index} className="flex-wrap w-full md:w-[25%] px-2">
-                    <div className="bg-white p-8 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 flex flex-col items-center text-center h-full w-auto">
-                      <div className="mb-6 hover:animate-[bell_1s_ease-in-out]">
-                        <Image
-                          src={valeurs.icon}
-                          alt={valeurs.title}
-                          width={70}
-                          height={70}
-                          className="mr-1"
-                        />
-                      </div>
-                      <h3 className="text-xl font-bold mb-4">{valeurs.title}</h3>
-                      <p className="text-black text-sm md:text-base text-justify mt-8">{valeurs.content}</p>
-                    </div>
-                  </div>
-                ))}
+                <SliderValue />
                
                 
             </div>
@@ -588,7 +557,7 @@ export default function About() {
       <div className="max-w-screen-xl mx-auto py-12 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
         <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 md:p-12">
           <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
-            <div className="flex-1">
+            <div className="flex-1 text-justify">
               <p className="text-gray-700 text-base sm:text-lg mb-6">
                 Nous avons pu traverser l'année 2022 avec d'excellents résultats, aussi bien sur le développement de notre bilan que sur nos performances financières.
               </p>
@@ -611,8 +580,8 @@ export default function About() {
               <p className="text-gray-600">Directeur Général</p>
             </div>
 
-            <div className="w-full md:w-1/3 flex justify-center md:justify-start">
-              <div className="relative w-full max-w-xs aspect-[3/4] mb-4">
+            <div className="w-full md:w-1/2 flex justify-center md:justify-start">
+              <div className="relative w-full max-w-xl aspect-[2/3] mb-4">
                 <Image
                   src="/images/team/dg-tom.jpg"
                   alt="Amine BOUABID"
@@ -625,7 +594,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="relative h-screen">
+      <div className="relative min-h-[400px] max-h-[600px]">
       <h2
           className="text-3xl font-bold text-center mb-2"
           data-aos="fade-up"
@@ -634,7 +603,7 @@ export default function About() {
         </h2>
           <Carousel pauseOnHover
           indicators={true}
-          className="h-full md:h-[50%] ">
+          className="h-[400px] md:h-[500px]">
             {testimonials.map((item, index) => (
             <div key={index} className="w-1/2 flex flex-col rounded-xl shadow-lg bg-[var(--primary)] items-center justify-center space-y-4 p-8">
               {/* <Image

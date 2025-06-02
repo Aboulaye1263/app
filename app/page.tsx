@@ -9,6 +9,7 @@ import { useEffect } from "react";
 import "aos/dist/aos.css";
 import { services } from "@/constants/services";
 import { refs } from "@/constants/refs";
+import LogoSlider from "@/components/Carousel/LogoSlider";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -33,7 +34,7 @@ export default function Home() {
       className="carousel-slide object-cover brightness-50 transition-all duration-1000"
     />,
     <Image
-      src="/images/banners/banner_home.png"
+      src="/images/new images/header.png"
       alt="TOM MEDLOG Carousel Image 2"
       fill
       key={3}
@@ -158,7 +159,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 w-[95%]">
                   <Image
-                    src="/images/notre-objectif.jpg"
+                    src="/images/notre_objectif.png"
                     alt="Vision"
                     fill
                     className="object-cover"
@@ -423,48 +424,20 @@ export default function Home() {
       </div>
 
       {/* References Section */}
-      <div className="pb-16 my-24 pt-8 px-4 md:px-8 lg:px-16 overflow-hidden">
+      <div className="pb-16 my-24 pt-8 px-4 md:px-8 lg:px-16">
         <h2
           className="text-3xl font-bold text-center mb-16"
           data-aos="fade-up"
         >
           ILS NOUS FONT CONFIANCE
         </h2>
-        <div className="flex whitespace-nowrap animate-[scroll_10s_linear_infinite]">
-          {/* First set of images */}
-          {refs.map((ref, index) => (
-            <div
-              key={`first-${index}`}
-              className="flex-none w-[200px] h-[150px] mx-4"
-            >
-              <Image
-                src={ref}
-                alt={`Reference ${index + 1}`}
-                width={300}
-                height={150}
-                className="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full h-full object-contain"
-                loading="eager"
-                priority={true}
-                quality={100}
-              />
-            </div>
-          ))}
-          {/* Duplicate set for seamless loop */}
-          {refs.map((ref, index) => (
-            <div
-              key={`second-${index}`}
-              className="flex-none w-[300px] h-[180px] mx-4"
-            >
-              <Image
-                src={ref}
-                alt={`Reference ${index + 1}`}
-                width={200}
-                height={150}
-                className="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full h-full object-cover"
-              />
-            </div>
-          ))}
+        <div className="overflow-hidden w-full">
+          <div className="flex  whitespace-nowrap">
+            {/* Doublons les images pour effet de boucle infinie */}
+            <LogoSlider />
+          </div>
         </div>
+
       </div>
       <Footer />
     </div>

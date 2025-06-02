@@ -43,8 +43,8 @@ export default function BlogPage() {
           Actualités et <span className="text-[#F3DFA2]">Annonces</span>
         </h1>
         
-        <p className="absolute bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-center">
-        RESTEZ INFORMÉ DES DERNIÈRES TENDANCES ET INNOVATIONS DANS LA LOGISTIQUE AU SÉNÉGAL.   
+        <p className="absolute bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-center"> 
+        Restez informé des dernières tendances et innovations dans la logistique au Sénégal.  
         </p>
       </div>
 

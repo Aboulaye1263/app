@@ -190,7 +190,7 @@ export default function ServicesPage() {
             ].map((solution, index) => (
               <div
                 key={index}
-                className="group bg-white rounded-xl p-8 shadow-sm hover:shadow-xl 
+                className="group rounded-xl p-8 shadow-sm hover:shadow-xl 
                          transition-all duration-500 transform hover:-translate-y-1
                          border border-gray-100 hover:border-[var(--primary)]"
                 data-aos="fade-up"
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                                transition-opacity duration-500"
                     />
                   </div>
-                  <h3 className="text-xl font-medium text-center text-gray-800 group-hover:text-[var(--primary)] transition-colors">
+                  <h3 className="text-xl font-medium text-center text-gray-100 group-hover:text-[var(--primary)] transition-colors">
                     {solution.title}
                   </h3>
                 </div>
