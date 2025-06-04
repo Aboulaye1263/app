@@ -12,13 +12,14 @@ export interface TeamMember {
       id: "1",
       name: "Louis Maurice Ngor NDONG",
       position: "Directeur Général Adjoint – TOM MEDLOG",
-      description: 'TOM MEDLOG est le fruit d’une ambition forte : transformer durablement le secteur logistique au Sénégal, en proposant des solutions intégrées, fiables et compétitives, au service des économies locales.'+
-                 'Notre action s’inscrit pleinement dans les objectifs de transformation du Port Autonome de Dakar à l’horizon 2035, visant à positionner le Sénégal comme un hub logistique incontournable en Afrique de l’Ouest.'+
-                 'Adossés au Groupe MSC, leader mondial du transport maritime, nous combinons une vision globale à une présence de proximité. Notre modèle repose sur une expertise de terrain, une culture de la performance, et une capacité à nous adapter aux besoins spécifiques du territoire.'+
-                 'Chez TOM MEDLOG, nous croyons que la performance passe par l’humain, par l’excellence opérationnelle et par la rigueur au quotidien. Mon rôle est de mobiliser nos équipes autour de ces valeurs pour bâtir, chaque jour, une logistique plus fluide, plus intelligente, et porteuse de développement.'+
+      description: 'TOM MEDLOG est le fruit d’une ambition forte : transformer durablement le secteur logistique au Sénégal, en proposant des solutions intégrées, fiables et compétitives, au service des économies locales. '+
+      ''+
+                 'Notre action s’inscrit pleinement dans les objectifs de transformation du Port Autonome de Dakar à l’horizon 2035, visant à positionner le Sénégal comme un hub logistique incontournable en Afrique de l’Ouest. '+
+                 'Adossés au Groupe MSC, leader mondial du transport maritime, nous combinons une vision globale à une présence de proximité. Notre modèle repose sur une expertise de terrain, une culture de la performance, et une capacité à nous adapter aux besoins spécifiques du territoire. '+
+                 'Chez TOM MEDLOG, nous croyons que la performance passe par l’humain, par l’excellence opérationnelle et par la rigueur au quotidien. Mon rôle est de mobiliser nos équipes autour de ces valeurs pour bâtir, chaque jour, une logistique plus fluide, plus intelligente, et porteuse de développement. '+
                  'Nous sommes prêts à relever vos défis logistiques avec réactivité, fiabilité et engagement. N’hésitez pas à nous faire confiance. Nous mettrons tout en œuvre pour vous satisfaire.',
       image: "/images/team/maurice-ndong.png",
-      experience: "Mai 2009"
+      experience: " 2009"
     },
     {
       id: "2",
@@ -31,7 +32,7 @@ export interface TeamMember {
                  'En tant que Directeur Financier et Comptable, je veille à ce que nos engagements financiers soient aussi solides que nos engagements logistiques. '+
                  'Car dans un secteur où la réactivité et la confiance sont essentielles, notre différence se joue aussi dans la précision et la rigueur comptable.',
       image: '/images/team/raul-dagba.png',
-      experience: "Depuis 2011"
+      experience: " 2011"
     },
     {
       id: "3",
@@ -46,7 +47,7 @@ export interface TeamMember {
                  'Notre terminal ne dort jamais. Parce que vos enjeux n’attendent pas. '+
                  'Bienvenue chez TOM MEDLOG : là où chaque action compte, et où l’engagement est réel.',
       image: '/images/team/hatem-haidar.png',
-      experience: "Avril 2016"
+      experience: " 2016"
     },
     {
         id: "4",
@@ -64,6 +65,6 @@ export interface TeamMember {
                  'Notre engagement est clair : transformer la logistique en véritable levier de développement pour nos clients comme pour le pays. '+
                  'Nous croyons fermement qu’ensemble, nous pouvons transformer vos défis en opportunités et faire avancer vos projets avec maîtrise et succès.',
         image: '/images/team/alain-dos-reis.png',
-        experience: 'Avril 2008',
+        experience: ' 2008',
     },
   ];

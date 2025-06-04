@@ -32,7 +32,7 @@ export default function BlogPage() {
       <div className="relative h-screen bg-[#222221] text-white py-12 px-4 text-center pt-40">
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
-            src="/images/banner-news.png"
+            src="/images/actualites.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"

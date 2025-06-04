@@ -27,7 +27,7 @@ const SliderValue = () => {
       id: 3,
       icon: "/images/famille.png",
       title: "Nous sommes une famille",
-      description: "nous cultivons un esprit familial basé sur la confiance,"+
+      description: "Nous cultivons un esprit familial basé sur la confiance,"+
                     " le dévouement et l'appartenance. "+
                     "Cela nous pousse à agir avec courage et responsabilité pour le bien de nos clients et collaborateurs. "
     },

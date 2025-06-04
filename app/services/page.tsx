@@ -192,17 +192,17 @@ export default function ServicesPage() {
                 key={index}
                 className="group rounded-xl p-8 shadow-sm hover:shadow-xl 
                          transition-all duration-500 transform hover:-translate-y-1
-                         border border-gray-100 hover:border-[var(--primary)]"
+                         border border-gray-100 hover:border-[var(--primary)] backdrop-blur-sm"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col items-center ">
                   <div className="relative w-16 h-16 mb-6 group-hover:scale-110 transition-transform">
                     <Image
                       src={solution.icon}
                       alt={solution.title}
                       fill
-                      className="object-contain opacity-50 group-hover:opacity-100 
+                      className="object-contain group-hover:opacity-100 
                                transition-opacity duration-500"
                     />
                   </div>

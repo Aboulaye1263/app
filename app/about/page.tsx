@@ -580,8 +580,8 @@ export default function About() {
               <p className="text-gray-600">Directeur Général</p>
             </div>
 
-            <div className="w-full md:w-1/2 flex justify-center md:justify-start">
-              <div className="relative w-full max-w-xl aspect-[2/3] mb-4">
+            <div className="w-full md:w-[50%] flex justify-center md:justify-start">
+              <div className="relative w-full max-w-xl aspect-[1/1] mb-4">
                 <Image
                   src="/images/team/dg-tom.jpg"
                   alt="Amine BOUABID"

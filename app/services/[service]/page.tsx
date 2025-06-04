@@ -47,8 +47,8 @@ const serviceDetails = {
     stats: [
       { value: "+100", label: "Camions" },
       { value: "24/7", label: "Suivi en temps réel" },
-      { value: "4", label: "Modes de transport" },
-      { value: "X", label: "Conteneurs transprotés" },
+      { value: "+11500", label: "Conteneurs EVP livrés et positionnés" },
+      { value: "+100.000", label: "Conteneurs EVP transférés" },
     ],
   },
   depot: {
@@ -105,7 +105,8 @@ const serviceDetails = {
     stats: [
       { value: "+90.000 m²", label: "Capacité de stockage sous douane" },
       { value: "+250", label: "Prises refeers" },
-      { value: "X", label: "Capacité de de conteneurs à réparer" },
+      { value: "+10", label: "Engins de manutention" },
+      { value: "+10.000", label: "Capacité de conteneurs à réparer" },
     ],
   },
   entreposage: {
@@ -239,17 +240,18 @@ const serviceDetails = {
         description:
           "Nous sommes pour l’entretien et la réparation des conteneurs, secs comme frigorifiques, avec une capacité de xxx"+
           "Nous combinons expertise technique, réactivité et conformité aux standards internationaux. Nos ateliers équipés et nos équipes certifiées interviennent avec précision pour assurer :"+
-          "\t- Réparations structurelles, esthétiques et techniques. "+
-          "\t- Contrôles de sécurité et de conformité. "+
-          "\t- Entretien préventif pour prolonger la durée de vie des conteneurs. "+
-          "\t- Préparation des reefers avant mise à disposition client.",
+          "- Réparations structurelles, esthétiques et techniques. \n"+
+          "- Contrôles de sécurité et de conformité. \n"+
+          "- Entretien préventif pour prolonger la durée de vie des conteneurs. \n"+
+          "- Préparation des reefers avant mise à disposition client.\n",
         icon: "/icons/maintenance.png",
       },
     ],
     stats: [
       { value: "+10", label: "Services spécialisés" },
-      { value: "24/7", label: "Support technique" },
-      { value: "100%", label: "Satisfaction client" },
+      { value: "+2500 PTI/an", label: "Capacité de Maintenance et réparations" },
+      { value: "4", label: "Ponts bascules / Pèse-essieu" },
+      { value: "+30", label: "GENSETS Services Frigorifiques" },
     ],
   },
 };
@@ -291,9 +293,12 @@ export default function ServiceDetail() {
             {service.title}
           </h1>
           
-          <div className="absolute top-[55%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-72 md:w-auto text-center z-10">
+          <div className="absolute top-[55%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-full md:w-[124vh] text-center z-10">
             <span className="text-white text-sm md:text-xl text-center mb-6">
               {service.heroText}
+            </span><br/>
+            <span className="text-white text-sm md:text-xl text-center mb-6">
+              {service.description}
             </span>
           </div>
         </div>
@@ -312,9 +317,9 @@ export default function ServiceDetail() {
       </div> */}
 
 
-      <div className="bg-gray-500 dark:bg-[var(--primary)]">
+      <div className="bg-gray-500 dark:bg-gray-300">
           <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-              <h1 className="mb-4 text-4xl font-medium tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-gray-900">{service.actionTitle}</h1>
+              <h1 className="mb-4 text-4xl font-medium tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-gray-100">{service.actionTitle}</h1>
               <p className="mb-8 text-lg font-normal text-gray-800 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-800">{service.actionDescription}</p>
               <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                   <a href="/contact#form" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[var(--foreground)] hover:bg-gray-100 hover:text-gray-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">

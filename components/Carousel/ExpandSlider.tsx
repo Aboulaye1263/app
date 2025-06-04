@@ -104,7 +104,7 @@ type SliderImage = {
                     {index === 1 && "Notre terminal à conteneurs, d’une surface + de 95.000 m² de capacité de stockage sous douane, offre une capacité de stockage de plus de 10 000 EVP garantissant une gestion optimale des flux. Il est également équipé de 350 prises réfrigérées et 10 groupes électrogènes neufs, permettant un contrôle total sur les cargaisons sensibles à la température."}
                     {index === 2 && "Avec plus de 50.000 m² d'entrepôts sous douane, nous proposons des solutions d’entreposage sécurisées et flexibles pour une large gamme de marchandises, qu’il s’agisse de produits de base (riz, sucre, céréales), de produits périssables, ou d’autres biens importés ou en transit."+
                                     "Notre capacité de stockage de plus de 150.000 tonnes permet une gestion optimisée et évolutive des flux, adaptée aux besoins spécifiques de chaque client."}
-                    {index === 3 && "Nous proposons une gamme complète de services spécialisés pour maximiser la performance et la durabilité de vos flux : maintenance, réparation, dépotage, pesage, flexibags… Nos équipes techniques certifiées aux standards internationaux interviennent sur une capacité annuelle de plus de xxx EVP"}
+                    {index === 3 && "Nous proposons une gamme complète de services spécialisés pour maximiser la performance et la durabilité de vos flux : maintenance, réparation, dépotage, pesage, flexibags… Nos équipes techniques certifiées aux standards internationaux interviennent sur une capacité annuelle de plus de 150.000 EVP"}
                  
                   </p>
                 )}
