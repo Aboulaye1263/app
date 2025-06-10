@@ -27,7 +27,7 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
           </Button>
           
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2">
+            <div className="md:w-1/3">
               <img 
                 src={member.image} 
                 alt={member.name}
@@ -35,7 +35,7 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
               />
             </div>
             
-            <div className="md:w-1/2 p-8">
+            <div className="md:w-2/3 p-8">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
                 {member.name}
               </h2>
@@ -48,10 +48,12 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
                   Depuis {member.experience} 
                 </span>
               </div>
-              
-              <p className="text-gray-700 leading-relaxed mb-6 text-xs">
-                {member.description}
+              {member.description.map((item, i) => (
+                <p className="text-gray-700 leading-relaxed mb-6 text-xs text-justify">
+                {item}<br/>
               </p>
+              ))}
+              
               
               {/* <div>
                 <h4 className="font-semibold text-gray-900 mb-3">Compétences</h4>
