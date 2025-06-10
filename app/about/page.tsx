@@ -111,7 +111,7 @@ export default function About() {
             viewBox="0 0 512 512"
             className="rotate-3600 animate-[downward_2s_ease-in-out_infinite]">
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-              <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="1.024"></g>
+              <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round" stroke="#CCCCCC" strokeWidth="1.024"></g>
               <g id="SVGRepo_iconCarrier"> 
                 <g> 
                   <g> 
@@ -611,11 +611,10 @@ export default function About() {
                 </li>
               </ul>
 
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-10 md:mt-16">Amine BOUABID</h3>
-              <p className="text-gray-600">Directeur Général</p>
+              
             </div>
 
-            <div className="w-full md:w-[50%] flex justify-center md:justify-start">
+            <div className="w-full md:w-[50%] flex-row justify-center md:justify-start">
               <div className="relative w-full max-w-xl aspect-[1/1] mb-4">
                 <Image
                   src="/images/team/dg-tom.jpg"
@@ -624,6 +623,8 @@ export default function About() {
                   className="object-cover rounded-lg"
                 />
               </div>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-10 md:mt-16 text-end">Amine BOUABID</h3>
+              <p className="text-gray-600 text-end">Directeur Général</p>
             </div>
           </div>
         </div>

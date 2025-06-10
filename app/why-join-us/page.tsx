@@ -230,7 +230,7 @@ export default function WhyJoinUs() {
             <Modal show={openModal} onClose={() => setOpenModal(false)}>
             <ModalHeader className="dark:bg-white text-gray-700 dark:text-gray-700" style={{fontWeight: 'bolder'}}>CANDIDATURE SPONTANÉE</ModalHeader>
             <ModalBody className="dark:bg-white">
-              <form className="space-y-4">
+              {/* <form className="space-y-4">
                 <div>
                   <label htmlFor="prenom" className="block text-sm font-medium text-gray-700">Prénom</label>
                   <input type="text" id="prenom" name="prenom" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
@@ -251,12 +251,17 @@ export default function WhyJoinUs() {
                   <label htmlFor="cv" className="block text-sm font-medium text-gray-700">Téléverser votre CV</label>
                   <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" required className="mt-1 block w-full border border-gray-300 rounded-md p-2" />
                 </div>
-              </form>
+              </form> */}
+              <iframe 
+                aria-label='Contact Tom Medlog' 
+                frameBorder="0" 
+                style= {{height: '500px', width: '99%', border: 'none'}} 
+                src='https://forms.zohopublic.com/BETAOne/form/ContactTomMedlog/formperma/630BnrhJSyEoy54BLEg47U2DIszOxSWpKLDQMsNyeTc'></iframe>
             </ModalBody>
-            <ModalFooter className="dark:bg-white">
+            {/* <ModalFooter className="dark:bg-white">
               <Button className="bg-[var(--primary)] dark:bg-[#eed484] text-black hover:bg-gray-800 hover:dark:bg-gray-700 hover:text-white" onClick={() => setOpenModal(false)}>ENVOYER</Button>
-              {/* <Button color="alternative hover:text-gray-500" onClick={() => setOpenModal(false)}>Annuler</Button> */}
-            </ModalFooter>
+             
+            </ModalFooter> */}
           </Modal>
           </div>
           {/* <div className="animate-[updown_2s_ease-in-out_infinite] relative z-10">
