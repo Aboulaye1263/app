@@ -57,7 +57,7 @@ export default function About() {
 
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
-        <div className="absolute top-0 left-0 right-0 -z-99 h-full">
+        <div data-aos="fade-in" className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
             src="/images/new images/header.png"
             alt="TOM MEDLOG Image header"
@@ -66,7 +66,7 @@ export default function About() {
           />
         </div>
         <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
+        <h1 className="tracking-in-expand absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
           DÉCOUVREZ QUI <span className="text-[#F3DFA2]">NOUS SOMMES</span>
         </h1>
         <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
@@ -320,7 +320,7 @@ export default function About() {
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
                     
-                    <CountUp end={-1} duration={2} /> km
+                    <CountUp end={-1} duration={5} /> km
                   </div>
                   <div className="text-black">
                      À vol d'oiseau du port autonome de Dakar
@@ -329,14 +329,14 @@ export default function About() {
                 <td className="w-1/3 px-4 py-28 bg-[var(--primary)] border-gray-300 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={10000} duration={2} prefix="+" separator="."/> EVP
+                    <CountUp end={10000} duration={5} prefix="+" separator="."/> EVP
                   </div>
                   <div className="text-black">Capacité de stockage</div>
                 </td>
                 <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                   <CountUp end={150000} duration={2} prefix="+" separator="."/> EVP
+                   <CountUp end={150000} duration={5}  prefix="+" separator="."/> EVP
                   </div>
                   <div className="text-[#222221]">
                   Traitées par an
@@ -350,7 +350,7 @@ export default function About() {
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl text-white font-bold mb-2">
                     
-                    <CountUp end={40000} duration={2} prefix="+" separator="."/> m²
+                    <CountUp end={40000} duration={5}  prefix="+" separator="."/> m²
                   </div>
                   <div className="text-white">
                   Entrepôts dédiés aux matières premières
@@ -376,7 +376,7 @@ export default function About() {
                 <td className="w-1/3 border-gray-300 px-4 py-28 bg-[#222221] text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2 text-white">
-                    <CountUp end={250000} duration={2} prefix="+" separator="."/> m²
+                    <CountUp end={250000} duration={5} prefix="+" separator="."/> m²
                   </div>
                   <div className="text-white">
                     De surface logistique portuaire
@@ -412,13 +412,13 @@ export default function About() {
               <tr className="h-48">
                 <td className="border-r-2 border-t-2 px-4 bg-[#F3DFA2] border-gray-300 text-center w-1/2 h-48">
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={10000} duration={2} />
+                    <CountUp end={10000} duration={5}  />
                   </div>
                   <div className="text-black">EVP</div>
                 </td>
                 <td className="border-t-2 px-4 bg-[#222221] text-center w-1/2 h-48">
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={34500} duration={2} />
+                    <CountUp end={34500} duration={5}  />
                   </div>
                   <div className="text-white">
                     M² entrepôts dédiés aux matières premières
@@ -428,7 +428,7 @@ export default function About() {
               <tr className="h-48">
                 <td className="border-r-2 border-t-2 border-gray-300 px-4 bg-[#222221] text-center w-1/2 h-48">
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={210000} duration={2} />
+                    <CountUp end={210000} duration={5}  />
                   </div>
                   <div className="text-white">
                     M² plateforme logistique portuaire
@@ -437,7 +437,7 @@ export default function About() {
                 <td className="text-center px-4 w-1/2 h-48">
                   <div className="text-4xl font-bold mb-2" >
                     
-                    <CountUp end={-1} duration={2} /> Km
+                    <CountUp end={-1} duration={5}  /> Km
                   </div>
                   <div className="text-black">
                      à vol d'oiseau du port autonome de Dakar

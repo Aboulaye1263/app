@@ -43,7 +43,7 @@ export default function WhyJoinUs() {
                 className="absolute top-[15%] md:top[15%] sm:[25%] left-1/2 -translate-x-1/2 object-cover rounded-lg opacity-70"
                 
               />
-              <h1 className="absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-3xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
+              <h1 className="text-focus-in absolute top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-3xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
               Un pionnier <span className="text-[#F3DFA2]">SÉNÉGALAIS</span>
               </h1>
               <div className="absolute top-[60%] md:top-[60%] lg:top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-full md:w-auto text-center z-10">

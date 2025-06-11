@@ -8,6 +8,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useParams } from "next/navigation";
 import Link from "next/link";
+import CountUp from "react-countup";
 // Service details map
 const serviceDetails = {
   transport: {
@@ -49,10 +50,10 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "+100", label: "Camions" },
-      { value: "24/7", label: "Suivi en temps réel" },
-      { value: "+11.500", label: "Conteneurs EVP livrés et positionnés" },
-      { value: "+100.000", label: "Conteneurs EVP transférés" },
+      { value: 100, sup: "+", und: " ", label: "Camions" },
+      { value: 24/7, sup: " ", und: " ", label: "Suivi en temps réel" },
+      { value: 11.500, sup: "+", und: " ", label: "Conteneurs EVP livrés et positionnés" },
+      { value: 100.000, sup: "+", und: " ", label: "Conteneurs EVP transférés" },
     ],
   },
   depot: {
@@ -112,10 +113,10 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "+90.000 m²", label: "Capacité de stockage sous douane" },
-      { value: "+250", label: "Prises refeers" },
-      { value: "+10", label: "Engins de manutention" },
-      { value: "+10.000", label: "Capacité de conteneurs à réparer" },
+      { value: 90.000, sup: "+", und: " m²", label: "Capacité de stockage sous douane" },
+      { value: 250, sup: "+", und: " ", label: "Prises refeers" },
+      { value: 10, sup: "+", und: " ", label: "Engins de manutention" },
+      { value: 10.000, sup: "+", und: " ", label: "Capacité de conteneurs à réparer" },
     ],
   },
   entreposage: {
@@ -163,10 +164,10 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "+120.000 tonnes", label: "Capacité de stockage" },
-      { value: "100 %", label: "Sécurisé" },
-      { value: "3", label: "Types de stockage" },
-      { value: "0,1 %", label: " Taux de freinte magasin" },
+      { value: 120.000, sup: "+", und: " Tonnes", label: "Capacité de stockage" },
+      { value: 100, sup: " ", und: " %", label: "Sécurisé" },
+      { value: 3, sup: "+", und: " ", label: "Types de stockage" },
+      { value: 0.1, sup: " ", und: " %", label: " Taux de freinte magasin" },
     ],
   },
   solution: {
@@ -271,10 +272,10 @@ const serviceDetails = {
       },
     ],
     stats: [
-      { value: "+10", label: "Services spécialisés" },
-      { value: "+2.500 PTI/an", label: "Capacité de Maintenance et réparations" },
-      { value: "4", label: "Ponts bascules / Pèse-essieu" },
-      { value: "+30", label: "GENSETS Services Frigorifiques" },
+      { value: 10, sup: "+", und: " ", label: "Services spécialisés" },
+      { value: 2.500, sup: "+", und: "PTI/an", label: "Capacité de Maintenance et réparations" },
+      { value: 4, sup: " ", und: " ", label: "Ponts bascules / Pèse-essieu" },
+      { value: 30, sup: "+", und: " ", label: "GENSETS Services Frigorifiques" },
     ],
   },
 };
@@ -402,7 +403,7 @@ export default function ServiceDetail() {
                 data-aos-delay={index * 100}
               >
                 <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-[var(--foreground)] mb-2">
-                  {stat.value}
+                  <CountUp end={stat.value} duration={5} enableScrollSpy={true} prefix={stat.sup} suffix={stat.und} decimals={1}/> 
                 </div>
                 <div className="text-[var(--foreground)] opacity-80 text-2xl">{stat.label}</div>
               </div>
