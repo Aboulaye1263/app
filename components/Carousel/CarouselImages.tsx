@@ -38,7 +38,7 @@ export default function CarouselImages({
       if (!isAnimating) {
         goToNext();
       }
-    }, 5000);
+    }, 7000);
     return () => clearInterval(timer);
   }, []); // Remove isAnimating dependency
 

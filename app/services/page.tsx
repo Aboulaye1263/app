@@ -160,7 +160,7 @@ export default function ServicesPage() {
       </div>
 
       {/* Solutions Section */}
-      <div className="py-20 px-4 sm:px-6 lg:px-8" style={{
+      <div className="py-20 px-8 sm:px-6 lg:px-8" style={{
         backgroundImage: `linear-gradient(to bottom, rgba(34, 34, 33, 0.3), rgba(34, 34, 33, 0.35)), url(/images/section_values.jpg)`,
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover"
@@ -170,14 +170,14 @@ export default function ServicesPage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16" data-aos="fade-up">
             <h2
-              className="inline-block text-3xl md:text-4xl font-bold border-2 border-[var(--primary)] 
+              className="inline-block text-3xl md:text-4xl font-bold text-white
                          px-8 py-4 rounded-md hover:bg-[var(--primary)] hover:text-black transition-colors"
             >
               SERVICES À VALEURS AJOUTÉES
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-12 md:px-20">
             {[
               { icon: "/icons/empotage_depotage.png", title: "Dépotage" },
               { icon: "/icons/chandling.png", title: "Consignation et Ship chandling" },
@@ -190,7 +190,7 @@ export default function ServicesPage() {
             ].map((solution, index) => (
               <div
                 key={index}
-                className="group rounded-xl p-8 shadow-sm hover:shadow-xl 
+                className="group rounded-xl p-4 shadow-sm hover:shadow-xl 
                          transition-all duration-500 transform hover:-translate-y-1
                          border border-gray-100 hover:border-[var(--primary)] backdrop-blur-sm"
                 data-aos="fade-up"
@@ -206,7 +206,7 @@ export default function ServicesPage() {
                                transition-opacity duration-500"
                     />
                   </div>
-                  <h3 className="text-xl font-medium text-center text-gray-100 group-hover:text-[var(--primary)] transition-colors">
+                  <h3 className="text-sm md:text-xl font-medium text-center text-gray-100 group-hover:text-[var(--primary)] transition-colors">
                     {solution.title}
                   </h3>
                 </div>

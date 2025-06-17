@@ -74,7 +74,7 @@ export default function HeaderMenu({
       <button
         className={`
           md:hidden text-4xl z-50 transition-transform duration-300 
-          hover:scale-110 md:text-black
+          hover:scale-110 text-black
           ${isScrolled ? "text-black" : "text-white"}`}
         
         onClick={() => setIsMenuOpen(!isMenuOpen)}

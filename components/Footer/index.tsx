@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-[#222221] text-white pt-16 pb-8">
       <div className="container mx-auto px-4">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           {/* Logo Column */}
           <div>
             <Image
@@ -16,6 +16,18 @@ export default function Footer() {
               height={60}
               className="mb-4"
             />
+          </div>
+
+          {/* Link page Column */}
+          <div>
+            <h3 className="font-bold mb-4 ">Liens utiles</h3>
+           <ul>
+            <li  className="" ><a href='/about'>A propos</a></li>
+            <li><a href='/services'>Services</a></li>
+            <li><a href='/blog'>Actualités</a></li>
+            <li><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
+            <li>CGU</li>
+           </ul>
           </div>
 
           {/* Contact Info Column */}

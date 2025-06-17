@@ -72,7 +72,7 @@ const LogoSlider = () => {
                             alt={`Reference ${index + 1}`}
                             width={200}
                             height={150}
-                            className="rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 w-full h-full object-contain"
+                            className=" hover:shadow-xl transition-all duration-300 hover:scale-105 w-full h-full object-contain"
                             loading="eager"
                             priority={index < refs.length} // Priorité sur le premier set uniquement
                             quality={100}

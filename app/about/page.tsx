@@ -52,7 +52,7 @@ export default function About() {
   ];
 
   return (
-    <main className="min-h-screen flex flex-col">
+    <main className="min-h-screen flex flex-col overflow-x-hidden">
       <HeaderMenu isScrolledAndImmutable/>
 
       {/* Hero Section */}
@@ -66,8 +66,8 @@ export default function About() {
           />
         </div>
         <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="tracking-in-expand absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
-          DÉCOUVREZ QUI <span className="text-[#F3DFA2]">NOUS SOMMES</span>
+        <h1 className="tracking-in-expand absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-medium mb-8 leading-tight text-white z-10">
+        Champion de la  <span className="text-[#F3DFA2]">logistique</span>
         </h1>
         <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
           <span className="text-white text-sm md:text-xl text-center mb-6">
@@ -140,14 +140,7 @@ export default function About() {
 
       {/* Timeline Section */}
       <div className="relative py-16 w-full md:pt-10">
-      <div className="absolute top-0 left-0 right-0 -z-99 h-full">
-          <Image
-            src="/images/Notre_Histoire_TOM.png"
-            alt="TOM MEDLOG Image header"
-            fill
-            className="object-cover -z-1"
-          />
-        </div> 
+
         <div className="absolute w-full h-full bottom-0 right-0 left-0 bg-gradient-to-r from-white/80 to-white/50 -z-1" />
         <div className="container mx-auto px-4 z-20">
           <div id="histoire" className="relative text-4xl font-bold text-center pt-12 mb-12 directed-scroll text-black">
@@ -173,7 +166,10 @@ export default function About() {
             {/* 2008 Entry */}
             <div className="mb-4 relative" data-aos="fade-right">
               <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
+                
+              
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
+                <div className="w-full pr-8 text-right">
                   <h3 className="text-2xl font-bold mb-2">2007</h3>
                   <p className="text-black text-end">
                   <span className="font-medium">Naissance d’un acteur à part : TOM</span><br></br>
@@ -182,16 +178,31 @@ export default function About() {
                   une proximité client forte et une ambition régionale affirmée.
                   </p>
                 </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                <div className="w-1/2 pl-8"></div>
+                <div className="w-full pl-8 text-left">
+                <img 
+                    src="/images/img-2007.jpg"
+                    alt="TOM MEDLOG Image header"
+                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
+                  />
+                </div>
+                
+                
+                
               </div>
             </div>
 
             {/* 2014 Entry */}
             <div className="mb-4 relative" data-aos="fade-left">
               <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
+                {/* <div className="w-1/2 pr-8"></div> */}
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
+                <div className="w-1/2 pl-52 text-left">
+                <img 
+                    src="/images/img-2015.jpg"
+                    alt="TOM MEDLOG Image header"
+                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
+                  />
+                </div>
                 <div className="w-1/2 pl-8">
                   <h3 className="text-2xl font-bold mb-2">2015</h3>
                   <p className="text-black text-justify">
@@ -217,13 +228,12 @@ export default function About() {
                   </p>
                 </div>
                 <div className="w-full pl-8 text-right">
+                    <img 
+                    src="/images/img-2017-zud.jpg"
+                    alt="TOM MEDLOG Image header"
+                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
+                  />
                   
-                  <p className="text-black text-start align-top mt-16">
-                  <span className="font-medium">Démarrage des entrepôts et services logistiques spécialisés</span><br></br>
-                  TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
-                  de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
-                  répondant aux besoins concrets des grands importateurs nationaux.
-                  </p>
                 </div>
                 <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
                 {/* <div className="w-1/2 pl-8"></div> */}
@@ -249,16 +259,52 @@ export default function About() {
             
             {/* Today Entry */}
             <div className="mb-4 mt-12 relative" data-aos="fade-left">
+              
               <div className="flex items-center">
-                <div className="w-1/2 pr-8"></div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
+              {/* <div className="w-1/2 pr-8"></div> */}
+              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
+                <div className="w-1/2 pl-52 text-left">
+                <img 
+                    src="/images/img-2017-entrepot.jpg"
+                    alt="TOM MEDLOG Image header"
+                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
+                  />
+                </div>
+                
                 <div className="w-1/2 pl-8">
-                  <h3 className="text-2xl font-bold mb-2">Aujourd'hui</h3>
+                  <h3 className="text-2xl font-bold mb-2">2017</h3>
                   <p className="text-black text-justify">
+                  <span className="font-medium">
+                  Démarrage des entrepôts et services logistiques spécialisés</span><br></br>
+                  TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
+                  de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
+                  répondant aux besoins concrets des grands importateurs nationaux.
+                  </p>
+                </div>
+              </div>
+              
+            </div>
+
+            {/* 2017 Entry */}
+            <div className="relative mt-8" data-aos="fade-right">
+              <div className="flex items-center">
+                <div className=" w-full pr-8 text-right">
+                  <h3 className="text-2xl font-bold mb-2">Aujourd'hui</h3>
+                  <p className="text-black text-end align-top">
                   <span className="font-medium">Champion national, pionnier régional</span><br></br>
                   TOM est devenu le champion Sénégalais de la logistique et un acteur stratégique incontournable de l’industrie en Afrique de l’Ouest.
                   </p>
                 </div>
+                <div className="w-full pl-8 text-right">
+                    <img 
+                    src="/images/aujourdhui.png"
+                    alt="TOM MEDLOG Image header"
+                    className="w-96 h-96 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
+                  />
+                  
+                </div>
+                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
+                {/* <div className="w-1/2 pl-8"></div> */}
               </div>
             </div>
           </div>
@@ -375,7 +421,7 @@ export default function About() {
 
                 <td className="w-1/3 border-gray-300 px-4 py-28 bg-[#222221] text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
-                  <div className="text-4xl font-bold mb-2 text-white">
+                  <div className="text-4xl font-bold mb-2 text-white dark:text-white">
                     <CountUp end={250000} duration={5} prefix="+" separator="."/> m²
                   </div>
                   <div className="text-white">
@@ -391,13 +437,32 @@ export default function About() {
           >
             <tbody>
               <tr className="h-48">
-                <td className="border-r-2 border-gray-300 bg-[#222221] text-center px-4 w-1/2 h-48">
-                  <div className="text-black">
-                    <CountUp end={250000}  duration={2} />
+                <td className="border-r-2 bg-white text-center px-4 w-1/2 h-48">
+                  <div className="text-black text-3xl font-bold mb-2">
+                    <CountUp end={-1} suffix="Km"  duration={5} />
+                  </div>
+                  <div className="text-[#222221]">
+                  À vol d'oiseau du port autonome de Dakar
+                  </div>
+                </td>
+                <td className="text-center px-4 w-1/2 h-48 bg-[#222221]">
+                  <div className="text-2xl font-bold mb-2 text-white" >
+                    
+                  <CountUp end={40000} duration={5}  prefix="+" separator="."/> m²
                   </div>
                   <div className="text-white">
-                    M² Surfaces logistiques dédiées
+                  Entrepôts dédiés aux matières premières
                   </div>
+                </td>
+                
+              </tr>
+              <tr className="h-48">
+              
+                <td className="border-r-2 border-t-2 px-4 bg-[#F3DFA2] border-gray-300 text-center w-1/2 h-48">
+                  <div className="text-2xl font-bold mb-2">
+                    <CountUp end={10000} duration={5}  prefix="+" separator="."/> EVP
+                  </div>
+                  <div className="text-black">Capacité de stockage</div>
                 </td>
                 <td className="px-4 w-1/2 h-48">
                   <Image
@@ -408,39 +473,24 @@ export default function About() {
                     className="w-[400px] md:w-[300px] md:h-[300px] object-contain"
                   />
                 </td>
+                
               </tr>
               <tr className="h-48">
-                <td className="border-r-2 border-t-2 px-4 bg-[#F3DFA2] border-gray-300 text-center w-1/2 h-48">
-                  <div className="text-4xl font-bold mb-2">
-                    <CountUp end={10000} duration={5}  />
-                  </div>
-                  <div className="text-black">EVP</div>
-                </td>
-                <td className="border-t-2 px-4 bg-[#222221] text-center w-1/2 h-48">
-                  <div className="text-4xl font-bold mb-2">
-                    <CountUp end={34500} duration={5}  />
-                  </div>
-                  <div className="text-white">
-                    M² entrepôts dédiés aux matières premières
-                  </div>
-                </td>
-              </tr>
-              <tr className="h-48">
-                <td className="border-r-2 border-t-2 border-gray-300 px-4 bg-[#222221] text-center w-1/2 h-48">
-                  <div className="text-4xl font-bold mb-2">
-                    <CountUp end={210000} duration={5}  />
-                  </div>
-                  <div className="text-white">
-                    M² plateforme logistique portuaire
-                  </div>
-                </td>
-                <td className="text-center px-4 w-1/2 h-48">
-                  <div className="text-4xl font-bold mb-2" >
-                    
-                    <CountUp end={-1} duration={5}  /> Km
+              <td className="border-r-2 border-t-2 px-4  text-center w-1/2 h-48">
+                  <div className="text-2xl font-bold mb-2 text-black">
+                  <CountUp end={150000} duration={5}  prefix="+" separator="."/> EVP
                   </div>
                   <div className="text-black">
-                     à vol d'oiseau du port autonome de Dakar
+                  Traitées par an
+                  </div>
+                </td>
+                
+                <td className="border-t-2 px-4 bg-[#222221] text-center w-1/2 h-48">
+                  <div className="text-2xl font-bold mb-2 text-white">
+                    <CountUp end={250000} duration={5} prefix="+" separator="."/> m²
+                  </div>
+                  <div className="text-white">
+                    De surface logistique portuaire
                   </div>
                 </td>
               </tr>
@@ -563,7 +613,7 @@ export default function About() {
      
 
       {/* Team Section */}
-      <div className="bg-[#222221] py-4 px-2 lg:px-2 relative my-0">
+      <div className="bg-[#222221] py-4 px-2 lg:px-2 relative my-0 min-h-dvh">
         
         <div className="container mx-auto">
           <div
@@ -582,7 +632,7 @@ export default function About() {
           {/* <div className="w-full md:w-full py-2">
             <TeamCarousel />
           </div> */}
-          <div className="max-h-screen">
+          <div className="">
             <TeamSection />
           </div>
         </div>
@@ -591,7 +641,7 @@ export default function About() {
       {/* Testimonial Section */}
       <div className="max-w-screen-xl mx-auto py-12 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
         <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 md:p-12">
-          <div className="flex flex-col md:flex-row items-start gap-6 md:gap-8">
+          <div className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-8">
             <div className="flex-1 text-justify">
               <p className="text-gray-700 text-base sm:text-lg mb-6">
                 Nous avons pu traverser l'année 2022 avec d'excellents résultats, aussi bien sur le développement de notre bilan que sur nos performances financières.

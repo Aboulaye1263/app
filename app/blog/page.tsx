@@ -2,6 +2,7 @@ import Footer from '@/components/Footer';
 import HeaderMenu from '@/components/Header/HeaderMenu';
 import Image from 'next/image';
 import Link from 'next/link';
+import TypingText from '@/components/TypingText';
 
 const blogPosts = [
   {
@@ -26,24 +27,25 @@ const blogPosts = [
 
 export default function BlogPage() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen overflow-x-hidden">
         <HeaderMenu isScrolledAndImmutable/>
       {/* Header Section */}
       <div className="relative h-screen bg-[#222221] text-white py-12 px-4 text-center pt-40">
-        <div className="absolute top-0 left-0 right-0 -z-99 h-full">
+        <div className="absolute kenburns-left top-0 left-0 right-0 -z-99 h-full">
           <Image
             src="/images/actualites.png"
             alt="TOM MEDLOG Image header"
             fill
-            className="object-cover"
+            className=" object-cover"
           />
         </div>
-        <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
+        <div className="kenburns-left absolute w-full min-h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
+        {/* <h1 className="tracking-in-contract-bck absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
           Actualités et <span className="text-[#F3DFA2]">Annonces</span>
-        </h1>
+        </h1> */}
+        <TypingText title="Actualités et" coloredTitle=' annonces' />
         
-        <p className="absolute bottom-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-center"> 
+        <p className="absolute w-full md:bottom-1/2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg md:text-xl md:mt-12 mb-0 max-w-5xl leading-relaxed opacity-90 text-center"> 
         Restez informé des dernières tendances et innovations dans la logistique au Sénégal.  
         </p>
       </div>

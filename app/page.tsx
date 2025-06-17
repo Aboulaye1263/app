@@ -51,11 +51,11 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
           <div className="max-w-5xl" data-aos="fade-up">
-            <h1 className="text-5xl md:text-7xl font-medium mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
+            <h1 className="text-3xl m-4 md:text-7xl font-medium mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
               Premier port sec en
               <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>
             </h1>
-            <p className="text-lg md:text-xl mb-12 max-w-3xl leading-relaxed opacity-90 text-justify">
+            <p className="text-lg  md:text-xl mb-8 m-4 max-w-3xl leading-relaxed opacity-90 text-justify">
               Fondé en 2007, TOM (Terminal des Opérations Maritimes) est un acteur stratégique et incontournable de la chaîne logistique en Afrique de l’Ouest. 
  
               <br></br>
@@ -63,13 +63,13 @@ export default function Home() {
               ses innovations et intégrations technologiques, et son offre de services à forte valeur ajoutée moteur de la performance économique régionale.
             </p>
             <Link
-              href="/about#histoire"
-              className="inline-flex items-center justify-center gap-3 bg-[var(--primary)] text-black font-semibold 
+              href="/services"
+              className="inline-flex items-center justify-center gap-3 m-4 bg-[var(--primary)] text-black font-semibold 
                        px-8 py-4 rounded-md hover:bg-white hover:scale-105
                        transition-all duration-300 ease-out shadow-lg
                        text-base min-w-[200px] group"
             >
-              Découvrez notre histoire
+              Nos services
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
@@ -88,176 +88,25 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      {/* Mission & Vision Section */}
-      <div className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="flex flex-col grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Mission Column */}
-          <div className="flex flex-col md:flex-row" data-aos="fade-right">
-            <div className="flex flex-col w-full md:w-1/2">
-              <h2 className="text-4xl font-bold">
-                NOTRE MISSION
-              </h2>
-              {/* Text Card */}
-              <div className="py-8">
-                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                Réinventer la logistique en Afrique de l’Ouest en proposant des solutions innovantes, 
-                intégrées et personnalisées, pour optimiser les chaînes d'approvisionnement et accompagner durablement la croissance de nos clients.
-                </p>
-                <Link
-                  href="/about#mission"
-                  className="inline-flex bg-[var(--primary)] items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
-                >
-                  En savoir plus
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative w-full md:w-1/2">
-              <div className="absolute right-[-10%] w-[100%] h-[100%] top-[15%] bg-[var(--primary)]" />
-
-              {/* Content */}
-              <div className="relative flex flex-col gap-6">
-                {/* Image */}
-                <div className="relative h-80 ml-auto w-[95%]">
-                  <Image
-                    src="/images/notre_mission.jpg"
-                    alt="Mission"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
+      
+      {/* References Section */}
+      <div className="pb-16 my-24 pt-8 px-4 md:px-8 lg:px-16">
+        <h2
+          className="text-2xl md:text-3xl font-bold text-center mb-16"
+          data-aos="fade-up"
+        >
+          ILS NOUS FONT CONFIANCE
+        </h2>
+        <div className="overflow-hidden w-full">
+          <div className="flex  whitespace-nowrap">
+            {/* Doublons les images pour effet de boucle infinie */}
+            <LogoSlider />
           </div>
-
-          {/* Vision Column */}
-          <div
-            className="flex flex-col md:flex-row mt-24 gap-8"
-            data-aos="fade-left"
-          >
-            <div className="relative w-full md:w-1/2">
-              {/* Background blue rectangle */}
-              <div className="absolute left-[-10%] w-full h-full top-[15%] bg-[var(--primary)] mx-auto md:mx-0" />
-
-              {/* Content */}
-              <div className="relative flex flex-col gap-6">
-                {/* Image */}
-                <div className="relative h-80 w-[95%]">
-                  <Image
-                    src="/images/notre_objectif.png"
-                    alt="Vision"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-            {/* Vision Text */}
-            <div className="flex flex-col w-full md:w-1/2">
-              <h2 className="text-4xl font-bold mt-8 md:mt-0">
-                NOTRE OBJECTIF
-              </h2>
-              {/* Text Card */}
-              <div className="py-8">
-                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                Devenir le hub logistique de référence au Sénégal, et renforcer durablement notre position de leader sur 
-                l'ensemble de la région ouest-africaine en structurant une logistique d'excellence au service des flux du continent.
-                </p>
-                <Link
-                  href="/about#objectif"
-                  className="inline-flex items-center gap-2 bg-[var(--primary)] text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
-                >
-                  En savoir plus
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-          </div>
-
-          {/* Vision Column */}
-          <div className="flex flex-col md:flex-row mt-24"  data-aos="fade-right">
-            <div className="flex flex-col w-full md:w-1/2">
-              <h2 className="text-4xl font-bold">
-                NOTRE VISION
-              </h2>
-              {/* Text Card */}
-              <div className="py-8">
-                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
-                Bâtir un leader africain de la logistique intégrée,
-                reconnu pour son excellence opérationnelle tout en créant un environnement de travail épanouissant fondé sur l’esprit d’équipe,
-                le respect mutuel, et la progression professionnel de chacun.
-                </p>
-                <Link
-                  href="/about#vision"
-                  className="inline-flex bg-[var(--primary)] items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
-                >
-                  En savoir plus
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    strokeWidth={2}
-                    stroke="currentColor"
-                    className="w-5 h-5"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
-                    />
-                  </svg>
-                </Link>
-              </div>
-            </div>
-
-            <div className="relative w-full md:w-1/2">
-              <div className="absolute right-[-10%] w-[100%] h-[100%] top-[15%] bg-[var(--primary)]" />
-
-              {/* Content */}
-              <div className="relative flex flex-col gap-6">
-                {/* Image */}
-                <div className="relative h-80 ml-auto w-[95%]">
-                  <Image
-                    src="/images/new images/notre_vision.png"
-                    alt="Mission"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-
         </div>
+
       </div>
+
+      
 
       {/* Services Section */}
       <div className="py-16 px-4 md:px-16 lg:px-32 bg-[#FAFAFA]">
@@ -396,7 +245,7 @@ export default function Home() {
 
       {/* Présence en Afrique Section */}
       <div className="py-16 px-4 md:px-16 lg:px-32 mt-24">
-        <div className="flex flex-col-reverse md:flex-row gap-8 items-center">
+        <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="relative w-full md:w-2/3" data-aos="fade-right">
             <Image
               src="/images/new images/carte-accueil.png"
@@ -411,7 +260,7 @@ export default function Home() {
             data-aos="fade-left"
           >
             <h2 className="text-2xl md:text-3xl font-bold mb-6">
-              PRÉSENCE EN AFRIQUE
+              VOTRE PARTENAIRE LOGISTIQUE DE CONFIANCE EN AFRIQUE DE L'OUEST
             </h2>
             <p className="text-gray-700 leading-relaxed mb-6 text-justify">
             Ancrés stratégiquement en Afrique de l’Ouest,
@@ -419,26 +268,149 @@ export default function Home() {
               Grâce à nos infrastructures de pointe et à nos équipes locales expérimentées, 
               nous adaptons chaque service aux réalités et exigences de chaque marché.
             </p>
+            <Link
+                  href="/contact"
+                  className="inline-flex bg-[var(--primary)]  justify-items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
+                >
+                  Nous contacter
+                  
+                </Link>
           </div>
         </div>
       </div>
 
-      {/* References Section */}
-      <div className="pb-16 my-24 pt-8 px-4 md:px-8 lg:px-16">
-        <h2
-          className="text-3xl font-bold text-center mb-16"
-          data-aos="fade-up"
-        >
-          ILS NOUS FONT CONFIANCE
-        </h2>
-        <div className="overflow-hidden w-full">
-          <div className="flex  whitespace-nowrap">
-            {/* Doublons les images pour effet de boucle infinie */}
-            <LogoSlider />
-          </div>
-        </div>
+      {/* Mission & Vision Section */}
+      <div className="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="flex flex-col grid-cols-1 md:grid-cols-2 gap-12">
+          {/* Mission Column */}
+          <div className="flex flex-col-reverse md:flex-row" data-aos="fade-right gap-6">
+            <div className="flex flex-col w-full md:w-1/2 mt-20">
+              <h2 className="text-4xl font-bold">
+                NOTRE MISSION
+              </h2>
+              {/* Text Card */}
+              <div className="py-8">
+                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
+                Réinventer la logistique en Afrique de l’Ouest en proposant des solutions innovantes, 
+                intégrées et personnalisées, pour optimiser les chaînes d'approvisionnement et accompagner durablement la croissance de nos clients.
+                </p>
+                <Link
+                  href="/about#mission"
+                  className="inline-flex bg-[var(--primary)] items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
+                >
+                  Découvrir
+                  
+                </Link>
+              </div>
+            </div>
 
+            <div className="relative w-full md:w-1/2">
+              <div className="absolute right-[-10%] w-[100%] h-[100%] top-[15%] bg-[var(--primary)]" />
+
+              {/* Content */}
+              <div className="relative flex flex-col gap-6">
+                {/* Image */}
+                <div className="relative h-80 ml-auto w-[95%]">
+                  <Image
+                    src="/images/notre_mission.jpg"
+                    alt="Mission"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Vision Column */}
+          <div
+            className="flex flex-col md:flex-row mt-24 gap-8"
+            data-aos="fade-left"
+          >
+            <div className="relative w-full md:w-1/2">
+              {/* Background blue rectangle */}
+              <div className="absolute left-[-10%] w-full h-full top-[15%] bg-[var(--primary)] mx-auto md:mx-0" />
+
+              {/* Content */}
+              <div className="relative flex flex-col gap-6">
+                {/* Image */}
+                <div className="relative h-80 w-[95%]">
+                  <Image
+                    src="/images/notre_objectif.png"
+                    alt="Vision"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+            {/* Vision Text */}
+            <div className="flex flex-col w-full md:w-1/2">
+              <h2 className="text-4xl font-bold mt-8 md:mt-0">
+                NOTRE OBJECTIF
+              </h2>
+              {/* Text Card */}
+              <div className="py-8">
+                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
+                Devenir le hub logistique de référence au Sénégal, et renforcer durablement notre position de leader sur 
+                l'ensemble de la région ouest-africaine en structurant une logistique d'excellence au service des flux du continent.
+                </p>
+                <Link
+                  href="/about#objectif"
+                  className="inline-flex items-center gap-2 bg-[var(--primary)] text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
+                >
+                  Découvrir
+                  
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Vision Column */}
+          <div className="flex flex-col-reverse md:flex-row mt-24"  data-aos="fade-right">
+            <div className="flex flex-col w-full md:w-1/2 mt-20">
+              <h2 className="text-4xl font-bold">
+                NOTRE VISION
+              </h2>
+              {/* Text Card */}
+              <div className="py-8">
+                <p className="text-gray-600 leading-relaxed mb-6 text-justify">
+                Bâtir un leader africain de la logistique intégrée,
+                reconnu pour son excellence opérationnelle tout en créant un environnement de travail épanouissant fondé sur l’esprit d’équipe,
+                le respect mutuel, et la progression professionnel de chacun.
+                </p>
+                <Link
+                  href="/about#vision"
+                  className="inline-flex bg-[var(--primary)] items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
+                >
+                  Découvrir
+                  
+                </Link>
+              </div>
+            </div>
+
+            <div className="relative w-full md:w-1/2">
+              <div className="absolute right-[-10%] w-[100%] h-[100%] top-[15%] bg-[var(--primary)]" />
+
+              {/* Content */}
+              <div className="relative flex flex-col gap-6">
+                {/* Image */}
+                <div className="relative h-80 ml-auto w-[95%]">
+                  <Image
+                    src="/images/new images/notre_vision.png"
+                    alt="Mission"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
+
+      
       <Footer />
     </div>
   );

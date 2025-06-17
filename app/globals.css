@@ -313,6 +313,42 @@ h2 {
     opacity: 1;
   }
 }
+.tracking-in-contract-bck {
+  animation: tracking-in-contract-bck 1s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@keyframes tracking-in-contract-bck {
+  0% {
+    letter-spacing: 1em;
+    transform: translateZ(400px);
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+
+.kenburns-left {
+  animation: kenburns-left 5s ease-out both;
+}
+
+@keyframes kenburns-left {
+  0% {
+
+    transform: scale(1) translate(0, 0);
+    transform-origin: 16% 50%;
+  }
+  100% {
+    transform: scale(1.25) translate(-20px, 15px);
+    transform-origin: left;
+  }
+}
+
+
 
 
 
