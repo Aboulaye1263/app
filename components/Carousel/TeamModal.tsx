@@ -49,7 +49,7 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
                 </span>
               </div>
               {member.description.map((item, i) => (
-                <p className="text-gray-700 leading-relaxed mb-6 text-xs text-justify">
+                <p key={i} className="text-gray-700 leading-relaxed mb-6 text-xs text-justify">
                 {item}<br/>
               </p>
               ))}

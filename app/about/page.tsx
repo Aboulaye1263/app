@@ -13,6 +13,7 @@ import TeamCarousel from "@/components/Carousel/TeamCarousel";
 import Testimonial from "@/components/Carousel/TestimonialSlider";
 import TeamSection from "@/components/Carousel/TeamSection";
 import SliderValue from "@/components/Carousel/ValueSlider";
+import Timeline from "@/components/Timeline";
 
 
 export default function About() {
@@ -160,153 +161,8 @@ export default function About() {
             </p>
           </div>
           <div className="relative">
-            {/* Vertical Line */}
-            <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-[#F3DFA2]"></div>
-
-            {/* 2008 Entry */}
-            <div className="mb-4 relative" data-aos="fade-right">
-              <div className="flex items-center">
-                
-              
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                <div className="w-full pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-2">2007</h3>
-                  <p className="text-black text-end">
-                  <span className="font-medium">Naissance d’un acteur à part : TOM</span><br></br>
-                  Nous avons décidé de mettre en œuvre notre vision : 
-                  réinventer la logistique au Sénégal à travers des opérations intégrées, 
-                  une proximité client forte et une ambition régionale affirmée.
-                  </p>
-                </div>
-                <div className="w-full pl-8 text-left">
-                <img 
-                    src="/images/img-2007.jpg"
-                    alt="TOM MEDLOG Image header"
-                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
-                  />
-                </div>
-                
-                
-                
-              </div>
-            </div>
-
-            {/* 2014 Entry */}
-            <div className="mb-4 relative" data-aos="fade-left">
-              <div className="flex items-center">
-                {/* <div className="w-1/2 pr-8"></div> */}
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                <div className="w-1/2 pl-52 text-left">
-                <img 
-                    src="/images/img-2015.jpg"
-                    alt="TOM MEDLOG Image header"
-                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
-                  />
-                </div>
-                <div className="w-1/2 pl-8">
-                  <h3 className="text-2xl font-bold mb-2">2015</h3>
-                  <p className="text-black text-justify">
-                  <span className="font-medium">Alliance avec le Port Autonome de Dakar</span><br></br>
-                  Installation sur une plateforme logistique de 210.000 m², à 1 km du Port Autonome de Dakar.
-                  Une infrastructure unique au Sénégal par sa taille et sa proximité.
-                  Début d’une alliance stratégique avec le PAD pour repenser la logistique nationale et accompagner l’essor du commerce régional.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            {/* 2017 Entry */}
-            <div className="relative mt-8" data-aos="fade-right">
-              <div className="flex items-center">
-                <div className=" w-full pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-2">2017</h3>
-                  <p className="text-black text-end align-top">
-                  <span className="font-medium">Lancement de la Zone Unique de Dépotage (ZUD)</span><br></br>
-                  Création de la ZUD, initiative pionnière visant à centraliser les opérations de dépotage, 
-                  fluidifier les contrôles douaniers et accélérer les flux entre le port et l’hinterland, 
-                  notamment vers le Mali via corridor Dakar-Bamako.
-                  </p>
-                </div>
-                <div className="w-full pl-8 text-right">
-                    <img 
-                    src="/images/img-2017-zud.jpg"
-                    alt="TOM MEDLOG Image header"
-                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
-                  />
-                  
-                </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                {/* <div className="w-1/2 pl-8"></div> */}
-              </div>
-            </div>
-
-            {/* <div className="relative mt-8" data-aos="fade-right">
-              <div className="flex items-center">
-                <div className="w-1/2 pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-2"></h3>
-                  <p className="text-black text-end">
-                  <span className="font-medium">Mi 2017 - Démarrage des entrepôts et services logistiques spécialisés</span><br></br>
-                  TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
-                  de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
-                  répondant aux besoins concrets des grands importateurs nationaux.
-                  </p>
-                </div>
-                <div className="absolute left-1/2 top-4 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                <div className="w-1/2 pl-8"></div>
-              </div>
-            </div> */}
-
-            
-            {/* Today Entry */}
-            <div className="mb-4 mt-12 relative" data-aos="fade-left">
-              
-              <div className="flex items-center">
-              {/* <div className="w-1/2 pr-8"></div> */}
-              <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                <div className="w-1/2 pl-52 text-left">
-                <img 
-                    src="/images/img-2017-entrepot.jpg"
-                    alt="TOM MEDLOG Image header"
-                    className="w-96 h-48 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
-                  />
-                </div>
-                
-                <div className="w-1/2 pl-8">
-                  <h3 className="text-2xl font-bold mb-2">2017</h3>
-                  <p className="text-black text-justify">
-                  <span className="font-medium">
-                  Démarrage des entrepôts et services logistiques spécialisés</span><br></br>
-                  TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
-                  de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
-                  répondant aux besoins concrets des grands importateurs nationaux.
-                  </p>
-                </div>
-              </div>
-              
-            </div>
-
-            {/* 2017 Entry */}
-            <div className="relative mt-8" data-aos="fade-right">
-              <div className="flex items-center">
-                <div className=" w-full pr-8 text-right">
-                  <h3 className="text-2xl font-bold mb-2">Aujourd'hui</h3>
-                  <p className="text-black text-end align-top">
-                  <span className="font-medium">Champion national, pionnier régional</span><br></br>
-                  TOM est devenu le champion Sénégalais de la logistique et un acteur stratégique incontournable de l’industrie en Afrique de l’Ouest.
-                  </p>
-                </div>
-                <div className="w-full pl-8 text-right">
-                    <img 
-                    src="/images/aujourdhui.png"
-                    alt="TOM MEDLOG Image header"
-                    className="w-96 h-96 object-cover transition-transform duration-500 hover:scale-105 rounded-2xl"
-                  />
-                  
-                </div>
-                <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-[#F3DFA2] rounded-full"></div>
-                {/* <div className="w-1/2 pl-8"></div> */}
-              </div>
-            </div>
+            <Timeline />
+      
           </div>
           <div
             data-aos="fade-up"

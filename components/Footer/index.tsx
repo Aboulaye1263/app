@@ -26,7 +26,7 @@ export default function Footer() {
             <li><a href='/services'>Services</a></li>
             <li><a href='/blog'>Actualités</a></li>
             <li><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
-            <li>CGU</li>
+            <li><a href='/contact#form'>Contact</a></li>
            </ul>
           </div>
 

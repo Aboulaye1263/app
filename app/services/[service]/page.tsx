@@ -16,6 +16,7 @@ const serviceDetails = {
     title: ["Transport"],
     heroText: "Soyez livrez partout. Sans rupture. Sans retard. Sans compromis.",
     heroImage: "/images/banner_transport_new.png", // You'll need to add these images
+    bannerImage:"/images/transport-banner.jpg",
     description:
       "Camion, rail ou froid embarqué (GENSET) : nos solutions multimodales garantissent un transport sécurisé, rapide et fluide pour tous vos secteurs : agroalimentaire, pharma, industrie, grande distribution et services.",
     actionTitle: "Un besoin logistique ? Une urgence ?",
@@ -61,6 +62,7 @@ const serviceDetails = {
     title: ["Dépôt de"," Conteneurs"],
     heroText: "Votre partenaire de confiance pour la gestion de conteneurs.",
     heroImage: "/images/service_depot.png",
+    bannerImage:"/images/depot-banner.jpg",
     description:
       "Avec plus de 50.000 m² d’espace et de solutions complètes pour le stockage et la gestion de conteneurs sous douane, qu’ils soient vides, pleins, ou spéciaux comme les réfrigérés, nos infrastructures et équipements modernes garantissent sécurité et conformité."+
       "  ",
@@ -124,6 +126,7 @@ const serviceDetails = {
     title: ["Entreposage / Distribution"," de Marchandises"],
     heroText: "Stockez en toute confiance. Quelles que soient vos marchandises, nous avons l’espace, la sécurité et la solution.",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
+    bannerImage:"/images/other_services/entrepot_sac_jaune.png",
     description:
       "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client, quelles que soient la nature ou la complexité de vos produits."+
       "Besoin d’un espace de stockage adapté ? Contactez nos équipes pour plus d’informations.",
@@ -175,6 +178,7 @@ const serviceDetails = {
     title: ["Services à Valeur"," Ajoutée"],
     heroText: "Plus que du stockage : de la valeur à chaque étape",
     heroImage: "/images/reefers_new.png",
+    bannerImage:"/images/services-banner.jpg",
     description:
       "Dépotage, réparation, maintenance, Genset, conditionnement… Nos solutions spécialisées optimisent vos flux, prolongent la durée de vie des équipements et marchandises, et renforcent votre compétitivité. "+
       "Gagnez en efficacité dès maintenant. Contactez nos équipes pour une solution sur mesure ou un audit de vos besoins.",
@@ -346,13 +350,23 @@ export default function ServiceDetail() {
       </div> */}
 
 
-      <div className="bg-gray-500 dark:bg-gray-300">
-          <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
-              <h1 className="mb-4 text-4xl font-medium tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-gray-100">{service.actionTitle}</h1>
-              <p className="mb-8 text-lg font-normal text-gray-800 lg:text-xl sm:px-16 lg:px-48 dark:text-gray-800">{service.actionDescription}</p>
+      <div className="flex mx-auto mt-12 max-w-screen-xl bg-[var(--primary)] dark:bg-[var(--primary)] rounded-xl">
+          <div className="md:w-1/2 py-8 px-4 mx-auto text-center">
+         <div className="relative h-80 ml-auto w-[95%]">
+            <Image
+              src={service.bannerImage}
+              alt= {service.title.join(" ")}
+              fill
+              className="object-cover rounded-xl"
+            />
+          </div>
+          </div>
+          <div className="w-full py-8 px-8 mx-auto max-w-screen-xl text-center lg:py-16">
+              <h1 className="mb-4 text-3xl font-normal tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-gray-900">{service.actionTitle}</h1>
+              <p className="mb-8 text-lg font-normal text-gray-800 lg:text-xl sm:px-8 lg:px-48 dark:text-gray-800">{service.actionDescription}</p>
               <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                   <a href="/contact#form" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[var(--foreground)] hover:bg-gray-100 hover:text-gray-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
-                      Demandez un devis 
+                    Demandez un devis 
                   </a>
                    
               </div>

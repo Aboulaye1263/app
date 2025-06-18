@@ -9,7 +9,7 @@ const TeamCard = ({ member, onClick }: TeamCardProps) => {
   return (
     <div 
       className="group cursor-pointer bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 overflow-hidden"
-      onClick={onClick}
+      
     >
       <div className="relative overflow-hidden">
         <img 
@@ -27,9 +27,10 @@ const TeamCard = ({ member, onClick }: TeamCardProps) => {
         <p className="text-gray-600 font-medium mb-3">
           {member.position}
         </p>
-        <p className="text-gray-600 text-sm line-clamp-3">
+        <p className="text-gray-600 text-sm line-clamp-1">
           {member.description}
         </p>
+        <button className="items-justify hover:text-[var(--primary)]" onClick={onClick}>Lire la suite</button>
         
         {/* <div className="mt-4 flex flex-wrap gap-2">
           {member.skills.slice(0, 2).map((skill, index) => (

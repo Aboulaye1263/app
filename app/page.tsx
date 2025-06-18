@@ -248,11 +248,11 @@ export default function Home() {
         <div className="flex flex-col md:flex-row gap-8 items-center">
           <div className="relative w-full md:w-2/3" data-aos="fade-right">
             <Image
-              src="/images/new images/carte-accueil.png"
+              src="/images/new images/Carte-Afrique-TOM.png"
               alt="Carte de présence en Afrique"
               width={700}
               height={400}
-              className="object-cover rounded-lg shadow-lg transform hover:scale-105 transition-all duration-500"
+              className="object-cover shadow-lg transform hover:scale-105 transition-all duration-500"
             />
           </div>
           <div
@@ -269,7 +269,7 @@ export default function Home() {
               nous adaptons chaque service aux réalités et exigences de chaque marché.
             </p>
             <Link
-                  href="/contact"
+                  href="/contact#form"
                   className="inline-flex bg-[var(--primary)]  justify-items-center gap-2 text-black px-4 py-4 rounded-md font-semibold hover:gap-3 transition-all"
                 >
                   Nous contacter
