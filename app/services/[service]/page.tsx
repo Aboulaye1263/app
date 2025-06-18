@@ -126,7 +126,7 @@ const serviceDetails = {
     title: ["Entreposage / Distribution"," de Marchandises"],
     heroText: "Stockez en toute confiance. Quelles que soient vos marchandises, nous avons l’espace, la sécurité et la solution.",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
-    bannerImage:"/images/other_services/entrepot_sac_jaune.png",
+    bannerImage:"/images/Hangar 02.jpg",
     description:
       "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client, quelles que soient la nature ou la complexité de vos produits."+
       "Besoin d’un espace de stockage adapté ? Contactez nos équipes pour plus d’informations.",

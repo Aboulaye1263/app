@@ -30,7 +30,9 @@ const TeamCard = ({ member, onClick }: TeamCardProps) => {
         <p className="text-gray-600 text-sm line-clamp-1">
           {member.description}
         </p>
-        <button className="items-justify hover:text-[var(--primary)]" onClick={onClick}>Lire la suite</button>
+        <button className="items-justify text-[var(--primary)] hover:text-gray-900" onClick={onClick}>
+       
+          Lire la suite</button>
         
         {/* <div className="mt-4 flex flex-wrap gap-2">
           {member.skills.slice(0, 2).map((skill, index) => (
