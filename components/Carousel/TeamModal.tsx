@@ -11,9 +11,9 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
   if (!isOpen || !member) return null;
 
   return (
-    <div className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+    <div onClick={onClose} className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
       <div 
-        className="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-hidden shadow-2xl transform transition-all duration-300 scale-100"
+        className="bg-white rounded-2xl max-w-6xl w-full h-[70vh] overflow-hidden shadow-2xl transform transition-all duration-300 scale-100"
         onClick={(e) => e.stopPropagation()}
       >
         <div className="relative">
@@ -27,15 +27,15 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
           </Button>
           
           <div className="flex flex-col md:flex-row">
-            <div className="md:w-1/2">
+            <div className="md:w-2/3">
               <img 
                 src={member.image} 
                 alt={member.name}
-                className="w-full h-64 md:h-full object-cover"
+                className="w-full h-full object-cover"
               />
             </div>
             
-            <div className="md:w-1/2 p-8">
+            <div className="md:w-1/3 p-8 h-full md:h-[70vh] px-8 py-16 overflow-y-hidden md:overflow-y-auto [&::-webkit-scrollbar]:w-1 [&::-webkit-scrollbar-track]:bg-transparent [&::-webkit-scrollbar-thumb]:bg-[var(--primary)] scroll-smooth [&>*]:opacity-100 [&>*]:translate-y-0">
               <h2 className="text-3xl font-bold text-gray-900 mb-2">
                 {member.name}
               </h2>

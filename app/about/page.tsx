@@ -75,7 +75,7 @@ export default function About() {
           Une ambition née au Sénégal, une référence pour l’Afrique de l’Ouest.
           </span>
         </div>
-        <div className="animate-[updown_2s_ease-in-out_infinite] relative z-10">
+        <div className="animate-[updown_2s_ease-in-out_infinite]  relative z-10">
           {/* <svg
             width="80"
             height="52"
@@ -231,14 +231,14 @@ export default function About() {
                 <td className="w-1/3 px-4 py-28 bg-[var(--primary)] border-gray-300 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                    <CountUp end={10000} duration={5} prefix="+" separator="."/> EVP
+                    <CountUp end={10000} duration={5} prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> EVP
                   </div>
                   <div className="text-black">Capacité de stockage</div>
                 </td>
                 <td className="w-1/3 px-4 text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2">
-                   <CountUp end={150000} duration={5}  prefix="+" separator="."/> EVP
+                   <CountUp end={150000} duration={5}  prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> EVP
                   </div>
                   <div className="text-[#222221]">
                   Traitées par an
@@ -252,7 +252,7 @@ export default function About() {
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl text-white font-bold mb-2">
                     
-                    <CountUp end={40000} duration={5}  prefix="+" separator="."/> m²
+                    <CountUp end={40000} duration={5}  prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> m²
                   </div>
                   <div className="text-white">
                   Entrepôts dédiés aux matières premières
@@ -278,7 +278,7 @@ export default function About() {
                 <td className="w-1/3 border-gray-300 px-4 py-28 bg-[#222221] text-center relative overflow-hidden group hover:scale-110 transition-transform duration-300">
                   <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white/30 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
                   <div className="text-4xl font-bold mb-2 text-white dark:text-white">
-                    <CountUp end={250000} duration={5} prefix="+" separator="."/> m²
+                    <CountUp end={250000} duration={5} prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> m²
                   </div>
                   <div className="text-white">
                     De surface logistique portuaire
@@ -304,7 +304,7 @@ export default function About() {
                 <td className="text-center px-4 w-1/2 h-48 bg-[#222221]">
                   <div className="text-2xl font-bold mb-2 text-white" >
                     
-                  <CountUp end={40000} duration={5}  prefix="+" separator="."/> m²
+                  <CountUp end={40000} duration={5}  prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> m²
                   </div>
                   <div className="text-white">
                   Entrepôts dédiés aux matières premières
@@ -316,7 +316,7 @@ export default function About() {
               
                 <td className="border-r-2 border-t-2 px-4 bg-[#F3DFA2] border-gray-300 text-center w-1/2 h-48">
                   <div className="text-2xl font-bold mb-2">
-                    <CountUp end={10000} duration={5}  prefix="+" separator="."/> EVP
+                    <CountUp end={10000} duration={5}  prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> EVP
                   </div>
                   <div className="text-black">Capacité de stockage</div>
                 </td>
@@ -334,7 +334,7 @@ export default function About() {
               <tr className="h-48">
               <td className="border-r-2 border-t-2 px-4  text-center w-1/2 h-48">
                   <div className="text-2xl font-bold mb-2 text-black">
-                  <CountUp end={150000} duration={5}  prefix="+" separator="."/> EVP
+                  <CountUp end={150000} duration={5}  prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> EVP
                   </div>
                   <div className="text-black">
                   Traitées par an
@@ -343,7 +343,7 @@ export default function About() {
                 
                 <td className="border-t-2 px-4 bg-[#222221] text-center w-1/2 h-48">
                   <div className="text-2xl font-bold mb-2 text-white">
-                    <CountUp end={250000} duration={5} prefix="+" separator="."/> m²
+                    <CountUp end={250000} duration={5} prefix="+" separator="." enableScrollSpy={true} scrollSpyOnce={true}/> m²
                   </div>
                   <div className="text-white">
                     De surface logistique portuaire

@@ -66,7 +66,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                 alt={title}
                 className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
               />
-              <div className="absolute top-4 right-4 bg-white text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
+              <div className="absolute top-4 right-4 bg-white text-gray-900 dark:bg-white dark:text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
                 {year}
               </div>
             </div>
@@ -88,7 +88,7 @@ const TimelineItem: React.FC<TimelineItemProps> = ({
                 alt={title}
                 className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
               />
-              <div className="absolute top-4 left-4 lg:left-4 md:left-4  bg-[var(--primary)] text-white px-3 py-1 rounded-full text-sm font-semibold">
+              <div className="absolute top-4 left-4 lg:left-4 md:left-4 bg-white text-gray-900 dark:bg-white dark:text-gray-900 px-3 py-1 rounded-full text-sm font-semibold">
                 {year}
               </div>
             </div>
