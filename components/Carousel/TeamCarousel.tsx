@@ -35,7 +35,7 @@ const teamMembers: TeamMember[] = [
                  'Adossés au Groupe MSC, leader mondial du transport maritime, nous combinons une vision globale à une présence de proximité. Notre modèle repose sur une expertise de terrain, une culture de la performance, et une capacité à nous adapter aux besoins spécifiques du territoire.'+
                  'Chez TOM MEDLOG, nous croyons que la performance passe par l’humain, par l’excellence opérationnelle et par la rigueur au quotidien. Mon rôle est de mobiliser nos équipes autour de ces valeurs pour bâtir, chaque jour, une logistique plus fluide, plus intelligente, et porteuse de développement.'+
                  'Nous sommes prêts à relever vos défis logistiques avec réactivité, fiabilité et engagement. N’hésitez pas à nous faire confiance. Nous mettrons tout en œuvre pour vous satisfaire.',
-    image: '/images/team/raul-dagba.png',
+    image: '/images/team/raul.jpg',
   },
   {
     id: 3,

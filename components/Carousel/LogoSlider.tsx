@@ -14,21 +14,22 @@ const LogoSlider = () => {
   return (
     <div className="relative overflow-hidden w-full">
       <div 
-        className={`flex gap-6 ${isPaused ? 'animate-pause' : 'animate-scroll'}`}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
+        className={`flex gap-6 animate-scroll`}
+        
         style={{
           width: `${duplicatedCards.length * 420}px`,
         }}
       >
         {duplicatedCards.map((ref, index) => (
-          <div key={index} className="flex-none w-[200px] h-[150px] mx-4">
+          <div key={index} className={`flex-none w-[200px] h-[150px] mx-4 bg-transparent ${isPaused ? 'hover:[animation-play-state:paused]' : 'animate-scroll'}`}
+          onMouseEnter={() => setIsPaused(true)}
+        onMouseLeave={() => setIsPaused(false)}>
                           <Image
                             src={ref}
                             alt={`Reference ${index + 1}`}
                             width={200}
                             height={150}
-                            className=" hover:shadow-xl transition-all duration-300 hover:scale-105 w-full h-full object-contain"
+                            className=" transition-all duration-50 hover:scale-105 w-full h-full object-contain"
                             loading="eager"
                             priority={index < refs.length} // Priorité sur le premier set uniquement
                             quality={100}

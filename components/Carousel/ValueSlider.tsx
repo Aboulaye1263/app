@@ -56,7 +56,7 @@ const SliderValue = () => {
   return (
     <div className="relative overflow-hidden">
       <div 
-        className={`flex gap-6 ${isPaused ? 'animate-pause' : 'animate-scroll'}`}
+        className={`flex gap-6 animate-scroll`}
         onMouseEnter={() => setIsPaused(true)}
         onMouseLeave={() => setIsPaused(false)}
         style={{
@@ -65,6 +65,7 @@ const SliderValue = () => {
       >
         {duplicatedCards.map((card, index) => (
           <Card
+            
             key={`${card.id}-${index}`}
             icon={card.icon}
             title={card.title}
