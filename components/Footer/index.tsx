@@ -22,11 +22,11 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">Liens utiles</h3>
            <ul>
-            <li  className="hover:translate-x-2 hover:underline hover:font-medium" ><a href='/about'>A propos</a></li>
-            <li className="hover:translate-x-2 hover:underline hover:font-medium"><a href='/services'>Services</a></li>
-            <li className="hover:translate-x-2 hover:underline hover:font-medium"><a href='/blog'>Actualités</a></li>
-            <li className="hover:translate-x-2 hover:underline hover:font-medium"><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
-            <li className="hover:translate-x-2 hover:underline hover:font-medium"><a href='/contact#form'>Contact</a></li>
+            <li  className="" ><a href='/about'>A propos</a></li>
+            <li><a href='/services'>Services</a></li>
+            <li><a href='/blog'>Actualités</a></li>
+            <li><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
+            <li><a href='/contact#form'>Contact</a></li>
            </ul>
           </div>
 
@@ -89,7 +89,6 @@ export default function Footer() {
                       fill="#fff"
                       d="M437 0H75C33.648 0 0 33.648 0 75v362c0 41.352 33.648 75 75 75h151V331h-60v-90h60v-61c0-49.629 40.371-90 90-90h91v90h-91v61h91l-15 90h-76v181h121c41.352 0 75-33.648 75-75V75c0-41.352-33.648-75-75-75m0 0"
                       data-original-color="#000000ff"
-                      
                     ></path>
                   </svg>
               </Link>

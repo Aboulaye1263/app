@@ -14,7 +14,6 @@ import Testimonial from "@/components/Carousel/TestimonialSlider";
 import TeamSection from "@/components/Carousel/TeamSection";
 import SliderValue from "@/components/Carousel/ValueSlider";
 import Timeline from "@/components/Timeline";
-import NewTimeline from "@/components/NewTimeline";
 
 
 export default function About() {
@@ -162,14 +161,12 @@ export default function About() {
             </p>
           </div>
           <div className="relative">
-            {/* <Timeline /> */}
-
-            <NewTimeline />
+            <Timeline />
       
           </div>
           <div
             data-aos="fade-up"
-            className="flex flex-col gap-4 items-center mt-4 pb-4"
+            className="flex flex-col gap-4 items-center mt-16 pb-4"
           >
             <p className="text-black font-bold text-sm md:text-base text-center">
             TOM, c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,

@@ -5,12 +5,11 @@ import HeaderMenu from "@/components/Header/HeaderMenu";
 import Link from "next/link";
 import CarouselImages from "@/components/Carousel/CarouselImages";
 import AOS from "aos";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "aos/dist/aos.css";
 import { services } from "@/constants/services";
 import { refs } from "@/constants/refs";
 import LogoSlider from "@/components/Carousel/LogoSlider";
-import ProgressBar from "@/components/ProgressBar";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -18,12 +17,6 @@ export default function Home() {
       once: true,
     });
   }, []);
-
-  const [progress, setProgress] = useState(0);
-  const increaseProgress = () => {
-    setProgress((prev) => Math.min(prev + 10, 100));
-    // Increase progress by 10%
-};
 
   const items = [
     <Image
@@ -50,8 +43,6 @@ export default function Home() {
   ];
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <ProgressBar />
-      
       <HeaderMenu />
 
       {/* Hero Section - Enhanced */}
@@ -59,7 +50,7 @@ export default function Home() {
         <CarouselImages items={items} fetchSlideCount />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
-          <div className="max-w-5xl md:justify-items-start justify-items-center" data-aos="fade-up">
+          <div className="max-w-5xl" data-aos="fade-up">
             <h1 className="text-3xl m-4 md:text-7xl font-medium mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
               Premier port sec en
               <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>
@@ -424,7 +415,3 @@ export default function Home() {
     </div>
   );
 }
-function setProgress(arg0: (prev: any) => number) {
-  throw new Error("Function not implemented.");
-}
-
