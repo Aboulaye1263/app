@@ -52,7 +52,7 @@ export default function Home() {
         <CarouselImages items={items} fetchSlideCount />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
-          <div className="max-w-5xl" data-aos="fade-up">
+          <div className="max-w-5xl justify-items-center md:justify-items-start" data-aos="fade-up">
             <h1 className="text-3xl m-4 md:text-7xl font-medium mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
               Premier port sec en
               <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>

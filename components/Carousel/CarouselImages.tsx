@@ -47,10 +47,10 @@ export default function CarouselImages({
       {/* Navigation Arrows */}
       <button
         onClick={goToPrevious}
-        className="absolute left-0 md:left-5 top-1/2 -translate-y-1/2 z-10 bg-white/50 md:bg-transparent rounded-r-lg md:rounded-none hover:scale-125 transition-transform duration-300"
+        className="absolute left-0 md:left-5 top-1/2 -translate-y-1/2 z-10 bg-transparent rounded-r-lg md:rounded-none hover:scale-125 transition-transform duration-300"
         aria-label="Previous slide"
       >
-        <div className="relative w-8 md:w-12 h-12 md:h-16">
+        <div className="relative w-8 md:w-12 h-8 md:h-16">
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
               width="24"
@@ -94,10 +94,10 @@ export default function CarouselImages({
       {/* Next Arrow */}
       <button
         onClick={goToNext}
-        className="absolute right-0 md:right-5 top-1/2 -translate-y-1/2 z-10 bg-white/50 md:bg-transparent rounded-l-lg md:rounded-none hover:scale-125 transition-transform duration-300"
+        className="absolute right-0 md:right-5 top-1/2 -translate-y-1/2 z-10 bg-transparent rounded-l-lg md:rounded-none hover:scale-125 transition-transform duration-300"
         aria-label="Next slide"
       >
-        <div className="relative w-8 md:w-12 h-12 md:h-16">
+        <div className="relative w-8 md:w-12 h-8 md:h-16">
           <div className="absolute inset-0 flex items-center justify-center">
             <svg
               width="24"
