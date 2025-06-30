@@ -56,9 +56,8 @@ const SliderValue = () => {
   return (
     <div className="relative overflow-hidden">
       <div 
-        className={`flex gap-6 ${isPaused ? 'animate-pause' : 'animate-scroll'}`}
-        onMouseEnter={() => setIsPaused(true)}
-        onMouseLeave={() => setIsPaused(false)}
+        className={`flex gap-6 ${isPaused ? 'hover:[animation-play-state:paused]' : 'animate-scroll'}`}
+        
         style={{
           width: `${duplicatedCards.length * 320}px`,
         }}

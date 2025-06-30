@@ -40,10 +40,11 @@ export default function BlogPage() {
           />
         </div>
         <div className="kenburns-left absolute w-full min-h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        {/* <h1 className="tracking-in-contract-bck absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-bold mb-8 leading-tight text-white z-10">
-          Actualités et <span className="text-[#F3DFA2]">Annonces</span>
-        </h1> */}
-        <TypingText title="Actualités et" coloredTitle=' annonces' />
+        <h1 className="w-full whitespace-nowrap animate-typing overflow-hidden  border-r-4 border-r-white border-opacity-0 pr-5 pt-2 font-medium  absolute top-1/3 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-5xl md:text-7xl  mb-4 leading-tight text-white z-10">
+          Actualités et
+          <span className="text-[#F3DFA2]"> Annonces</span>
+        </h1>
+        
         
         <p className="absolute w-full md:bottom-1/2 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-lg md:text-xl md:mt-12 mb-0 max-w-5xl leading-relaxed opacity-90 text-center"> 
         Restez informé des dernières tendances et innovations dans la logistique au Sénégal.  

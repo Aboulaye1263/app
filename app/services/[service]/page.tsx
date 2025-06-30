@@ -13,7 +13,7 @@ import TypingText from "@/components/TypingText";
 // Service details map
 const serviceDetails = {
   transport: {
-    title: ["Transport"],
+    title: "Transport",
     heroText: "Soyez livrez partout. Sans rupture. Sans retard. Sans compromis.",
     heroImage: "/images/banner_transport_new.png", // You'll need to add these images
     bannerImage:"/images/transport-banner.jpg",
@@ -59,7 +59,7 @@ const serviceDetails = {
     ],
   },
   depot: {
-    title: ["Dépôt de"," Conteneurs"],
+    title: "Dépôt de Conteneurs",
     heroText: "Votre partenaire de confiance pour la gestion de conteneurs.",
     heroImage: "/images/service_depot.png",
     bannerImage:"/images/depot-banner.jpg",
@@ -123,7 +123,7 @@ const serviceDetails = {
     ],
   },
   entreposage: {
-    title: ["Entreposage / Distribution"," de Marchandises"],
+    title: "Entreposage / Distribution de Marchandises",
     heroText: "Stockez en toute confiance. Quelles que soient vos marchandises, nous avons l’espace, la sécurité et la solution.",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
     bannerImage:"/images/Hangar 02.jpg",
@@ -175,7 +175,7 @@ const serviceDetails = {
     ],
   },
   solution: {
-    title: ["Services à Valeur"," Ajoutée"],
+    title: "Services à Valeur Ajoutée",
     heroText: "Plus que du stockage : de la valeur à chaque étape",
     heroImage: "/images/reefers_new.png",
     bannerImage:"/images/services-banner.jpg",
@@ -311,7 +311,7 @@ export default function ServiceDetail() {
            <Image
            
            src={service.heroImage}
-           alt= {service.title.join(" ")}
+           alt= {service.title}
            fill
            className="object-cover"
            priority
@@ -321,7 +321,7 @@ export default function ServiceDetail() {
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute inset-0 flex-wrap items-center justify-center">
           
-            <TypingText title={service.title[0]} coloredTitle={service.title[1]} />
+            <TypingText title={service.title} />
             
          
           
@@ -355,7 +355,7 @@ export default function ServiceDetail() {
          <div className="relative h-80 ml-auto w-[95%]">
             <Image
               src={service.bannerImage}
-              alt= {service.title.join(" ")}
+              alt= {service.title}
               fill
               className="object-cover rounded-xl"
             />

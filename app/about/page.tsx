@@ -14,6 +14,7 @@ import Testimonial from "@/components/Carousel/TestimonialSlider";
 import TeamSection from "@/components/Carousel/TeamSection";
 import SliderValue from "@/components/Carousel/ValueSlider";
 import Timeline from "@/components/Timeline";
+import NewTimeline from "@/components/NewTimeline";
 
 
 export default function About() {
@@ -140,10 +141,12 @@ export default function About() {
       </div>
 
       {/* Timeline Section */}
-      <div className="relative py-16 w-full md:pt-10">
-
+      <div className="relative py-16 w-full md:pt-10 ">
+      
         <div className="absolute w-full h-full bottom-0 right-0 left-0 bg-gradient-to-r from-white/80 to-white/50 -z-1" />
+        
         <div className="container mx-auto px-4 z-20">
+       
           <div id="histoire" className="relative text-4xl font-bold text-center pt-12 mb-12 directed-scroll text-black">
           <h2>
             NOTRE HISTOIRE
@@ -161,7 +164,7 @@ export default function About() {
             </p>
           </div>
           <div className="relative">
-            <Timeline />
+            <NewTimeline />
       
           </div>
           <div
@@ -191,7 +194,7 @@ export default function About() {
             <div className="flex items-baseline mb-4">
               <div>
                 <span
-                  className="text-6xl font-bold text-[#F3DFA2] "
+                  className="text-6xl font-bold text-[#F3DFA2]"
                   style={{ animationDelay: "0.5s" }}
                 >
                   18

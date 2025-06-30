@@ -22,11 +22,11 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">Liens utiles</h3>
            <ul>
-            <li  className="" ><a href='/about'>A propos</a></li>
-            <li><a href='/services'>Services</a></li>
-            <li><a href='/blog'>Actualités</a></li>
-            <li><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
-            <li><a href='/contact#form'>Contact</a></li>
+            <li  className="hover:translate-x-2 hover:font-medium hover:underline" ><a href='/about'>A propos</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/services'>Services</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/blog'>Actualités</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/contact#form'>Contact</a></li>
            </ul>
           </div>
 

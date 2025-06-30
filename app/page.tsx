@@ -10,6 +10,7 @@ import "aos/dist/aos.css";
 import { services } from "@/constants/services";
 import { refs } from "@/constants/refs";
 import LogoSlider from "@/components/Carousel/LogoSlider";
+import ProgressBar from "@/components/ProgressBar";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -47,6 +48,7 @@ export default function Home() {
 
       {/* Hero Section - Enhanced */}
       <div className="relative h-screen">
+        <ProgressBar />
         <CarouselImages items={items} fetchSlideCount />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
