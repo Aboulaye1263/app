@@ -3,12 +3,14 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import HeaderMenu from "@/components/Header/HeaderMenu";
 import { Card } from "flowbite-react";
+import ProgressBar from "@/components/ProgressBar";
 
 
 export default function Contact() {
   return (
     <main className="min-h-screen">
       <HeaderMenu isScrolledAndImmutable/>
+      <ProgressBar />
 
       {/* Contact Section */}
       <div 

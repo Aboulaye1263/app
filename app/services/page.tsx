@@ -10,6 +10,7 @@ import { services } from "@/constants/services";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { url } from "inspector";
+import ProgressBar from "@/components/ProgressBar";
 
 // bg-gradient-to-br from-[var(--primary)] to-[var(--primary)]/70
 
@@ -71,6 +72,7 @@ export default function ServicesPage() {
         </div>
       </div> */}
       <div data-aos="flip-left" className="relative h-screen flex flex-col justify-end items-center pb-32">
+      <ProgressBar />
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
             src="/images/banner_services.png"

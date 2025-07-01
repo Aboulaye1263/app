@@ -10,6 +10,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import CountUp from "react-countup";
 import TypingText from "@/components/TypingText";
+import ProgressBar from "@/components/ProgressBar";
 // Service details map
 const serviceDetails = {
   transport: {
@@ -307,6 +308,7 @@ export default function ServiceDetail() {
       {/* Hero Section */}
       
       <div className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full">
+      <ProgressBar />
       
            <Image
            

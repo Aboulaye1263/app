@@ -15,6 +15,7 @@ import TeamSection from "@/components/Carousel/TeamSection";
 import SliderValue from "@/components/Carousel/ValueSlider";
 import Timeline from "@/components/Timeline";
 import NewTimeline from "@/components/NewTimeline";
+import ProgressBar from "@/components/ProgressBar";
 
 
 export default function About() {
@@ -59,6 +60,7 @@ export default function About() {
 
       {/* Hero Section */}
       <div className="relative h-screen flex flex-col justify-end items-center pb-32">
+      <ProgressBar />
         <div data-aos="fade-in" className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
             src="/images/new images/header.png"

@@ -9,6 +9,7 @@ import Link from "next/link";
 import { Button, Modal, ModalBody, ModalFooter, ModalHeader, modalTheme } from "flowbite-react";
 import localFont from "next/font/local";
 import { normalize } from "path";
+import ProgressBar from "@/components/ProgressBar";
 
 export default function WhyJoinUs() {
   useEffect(() => {
@@ -26,6 +27,7 @@ export default function WhyJoinUs() {
       <HeaderMenu isScrolledAndImmutable/>
       {/* Hero Section */}
             <div className="relative h-screen flex flex-col justify-end items-center pb-32">
+            <ProgressBar />
               <div className="absolute top-0 left-0 right-0 -z-99 h-full">
                 <Image
                   src="/images/joinUs-banner.png"
