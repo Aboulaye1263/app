@@ -49,7 +49,7 @@ export default function WhyJoinUs() {
               Un pionnier <span className="text-[#F3DFA2]">SÉNÉGALAIS</span>
               </h1>
               <div className="absolute top-[60%] md:top-[60%] lg:top-[65%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-full md:w-auto text-center z-10">
-                <p className="md:w-[95vh] text-white text-sm md:text-xl text-center mb-6 mt-12 px-10 ">
+                <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-12 px-10 ">
                 TOM est une entreprise sénégalaise fière de ses racines. Créée et dirigée
                 localement, nous sommes un véritable pionnier. Premier opérateur à implanter
                 un port à sec en Afrique de l’Ouest, nous avons établi la norme pour tout le

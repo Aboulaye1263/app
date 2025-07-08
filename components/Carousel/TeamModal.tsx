@@ -19,9 +19,9 @@ const TeamModal = ({ member, isOpen, onClose }: TeamModalProps) => {
         <div className="relative">
           <Button
             onClick={onClose}
-            className="absolute top-4 right-4 z-10 p-2 bg-white/90 hover:bg-white rounded-full shadow-lg transition-all duration-200 hover:scale-110"
+            className="absolute top-4 right-4 z-10 p-2 rounded-full shadow-lg transition-all duration-200 hover:scale-110"
             size="sm"
-            color="gray"
+            color="dark"
           >
             ✕
           </Button>

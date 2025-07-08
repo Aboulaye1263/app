@@ -53,6 +53,7 @@ export default function ServicesPage() {
   return (
     <main className="min-h-screen bg-[#FAFAFA] overflow-x-hidden">
       <HeaderMenu isScrolledAndImmutable/>
+      <ProgressBar />
 
       {/* Hero Section */}
       {/* <div className="relative pt-32 pb-20 px-4 sm:px-6 lg:px-8">
@@ -72,7 +73,7 @@ export default function ServicesPage() {
         </div>
       </div> */}
       <div data-aos="flip-left" className="relative h-screen flex flex-col justify-end items-center pb-32">
-      <ProgressBar />
+      
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
             src="/images/banner_services.png"

@@ -1,14 +1,15 @@
 
 import { VerticalTimeline, VerticalTimelineElement }  from 'react-vertical-timeline-component';
-import 'react-vertical-timeline-component/style.min.css';
+import '../components/timeline.css';
 
 const NewTimeline = () => {
 return (
-    <div className="min-h-screen py-4 px-4">
+    <div className="h-full py-4 px-4">
         {/* <div className="absolute md:left-1/2 lg:left-1/2 left-8 transform md:transform lg:transform -translate-x-1/2 md:-translate-x-1/2 lg:-translate-x-1/2 translate-x-0 w-1 bg-[var(--primary)] h-full rounded-full shadow-lg z-10"></div> */}
 <VerticalTimeline
 lineColor="#eeD484"
-layout='2-columns'>
+layout='2-columns'
+className='lg:h-[300vh] md:h-[420vh]'>
   <VerticalTimelineElement
     className="vertical-timeline-element--work font-light"
     contentStyle={{color: '#171717' }}
@@ -46,7 +47,7 @@ layout='2-columns'>
         className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
     />
     <br></br>
-    <h3 className="vertical-timeline-element-title font-medium text-2xl px-5">Alliance avec le Port Autonome de Dakar</h3>
+    <h3 className="vertical-timeline-element-title font-medium md:text-2xl px-5">Alliance avec le Port Autonome de Dakar</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
     
     
@@ -71,7 +72,7 @@ layout='2-columns'>
         className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
     />
     <br></br>
-    <h3 className="vertical-timeline-element-title font-medium text-2xl px-5">Lancement de la Zone Unique de Dépotage (ZUD)</h3>
+    <h3 className="vertical-timeline-element-title font-medium md:text-2xl px-5">Lancement de la Zone Unique de Dépotage (ZUD)</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Los Angeles, CA</h4> */}
     
     
@@ -95,7 +96,7 @@ layout='2-columns'>
         className="w-full h-48 object-cover transition-transform duration-500 hover:scale-105"
     />
     <br></br>
-    <h3 className="vertical-timeline-element-title font-medium text-2xl px-5">Démarrage des entrepôts et services logistiques spécialisés</h3>
+    <h3 className="vertical-timeline-element-title font-medium md:text-2xl px-5">Démarrage des entrepôts et services logistiques spécialisés</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">San Francisco, CA</h4> */}
    
     
@@ -119,7 +120,7 @@ layout='2-columns'>
         className="w-full h-48 object-contain rounded-lg transition-transform duration-500 hover:scale-105"
     />
     <br></br>
-    <h3 className="vertical-timeline-element-title font-medium text-2xl px-5">Champion national, pionnier régional</h3>
+    <h3 className="vertical-timeline-element-title font-medium md:text-2xl px-5">Champion national, pionnier régional</h3>
     {/* <h4 className="vertical-timeline-element-subtitle">Online Course</h4> */}
     
    
