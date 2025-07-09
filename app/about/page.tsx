@@ -32,25 +32,41 @@ export default function About() {
       name: "Papice MENDY",
       role: "Responsable Logistique - Touba Fruit/Senfruit",
       image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=300&h=300",
-      text: "En tant qu’acteur majeur de l’exportation de fruits frais vers l’Europe, nous avons trouvé en Tom Medlog Sénégal un partenaire logistique fiable et réactif. Grâce à leur maîtrise du transport réfrigéré et de la chaîne logistique, nous avons considérablement réduit nos délais d’acheminement et amélioré la traçabilité de nos expéditions jusqu’au Port de Dakar. Leur équipe est à l’écoute, disponible et force de proposition, ce qui nous permet de nous concentrer pleinement sur notre cœur de métier. Nous recommandons vivement Tom Medlog à toute entreprise recherchant un service logistique de qualité au Sénégal.",
+      text: "En tant qu’acteur majeur de l’exportation de fruits frais vers l’Europe,"+
+      " nous avons trouvé en Tom Medlog Sénégal un partenaire logistique fiable et réactif."+
+      " Grâce à leur maîtrise du transport réfrigéré et de la chaîne logistique, nous avons considérablement réduit nos délais d’acheminement et amélioré la traçabilité de nos expéditions jusqu’au Port de Dakar."+
+      " Leur équipe est à l’écoute, disponible et force de proposition, ce qui nous permet de nous concentrer pleinement sur notre cœur de métier. "+
+      "Nous recommandons vivement Tom Medlog à toute entreprise recherchant un service logistique de qualité au Sénégal.",
           },
     {
       name: "Vincent HUET",
       role: "Responsable Achats et Transit - Agroline SA",
       image: "https://images.unsplash.com/photo-1599566150163-29194dcaad36?auto=format&fit=crop&q=80&w=300&h=300",
-      text: "En qualité de Responsable Achats et Transit/supply chain d’Agroline SA, une des plus grandes entreprises agro-alimentaires du Sénégal, je tiens à exprimer notre entière satisfaction quant à notre collaboration avec TOM MEDLOG. Leurs services de transport, de logistique et de stockage de conteneurs sont essentiels pour notre chaîne d’approvisionnement, garantissant la qualité et la fraîcheur de nos produits. TOM MEDLOG allie professionnalisme et réactivité, nous permettant ainsi de rester compétitifs sur le marché ouest-africain. Grâce à leur expertise et leur disponibilité, nous pouvons nous concentrer sur notre mission : offrir des produits authentiques inspirés des saveurs traditionnelles du Sénégal.",
+      text: "En qualité de Responsable Achats et Transit/supply chain d’Agroline SA, une des plus grandes entreprises agro-alimentaires du Sénégal,"+
+      " je tiens à exprimer notre entière satisfaction quant à notre collaboration avec TOM MEDLOG. Leurs services de transport,"+
+      " de logistique et de stockage de conteneurs sont essentiels pour notre chaîne d’approvisionnement, garantissant la qualité et la fraîcheur de nos produits."+
+      " TOM MEDLOG allie professionnalisme et réactivité, nous permettant ainsi de rester compétitifs sur le marché ouest-africain. "+
+      "Grâce à leur expertise et leur disponibilité, nous pouvons nous concentrer sur notre mission : offrir des produits authentiques inspirés des saveurs traditionnelles du Sénégal.",
           },
     {
-      name: "Sophie Martin",
-      role: "Responsable des Opérations",
+      name: " ",
+      role: "Service logistique - PATISEN",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=300&h=300",
-      text: "La solution proposée a transformé notre façon de travailler. Nous avons gagné en efficacité et en productivité de manière significative.",
+      text: "Dans un secteur aussi exigeant que le nôtre, la fiabilité logistique est essentielle. "+
+      "Avec Tom Medlog, nous avons trouvé bien plus qu’un prestataire : un véritable partenaire stratégique. "+
+      "Leur expertise, leur réactivité et leur parfaite connaissance de la logistique et des opérations portuaires ont largement contribué à fluidifier notre supply chain,"+
+      " au Sénégal comme à l’international. Grâce à cette collaboration, nous gagnons en performance logistique tout en maintenant les standards de qualité qui font la réputation de PATISEN à travers l’Afrique et au-delà."+
+      " Tom Medlog partage nos valeurs de rigueur, d’innovation et de respect des engagements. C’est ce qui fait toute la différence. ",
           },
     {
-      name: "Lucas Petit",
-      role: "Directeur Technique",
+      name: "Mouna Assad",
+      role: "Gérante de Tropical Fruits",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300&h=300",
-      text: "Une collaboration fructueuse et agréable. Leur expertise nous a permis d'atteindre nos objectifs plus rapidement que prévu.",
+      text: "En tant qu’entreprise agroalimentaire spécialisée dans la distribution de fruits et légumes frais à travers le Sénégal,"+
+      " nous avons des exigences élevées en matière de qualité, de rigueur et de réactivité. Depuis plus de 10 ans, TOM MEDLOG est un partenaire de confiance qui comprend parfaitement nos impératifs et anticipe nos besoins."+
+      " Leur maîtrise des opérations logistiques, la fiabilité de leur service de transport, la gestion optimisée du stockage des conteneurs, ainsi que la prise en charge experte des conteneurs frigorifiques,"+
+      " sont autant d’éléments clés qui nous permettent de garantir à nos clients des produits toujours frais, livrés dans les meilleurs délais."+
+      " TOM MEDLOG incarne les valeurs qui nous sont chères : professionnalisme, efficacité et engagement. C’est un partenaire stratégique sur lequel nous savons pouvoir nous appuyer au quotidien.",
           }
   ];
 
@@ -550,9 +566,10 @@ export default function About() {
         </h2>
           <Carousel pauseOnHover
           indicators={true}
+          
           className="h-[400px] md:h-[500px]">
             {testimonials.map((item, index) => (
-            <div key={index} className="w-1/2 flex flex-col rounded-xl shadow-lg bg-[var(--primary)] items-center justify-center space-y-4 p-8">
+            <div key={index} className="w-[95vh] flex flex-col rounded-xl shadow-lg bg-[var(--primary)] items-center justify-center space-y-4 p-8">
               {/* <Image
                 src={item.image}
                 alt={item.name}

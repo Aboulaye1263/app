@@ -9,7 +9,7 @@ return (
 <VerticalTimeline
 lineColor="#eeD484"
 layout='2-columns'
-className='lg:h-[300vh] md:h-[420vh]'>
+className='lg:h-[320vh]'>
   <VerticalTimelineElement
     className="vertical-timeline-element--work font-light"
     contentStyle={{color: '#171717' }}
@@ -84,7 +84,7 @@ className='lg:h-[300vh] md:h-[420vh]'>
     </div>
   </VerticalTimelineElement>
   <VerticalTimelineElement
-    className="vertical-timeline-element--work md:-top-[70vh] lg:-top-[60vh]"
+    className="vertical-timeline-element--work md:-top-[70vh] lg:-top-[50vh]"
     date=""
     iconStyle={{ background: '#EED484', color: '#eed484', width: '0px', height: '0px', borderWidth: '0', boxShadow: 'none' }}
     contentArrowStyle={{ borderRight: '7px solid  #EED484' }}
