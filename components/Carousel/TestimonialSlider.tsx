@@ -1,6 +1,6 @@
 import React from "react";
 import { cn } from "@/lib/utils";
-import { Card, QuoteRightIcon, Avatar,} from "flowbite-react";
+import { Card, QuoteRightIcon, Avatar, Button} from "flowbite-react";
 
 interface TestimonialProps {
   quote: string;

@@ -1,5 +1,5 @@
-
-import React, { useEffect, useState } from 'react';
+"use client";
+import { useEffect, useState } from 'react';
 
 const ProgressBar = () => {
   const [scrollProgress, setScrollProgress] = useState(0);

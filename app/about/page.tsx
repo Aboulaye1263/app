@@ -86,7 +86,7 @@ export default function About() {
           />
         </div>
         <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="tracking-in-expand absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-medium mb-8 leading-tight text-white z-10">
+        <h1 className="tracking-in-expand absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-3xl md:text-7xl font-medium mb-8 leading-tight text-white z-10">
         Champion de la  <span className="text-[#F3DFA2]">logistique</span>
         </h1>
         <div className="absolute top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-auto text-center z-10">
@@ -403,7 +403,7 @@ export default function About() {
               alt="Medlog"
               width={800}
               height={600}
-              className="w-auto bg-gray-100 rounded-lg h-full opacity-100"
+              className="w-auto bg-gray-100 rounded-lg  opacity-100"
             />
           </div>
           {/* Objectif Section */}
@@ -416,7 +416,7 @@ export default function About() {
               alt="Medlog"
               width={800}
               height={600}
-              className=" md:w-1/2 bg-gray-100 rounded-lg h-full opacity-100"
+              className="md:w-1/2 bg-gray-100 h-full rounded-lg opacity-100"
             />
             <div id="objectif" className="flex flex-col md:w-1/2 directed-scroll">
               <div>
@@ -460,7 +460,7 @@ export default function About() {
               alt="Medlog"
               width={800}
               height={600}
-              className="h-full rounded-lg opacity-100"
+              className="w-full rounded-lg opacity-100"
             />
           </div>
         </div>
@@ -550,14 +550,14 @@ export default function About() {
                   className="object-cover rounded-lg"
                 />
               </div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-10 md:mt-16 text-end">Amine BOUABID</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-10 md:mt-16 text-end">Franck De VARGAS</h3>
               <p className="text-gray-600 text-end">Directeur Général</p>
             </div>
           </div>
         </div>
       </div>
 
-      <div className="relative min-h-[90vh] max-h-[600px] lg:w-[70%] lg:px-4 lg:mx-auto">
+      <div className="relative md:min-h-[90%] min-h-[120vh] max-h-[600px] lg:w-[70%] lg:px-4 lg:mx-auto">
       <h2
           className="text-3xl font-bold text-center mb-2"
           data-aos="fade-up"
@@ -567,7 +567,7 @@ export default function About() {
           <Carousel pauseOnHover
           indicators={true}
           
-          className="h-screen md:h-[500px] ">
+          className="h-[110vh] md:h-[500px] ">
             {testimonials.map((item, index) => (
             <div key={index} className="w-[75%] flex flex-col rounded-xl shadow-lg bg-[var(--primary)] items-center justify-center space-y-4 p-8">
               {/* <Image

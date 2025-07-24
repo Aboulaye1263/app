@@ -72,7 +72,7 @@ export default function ServicesPage() {
           </h1>
         </div>
       </div> */}
-      <div data-aos="flip-left" className="relative h-screen flex flex-col justify-end items-center pb-32">
+      <div data-aos="flip-left" className="relative h-screen flex flex-col justify-items-center pb-32">
       
         <div className="absolute top-0 left-0 right-0 -z-99 h-full">
           <Image
@@ -82,15 +82,13 @@ export default function ServicesPage() {
             className="object-cover"
           />
         </div>
-        <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="text-focus-in absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-2 leading-tight text-white z-10">
-          UNE EXPERTISE DÉDIÉE À
+        <div className="absolute w-full h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50 " />
+        <h1 className="text-focus-in absolute whitespace-normal top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[55%] px-2 text-center text-3xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
+          UNE EXPERTISE DÉDIÉE À  <span className="text-[var(--primary)] text-center"> VOS BESOINS </span>
         </h1>
-        <h1 className="text-focus-in absolute text-[var(--primary)] top-[60%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full text-center text-5xl md:text-7xl font-normal mb-8 leading-tight z-10">
-          VOS BESOINS
-        </h1>
-        <div className="absolute top-[70%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-144 text-center z-10">
-          <span className="text-white text-sm md:text-xl text-center mb-6">
+        
+        <div className="absolute top-[63%] left-1/2 -translate-x-1/2 -translate-y-1/2 animate-[updown_2s_ease-in-out_infinite] w-80 md:w-144 text-center z-10">
+          <span className="text-white text-sm md:text-xl text-center mb-6 mt-16">
             Des solutions logistiques qui assurent fluidité et performance, pour
             accompagner vos ambitions.
           </span>
@@ -99,7 +97,7 @@ export default function ServicesPage() {
 
       {/* Services Grid */}
        <div className="min-h-screen bg-gradient-to-br from-white-900 to-white-800 py-16 px-4">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto hidden md:table">
           <div className="flex flex-col items-center justify-center mb-12">
             {/* <h1 className="text-4xl md:text-5xl font-normal text-white text-center mb-4">Nos services</h1>
             <div className="flex items-center gap-3">
@@ -174,7 +172,7 @@ export default function ServicesPage() {
           <div className="text-center mb-16" data-aos="fade-up">
             <h2
               className="inline-block text-3xl md:text-4xl font-bold text-white
-                         px-8 py-4 rounded-md hover:bg-[var(--primary)] hover:text-black transition-colors"
+                         px-8 py-4 rounded-md hover:text-[var(--primary)] transition-colors"
             >
               SERVICES À VALEURS AJOUTÉES
             </h2>
@@ -195,7 +193,7 @@ export default function ServicesPage() {
                 key={index}
                 className="group rounded-xl p-4 shadow-sm hover:shadow-xl 
                          transition-all duration-500 transform hover:-translate-y-1
-                         border border-gray-100 hover:border-[var(--primary)] backdrop-blur-sm"
+                         border border-gray-100 hover:border-[var(--primary)] backdrop-blur-sm backdrop-opacity-60"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >

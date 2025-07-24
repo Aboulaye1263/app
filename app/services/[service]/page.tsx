@@ -129,10 +129,10 @@ const serviceDetails = {
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
     bannerImage:"/images/Hangar 02.jpg",
     description:
-      "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client, quelles que soient la nature ou la complexité de vos produits."+
-      "Besoin d’un espace de stockage adapté ? Contactez nos équipes pour plus d’informations.",
-      actionTitle: "Optimisez vos opérations logistiques dès aujourd’hui.",
-      actionDescription: "Contactez-nous pour une solution personnalisée.",
+      "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client, quelles que soient la nature ou la complexité de vos produits.",
+      actionTitle: "Besoin d’un espace de stockage adapté ? ",
+                    
+      actionDescription: "Contactez nos équipes pour plus d’informations.",
       features: [
       {
         title: "Stockage sous douane",
@@ -181,10 +181,9 @@ const serviceDetails = {
     heroImage: "/images/reefers_new.png",
     bannerImage:"/images/services-banner.jpg",
     description:
-      "Dépotage, réparation, maintenance, Genset, conditionnement… Nos solutions spécialisées optimisent vos flux, prolongent la durée de vie des équipements et marchandises, et renforcent votre compétitivité. "+
-      "Gagnez en efficacité dès maintenant. Contactez nos équipes pour une solution sur mesure ou un audit de vos besoins.",
-      actionTitle: "Optimisez vos opérations logistiques dès aujourd’hui.",
-      actionDescription: "Contactez-nous pour une solution personnalisée.",
+      "Dépotage, réparation, maintenance, Genset, conditionnement… Nos solutions spécialisées optimisent vos flux, prolongent la durée de vie des équipements et marchandises, et renforcent votre compétitivité. ",
+      actionTitle: "Gagnez en efficacité dès maintenant. ",
+      actionDescription: "Contactez nos équipes pour une solution sur mesure ou un audit de vos besoins.",
       features: [
       {
         title: "Services frigorifiques",
@@ -307,7 +306,7 @@ export default function ServiceDetail() {
 
       {/* Hero Section */}
       
-      <div className="relative h-[60vh] sm:h-[70vh] lg:h-[80vh] w-full">
+      <div className="relative min-h-screen sm:h-[70vh] lg:h-[80vh] w-full">
       <ProgressBar />
       
            <Image
@@ -321,19 +320,19 @@ export default function ServiceDetail() {
           
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
-        <div className="absolute inset-0 flex-wrap items-center justify-center">
+        <div className="absolute inset-0 flex-wrap text-3xl items-center justify-center">
           
-            <TypingText title={service.title} />
+            {/* <TypingText title={service.title} /> */}
+            <h1 className="text-focus-in absolute whitespace-normal top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[85%] px-2 text-center text-3xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
+              {service.title}
+            </h1>
             
          
           
-          <div className="absolute top-[55%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-full md:w-[124vh] text-center z-10">
-            <span className="text-white text-sm md:text-xl text-center mb-6">
-              {service.heroText}
-            </span><br/>
-            <span className="text-white text-sm md:text-xl text-center mb-6">
-              {service.description}
-            </span>
+          <div className="absolute top-[57%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-full md:w-[124vh] text-center z-10">
+           
+            <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-2 px-10 ">{service.heroText}</p>
+            <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-2 px-10 ">{service.description}</p>
           </div>
         </div>
       </div>

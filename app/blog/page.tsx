@@ -3,6 +3,7 @@ import HeaderMenu from '@/components/Header/HeaderMenu';
 import Image from 'next/image';
 import Link from 'next/link';
 import TypingText from '@/components/TypingText';
+import ProgressBar from '@/components/ProgressBar';
 
 const blogPosts = [
   {
@@ -31,16 +32,17 @@ export default function BlogPage() {
         <HeaderMenu isScrolledAndImmutable/>
       {/* Header Section */}
       <div className="relative h-screen bg-[#222221] text-white py-12 px-4 text-center pt-40">
+      <ProgressBar />
         <div className="absolute kenburns-left top-0 left-0 right-0 -z-99 h-full">
           <Image
             src="/images/actualites.png"
             alt="TOM MEDLOG Image header"
             fill
-            className=" object-cover"
+            className="object-cover"
           />
         </div>
-        <div className="kenburns-left absolute w-full min-h-screen bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
-        <h1 className="w-full whitespace-nowrap animate-typing overflow-hidden  border-r-4 border-r-white border-opacity-0 pr-5 pt-2 font-medium  absolute top-1/3 md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-5xl md:text-7xl  mb-4 leading-tight text-white z-10">
+        <div className="kenburns-left absolute w-full min-h-screen justify-items-center bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
+        <h1 className="w-full md:whitespace-nowrap flex-wrap animate-typing overflow-hidden  border-r-4 border-r-white border-opacity-0 px-5 pt-2 font-medium  absolute top-[40%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-3xl md:text-7xl  mb-4 leading-tight text-white z-10">
           Actualités et
           <span className="text-[#F3DFA2]"> Annonces</span>
         </h1>

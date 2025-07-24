@@ -57,7 +57,7 @@ export default function Home() {
               Premier port sec en
               <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>
             </h1>
-            <p className="text-lg  md:text-xl mb-8 m-4 max-w-3xl leading-relaxed opacity-90 text-justify">
+            <p className="text-sm  md:text-xl mb-8 m-4 max-w-3xl leading-relaxed opacity-90 text-justify">
               Fondé en 2007, TOM (Terminal des Opérations Maritimes) est un acteur stratégique et incontournable de la chaîne logistique en Afrique de l’Ouest. 
  
               <br></br>
@@ -66,7 +66,7 @@ export default function Home() {
             </p>
             <Link
               href="/services"
-              className="inline-flex items-center justify-center gap-3 m-4 bg-[var(--primary)] text-black font-semibold 
+              className="flex  items-center justify-center gap-3 m-4 bg-[var(--primary)] text-black font-semibold 
                        px-8 py-4 rounded-md hover:bg-white hover:scale-105
                        transition-all duration-300 ease-out shadow-lg
                        text-base min-w-[200px] group"
@@ -163,12 +163,12 @@ export default function Home() {
                   // md breakpoint
                   visibleItems = 4;
                 } else {
-                  visibleItems = 1;
+                  visibleItems = 3;
                 }
 
                 // Calculate total width of items to scroll
                 const totalItemWidth = container.scrollWidth;
-                const itemWidth = totalItemWidth / 11; // Total number of items (11)
+                const itemWidth = totalItemWidth / 12; // Total number of items (11)
                 const scrollAmount = itemWidth * visibleItems;
 
                 container.scrollTo({
@@ -211,12 +211,12 @@ export default function Home() {
                   // md breakpoint
                   visibleItems = 4;
                 } else {
-                  visibleItems = 1;
+                  visibleItems = 3;
                 }
 
                 // Calculate total width of items to scroll
                 const totalItemWidth = container.scrollWidth;
-                const itemWidth = totalItemWidth / 11; // Total number of items (11)
+                const itemWidth = totalItemWidth / 12; // Total number of items (11)
                 const scrollAmount = itemWidth * visibleItems;
 
                 container.scrollTo({
@@ -331,7 +331,7 @@ export default function Home() {
           >
             <div className="relative w-full md:w-1/2">
               {/* Background blue rectangle */}
-              <div className="absolute left-[-10%] w-full h-full top-[15%] bg-[var(--primary)] mx-auto md:mx-0" />
+              <div className="absolute left-[-10%] w-full h-[75%] md:h-full top-[25%] md:top-[15%] bg-[var(--primary)] mx-auto md:mx-0" />
 
               {/* Content */}
               <div className="relative flex flex-col gap-6">
@@ -341,7 +341,7 @@ export default function Home() {
                     src="/images/notre_objectif.png"
                     alt="Vision"
                     fill
-                    className="object-cover"
+                    className="object-contain md:object-cover"
                   />
                 </div>
               </div>

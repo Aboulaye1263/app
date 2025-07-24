@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 export default function Footer() {
   return (
-    <footer className="bg-[rgb(34,34,33)] text-white pt-16 pb-8">
+    <footer className="bg-[rgb(34,34,33)] text-white md:pt-16 pt-2 pb-8">
       <div className="w-full mx-auto px-12">
         {/* Main Footer Content */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 mb-2">
           {/* Logo Column */}
           <div>
             <Image
@@ -14,7 +14,7 @@ export default function Footer() {
               alt="TOM MEDLOG"
               width={150}
               height={60}
-              className="mb-4"
+              className="mb-0"
             />
           </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">Liens utiles</h3>
            <ul>
-            <li  className="hover:translate-x-2 hover:font-medium hover:underline" ><a href='/about'>A propos</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline" ><a href='/about'>A propos</a></li>
             <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/services'>Services</a></li>
             <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/blog'>Actualités</a></li>
             <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
