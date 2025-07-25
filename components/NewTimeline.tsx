@@ -12,7 +12,7 @@ layout='2-columns'
 className='lg:h-[320vh]'>
   <VerticalTimelineElement
     className="vertical-timeline-element--work font-light"
-    contentStyle={{color: '#171717' }}
+    contentStyle={{color: '#171717'}}
     contentArrowStyle={{ borderRight: '7px solid  #EED484' }}
     date="2007"
     iconStyle={{ background: '#EED484', color: '#fff', width: '10px', height: '10px' }}
@@ -29,7 +29,7 @@ className='lg:h-[320vh]'>
     
         {/* <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4> */}
         
-        <p className="font-extralight px-5 py-5">
+        <p className="font-extralight px-5 py-5 text-sm">
         Nous avons décidé de mettre en œuvre notre vision : réinventer la logistique au Sénégal à travers des opérations intégrées, une proximité client forte et une ambition régionale affirmée.
         </p>
     </div>
