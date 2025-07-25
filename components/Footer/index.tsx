@@ -22,11 +22,11 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">Liens utiles</h3>
            <ul>
-            <li className="hover:translate-x-2 hover:font-medium hover:underline" ><a href='/about'>A propos</a></li>
-            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/services'>Services</a></li>
-            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/blog'>Actualités</a></li>
-            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/why-join-us'>Pourquoi nous rejoindre</a></li>
-            <li className="hover:translate-x-2 hover:font-medium hover:underline"><a href='/contact#form'>Contact</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline" ><a href='/about' className='md:text-sm text-xs'>A propos</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline md:text-sm text-xs"><a href='/services' className='md:text-sm text-xs'>Services</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline md:text-sm text-xs"><a href='/blog' className='md:text-sm text-xs'>Actualités</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline md:text-sm text-xs"><a href='/why-join-us' className='md:text-sm text-xs'>Pourquoi nous rejoindre</a></li>
+            <li className="hover:translate-x-2 hover:font-medium hover:underline md:text-sm text-xs"><a href='/contact#form' className='md:text-sm text-xs'>Contact</a></li>
            </ul>
           </div>
 
@@ -34,15 +34,15 @@ export default function Footer() {
           <div>
             <h3 className="font-bold mb-4 ">TOM S.A</h3>
             {/* <h3 className="font-bold mb-4 ">Siège Social</h3> */}
-            <p className="text-sm mb-4">
+            <p className="md:text-sm text-xs mb-4">
             <span className='font-bold'>Siège Social : </span>Immeuble MSC – 2ème étage, Route des Hydrocarbures, Hann Bel-Air
             Dakar - Sénégal
             </p>
-            <p className="text-sm">
+            <p className="md:text-sm text-xs">
               Tel: (+221) 33 859 06 06
             </p>
             
-            <a href="mailto:accueil@tom.sn" className="text-sm" style={{textDecoration: "underline"}}>
+            <a href="mailto:accueil@tom.sn" className="md:text-sm text-xs" style={{textDecoration: "underline"}}>
               accueil@tom.sn
             </a>
           </div>
@@ -50,7 +50,7 @@ export default function Footer() {
           {/* About Column */}
           <div>
             <h3 className="font-bold mb-4 ">À PROPOS DE NOUS</h3>
-            <p className="text-sm text-justify">
+            <p className="md:text-sm text-xs text-justify">
             Acteur de référence en logistique en Afrique de l’Ouest,
              TOM contribue activement au développement économique du Sénégal 
              et de la région en s’appuyant sur des infrastructures modernes, 
@@ -89,7 +89,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright */}
-          <div className="text-center text-sm mt-8 text-gray-400">
+          <div className="text-center md:text-sm text-xs mt-8 text-gray-400">
             Copyright © 2024, TOM
             <br />
             2024. All rights reserved

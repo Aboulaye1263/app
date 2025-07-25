@@ -341,7 +341,7 @@ export default function Home() {
                     src="/images/notre_objectif.png"
                     alt="Vision"
                     fill
-                    className="object-contain md:object-cover"
+                    className="object-contain md:object-covery"
                   />
                 </div>
               </div>

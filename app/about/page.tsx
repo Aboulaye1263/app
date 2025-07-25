@@ -10,12 +10,12 @@ import { Button, Carousel, Modal, ModalBody, ModalHeader, Tooltip} from "flowbit
 import { title } from "process";
 import { Content } from "next/font/google";
 import TeamCarousel from "@/components/Carousel/TeamCarousel";
-import Testimonial from "@/components/Carousel/TestimonialSlider";
 import TeamSection from "@/components/Carousel/TeamSection";
 import SliderValue from "@/components/Carousel/ValueSlider";
 import Timeline from "@/components/Timeline";
 import NewTimeline from "@/components/NewTimeline";
 import ProgressBar from "@/components/ProgressBar";
+import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
 
 
 export default function About() {
@@ -564,29 +564,7 @@ export default function About() {
         >
           Témoignages clients
         </h2>
-          <Carousel pauseOnHover
-          indicators={true}
-          
-          className="h-[110vh] md:h-[500px] ">
-            {testimonials.map((item, index) => (
-            <div key={index} className="w-[75%] flex flex-col rounded-xl shadow-lg bg-[var(--primary)] items-center justify-center space-y-4 p-8">
-              {/* <Image
-                src={item.image}
-                alt={item.name}
-                width={80}
-                height={80}
-                className="rounded-full"
-              /> */}
-              <p className="text-sm italic text-gray-700">“{item.text}”</p>
-              <div className="text-center">
-                <h3 className="font-semibold text-gray-900">{item.name}</h3>
-                <p className="text-sm text-gray-500">{item.role}</p>
-              </div>
-            </div>
-          ))}
-            
-          </Carousel>
-          
+          <TestimonialCarousel />
         </div>
       <Footer />
     </main>
