@@ -11,8 +11,10 @@
   },
   "dependencies": {
     "@prisma/client": "^6.3.1",
+    "@radix-ui/react-slot": "^1.2.3",
     "@svgr/webpack": "^8.1.0",
     "aos": "^2.3.4",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "flowbite": "^3.1.2",
     "flowbite-react": "^0.11.7",
@@ -24,7 +26,8 @@
     "react-countup": "^6.5.3",
     "react-dom": "^19.1.0",
     "react-vertical-timeline-component": "^3.5.3",
-    "tailwind-merge": "^3.2.0"
+    "tailwind-merge": "^3.3.1",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",

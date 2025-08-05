@@ -16,6 +16,8 @@ import Timeline from "@/components/Timeline";
 import NewTimeline from "@/components/NewTimeline";
 import ProgressBar from "@/components/ProgressBar";
 import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
+import ValuesSection from "@/components/Carousel/ValueSection";
+import ValueSection from "@/components/Carousel/ValueSection";
 
 
 export default function About() {
@@ -189,7 +191,7 @@ export default function About() {
             data-aos="fade-up"
             className="flex flex-col gap-4 items-center mt-16 pb-4"
           >
-            <p className="text-black font-bold text-sm md:text-base text-center">
+            <p className="text-black font-semibold text-sm md:text-base text-center">
             TOM, c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,
             et la puissance d’un réseau logistique global, partenaire et relais régional de MEDLOG et MSC: premier armateur mondial.
             </p>
@@ -222,7 +224,7 @@ export default function About() {
                 années d'expérience
               </span>
             </div>
-            <p className="text-gray-700 text-justify">
+            <p className="text-gray-700 text-justify text-sm md:text-base">
               Avec une intégration forte au sein du groupe MEDLOG et plusieurs
               sites au Sénégal stratégiquement situés et couvrant 250.000 m²,
               notamment une plateforme de distribution dans le Port Autonome de
@@ -468,18 +470,18 @@ export default function About() {
 
         <div id="valeurs"  data-aos="zoom-in" className="bg-[#FAFAFA] relative w-full h-full px-4 md:px-8 md:py-8 lg:px-4 text-center flex flex-col">
           <div>
-            <h2 className="text-5xl text-[var(--foreground)] font-bold mb-20 md:mb-4">
+            <h2 className="text-4xl text-[var(--foreground)] font-bold mb-20 md:mb-4">
               NOS VALEURS
             </h2>
           </div>
 
-          <div className="relative flex w-full">
+          <div className="relative w-full">
             <div
                 className="flex flex-wrap overflow-x-auto scrollbar-hide scroll-smooth transition-transform duration-500 ease-in-out mx-0 directed-scroll justify-center md:py-8"
                 id="carousel-container"
                 style={{ gap: "2.5rem" }}
               >
-                <SliderValue />
+                <ValueSection />
                
                 
             </div>
@@ -557,7 +559,7 @@ export default function About() {
         </div>
       </div>
 
-      <div className="relative md:min-h-[90%] min-h-[120vh] max-h-[600px] lg:w-[70%] lg:px-4 lg:mx-auto">
+      <div id="testimonial" className="relative md:min-h-[90%] min-h-[120vh] max-h-[600px] lg:w-[70%] lg:px-4 lg:mx-auto">
       <h2
           className="text-3xl font-bold text-center mb-2"
           data-aos="fade-up"

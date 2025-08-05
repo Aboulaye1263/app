@@ -11,6 +11,7 @@ import { services } from "@/constants/services";
 import { refs } from "@/constants/refs";
 import LogoSlider from "@/components/Carousel/LogoSlider";
 import ProgressBar from "@/components/ProgressBar";
+import PartnerPorfolio from "@/components/Carousel/PartnerPorfolio";
 export default function Home() {
   useEffect(() => {
     AOS.init({
@@ -25,14 +26,14 @@ export default function Home() {
       alt="TOM MEDLOG Image header"
       fill
       key={1}
-      className="carousel-slide object-cover brightness-50 transition-all duration-1000"
+      className="carousel-slide md:object-cover brightness-50 transition-all duration-1000"
     />,
     <Image
       src="/images/banners/banner_2.jpg"
       alt="TOM MEDLOG Carousel Image 1"
       fill
       key={2}
-      className="carousel-slide object-cover brightness-50 transition-all duration-1000"
+      className="carousel-slide md:object-cover brightness-50 transition-all duration-1000"
     />,
     <Image
       src="/images/new images/header.png"
@@ -59,7 +60,7 @@ export default function Home() {
             </h1>
             <p className="text-sm  md:text-xl mb-8 m-4 max-w-3xl leading-relaxed opacity-90 text-justify">
               Fondé en 2007, TOM (Terminal des Opérations Maritimes) est un acteur stratégique et incontournable de la chaîne logistique en Afrique de l’Ouest. 
- 
+
               <br></br>
               <br></br>Pionnier dans son domaine, TOM a établi la norme pour la logistique au Sénégal et en Afrique de l’ouest grâce à son engagement envers l’excellence opérationnelle,
               ses innovations et intégrations technologiques, et son offre de services à forte valeur ajoutée moteur de la performance économique régionale.
@@ -103,6 +104,7 @@ export default function Home() {
           <div className="flex  whitespace-nowrap">
             {/* Doublons les images pour effet de boucle infinie */}
             <LogoSlider />
+            <PartnerPorfolio />
           </div>
         </div>
 
@@ -341,7 +343,7 @@ export default function Home() {
                     src="/images/notre_objectif.png"
                     alt="Vision"
                     fill
-                    className="object-contain md:object-covery"
+                    className="object-contain md:object-cover"
                   />
                 </div>
               </div>

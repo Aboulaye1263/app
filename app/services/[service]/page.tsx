@@ -14,7 +14,7 @@ import ProgressBar from "@/components/ProgressBar";
 // Service details map
 const serviceDetails = {
   transport: {
-    title: "Transport",
+    title: ["Transport"],
     heroText: "Soyez livrez partout. Sans rupture. Sans retard. Sans compromis.",
     heroImage: "/images/banner_transport_new.png", // You'll need to add these images
     bannerImage:"/images/transport-banner.jpg",
@@ -60,7 +60,7 @@ const serviceDetails = {
     ],
   },
   depot: {
-    title: "Dépôt de Conteneurs",
+    title: ["Dépôt de"," Conteneurs"],
     heroText: "Votre partenaire de confiance pour la gestion de conteneurs.",
     heroImage: "/images/service_depot.png",
     bannerImage:"/images/depot-banner.jpg",
@@ -124,12 +124,12 @@ const serviceDetails = {
     ],
   },
   entreposage: {
-    title: "Entreposage / Distribution de Marchandises",
+    title: ["Entreposage / Distribution de"," Marchandises"],
     heroText: "Stockez en toute confiance. Quelles que soient vos marchandises, nous avons l’espace, la sécurité et la solution.",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
     bannerImage:"/images/Hangar 02.jpg",
     description:
-      "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client, quelles que soient la nature ou la complexité de vos produits.",
+      "Avec plus de 50 000 m² d’espaces sécurisés et d’entrepôts modernes, sous douane ou à température contrôlée, nous pouvons stocker tous types de marchandises et répondre aux exigences spécifiques de chaque client.",
       actionTitle: "Besoin d’un espace de stockage adapté ? ",
                     
       actionDescription: "Contactez nos équipes pour plus d’informations.",
@@ -176,7 +176,7 @@ const serviceDetails = {
     ],
   },
   solution: {
-    title: "Services à Valeur Ajoutée",
+    title: ["Services à Valeur"," Ajoutée"],
     heroText: "Plus que du stockage : de la valeur à chaque étape",
     heroImage: "/images/reefers_new.png",
     bannerImage:"/images/services-banner.jpg",
@@ -312,7 +312,7 @@ export default function ServiceDetail() {
            <Image
            
            src={service.heroImage}
-           alt= {service.title}
+           alt= {service.title.join(" ")}
            fill
            className="object-cover"
            priority
@@ -323,16 +323,14 @@ export default function ServiceDetail() {
         <div className="absolute inset-0 flex-wrap text-3xl items-center justify-center">
           
             {/* <TypingText title={service.title} /> */}
-            <h1 className="text-focus-in absolute whitespace-normal top-[50%] left-1/2 -translate-x-1/2 -translate-y-1/2 w-full md:w-[85%] px-2 text-center text-3xl md:text-7xl font-normal mb-8 leading-tight text-white z-10">
-              {service.title}
-            </h1>
+            <TypingText title={service.title[0]} coloredTitle={service.title[1]} />
             
          
           
-          <div className="absolute top-[57%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-full md:w-[124vh] text-center z-10">
+          <div className="absolute top-[55%] md:top-[60%] lg:top-[65%] left-1/2 transform -translate-x-1/2 w-full md:w-[124vh] text-center z-10">
            
-            <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-2 px-10 ">{service.heroText}</p>
-            <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-2 px-10 ">{service.description}</p>
+            <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-2 px-4 ">{service.heroText}</p>
+            <p className="md:w-[120vh] text-white text-sm md:text-xl text-center mb-6 mt-2 px-4 ">{service.description}</p>
           </div>
         </div>
       </div>
@@ -351,22 +349,22 @@ export default function ServiceDetail() {
       </div> */}
 
 
-      <div className="flex mx-auto mt-12 max-w-screen-xl bg-[var(--primary)] dark:bg-[var(--primary)] rounded-xl">
-          <div className="md:w-1/2 py-8 px-4 mx-auto text-center">
-         <div className="relative h-80 ml-auto w-[95%]">
-            <Image
-              src={service.bannerImage}
-              alt= {service.title}
-              fill
-              className="object-cover rounded-xl"
-            />
-          </div>
+      <div className="md:flex mx-auto mt-12 max-w-screen-xl bg-[var(--primary)] dark:bg-[var(--primary)] rounded-xl">
+          <div className="md:w-1/2 py-8 px-4 mx-auto text-center md:block hidden">
+            <div className="relative h-80 ml-auto w-[95%]">
+              <Image
+                src={service.bannerImage}
+                alt={service.title.join(" ")}
+                fill
+                className="object-cover rounded-xl"
+              />
+            </div>
           </div>
           <div className="w-full py-8 px-8 mx-auto max-w-screen-xl text-center lg:py-16">
               <h1 className="mb-4 text-3xl font-normal tracking-tight leading-none text-gray-900 md:text-5xl lg:text-4xl dark:text-gray-900">{service.actionTitle}</h1>
               <p className="mb-8 text-lg font-normal text-gray-800 lg:text-xl sm:px-8 lg:px-48 dark:text-gray-800">{service.actionDescription}</p>
               <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-                  <a href="/contact#form" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[var(--foreground)] hover:bg-gray-100 hover:text-gray-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
+                  <a href="/contact#form" className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-[#222221] hover:bg-gray-100 hover:text-gray-800 focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-900">
                     Demandez un devis 
                   </a>
                    

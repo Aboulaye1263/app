@@ -15,11 +15,11 @@ interface Testimonial {
 const testimonials: Testimonial[] = [
   {
     id: 1,
-    name: "Papice MENDY",
+    name: "Touba Fruit/Senfruit",
     role: "Responsable Logistique",
-    company: "Touba Fruit/Senfruit",
-    excerpt: "En tant qu’acteur majeur de l’exportation de fruits frais vers l’Europe,"+
-      " nous avons trouvé en Tom Medlog Sénégal un partenaire logistique fiable et réactif.",
+    company: "Papice MENDY",
+    excerpt: "Grâce à la maîtrise de TOM MEDLOG du transport réfrigéré et de la chaîne logistique, nous avons considérablement réduit nos délais d'acheminement et amélioré la traçabilité de nos expéditions. Leur équipe est à l'écoute, disponible et force de proposition.",
+      
     fullText: "En tant qu’acteur majeur de l’exportation de fruits frais vers l’Europe,"+
       " nous avons trouvé en Tom Medlog Sénégal un partenaire logistique fiable et réactif."+
       " Grâce à leur maîtrise du transport réfrigéré et de la chaîne logistique, nous avons considérablement réduit nos délais d’acheminement et amélioré la traçabilité de nos expéditions jusqu’au Port de Dakar."+
@@ -30,11 +30,11 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 2,
-    name: "Vincent HUET",
+    name: "Agroline SA",
     role: "Responsable Achats et Transit",
-    company: "Agroline SA",
-    excerpt: "En qualité de Responsable Achats et Transit/supply chain d’Agroline SA, une des plus grandes entreprises agro-alimentaires du Sénégal,"+
-            " je tiens à exprimer notre entière satisfaction quant à notre collaboration avec TOM MEDLOG.",
+    company: "Vincent HUET",
+    excerpt: "TOM MEDLOG allie professionnalisme et réactivité. Grâce à leur expertise et leur disponibilité, nous pouvons offrir des produits authentiques Sénégalais. ",
+            
     fullText: "En qualité de Responsable Achats et Transit/supply chain d’Agroline SA, une des plus grandes entreprises agro-alimentaires du Sénégal,"+
       " je tiens à exprimer notre entière satisfaction quant à notre collaboration avec TOM MEDLOG. Leurs services de transport,"+
       " de logistique et de stockage de conteneurs sont essentiels pour notre chaîne d’approvisionnement, garantissant la qualité et la fraîcheur de nos produits."+
@@ -45,11 +45,11 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 3,
-    name: " ",
+    name: "PATISEN",
     role: "Service logistique",
-    company: "PATISEN",
-    excerpt: "Dans un secteur aussi exigeant que le nôtre, la fiabilité logistique est essentielle. "+
-      "Avec Tom Medlog, nous avons trouvé bien plus qu’un prestataire : un véritable partenaire stratégique. ",
+    company: "",
+    excerpt: "Avec TOM MEDLOG, nous avons trouvé bien plus qu'un prestataire : un véritable partenaire stratégique qui partage nos valeurs de rigueur, d'innovation et de respect des engagements. C'est ce qui fait toute la différence.",
+      
     fullText: "Dans un secteur aussi exigeant que le nôtre, la fiabilité logistique est essentielle. "+
       "Avec Tom Medlog, nous avons trouvé bien plus qu’un prestataire : un véritable partenaire stratégique. "+
       "Leur expertise, leur réactivité et leur parfaite connaissance de la logistique et des opérations portuaires ont largement contribué à fluidifier notre supply chain,"+
@@ -60,9 +60,9 @@ const testimonials: Testimonial[] = [
   },
   {
     id: 4,
-    name: "Mouna Assad",
+    name: "Tropical Fruits",
     role: "Gérante",
-    company: "Tropical Fruits",
+    company: "Mouna Assad",
     excerpt: "Depuis plus de 10 ans, TOM MEDLOG est un partenaire de confiance qui comprend parfaitement nos impératifs et anticipe nos besoins.",
     fullText:  "En tant qu’entreprise agroalimentaire spécialisée dans la distribution de fruits et légumes frais à travers le Sénégal,"+
       " nous avons des exigences élevées en matière de qualité, de rigueur et de réactivité. Depuis plus de 10 ans, TOM MEDLOG est un partenaire de confiance qui comprend parfaitement nos impératifs et anticipe nos besoins."+

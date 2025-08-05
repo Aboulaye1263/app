@@ -155,6 +155,12 @@ export default function HeaderMenu({
             >
               Nos experts
             </Link>
+            <Link
+              href="/about#testimonial"
+              className="block px-4 py-2 text-sm text-gray-700 hover:bg-[var(--primary)] hover:text-white"
+            >
+              Témoignages clients
+            </Link>
           </div>
         </div>
         {/* Services */}

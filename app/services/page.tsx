@@ -11,6 +11,8 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { url } from "inspector";
 import ProgressBar from "@/components/ProgressBar";
+import { ArrowLeft, ArrowRight, ImageIcon } from "lucide-react";
+import ServiceSlider from "@/components/Carousel/ServiceSlider";
 
 // bg-gradient-to-br from-[var(--primary)] to-[var(--primary)]/70
 
@@ -50,6 +52,8 @@ export default function ServicesPage() {
 
   ];
 
+
+
   return (
     <main className="min-h-screen bg-[#FAFAFA] overflow-x-hidden">
       <HeaderMenu isScrolledAndImmutable/>
@@ -74,7 +78,7 @@ export default function ServicesPage() {
       </div> */}
       <div data-aos="flip-left" className="relative h-screen flex flex-col justify-items-center pb-32">
       
-        <div className="absolute top-0 left-0 right-0 -z-99 h-full">
+        <div className="absolute top-0 left-0 right-0 -z-99 h-full ">
           <Image
             src="/images/banner_services.png"
             alt="TOM MEDLOG Image header"
@@ -96,20 +100,19 @@ export default function ServicesPage() {
       </div>
 
       {/* Services Grid */}
-       <div className="min-h-screen bg-gradient-to-br from-white-900 to-white-800 py-16 px-4">
-        <div className="max-w-7xl mx-auto hidden md:table">
-          <div className="flex flex-col items-center justify-center mb-12">
-            {/* <h1 className="text-4xl md:text-5xl font-normal text-white text-center mb-4">Nos services</h1>
-            <div className="flex items-center gap-3">
-              
-              <p className="text-gray-300 text-center">Lorem ipsum dolor sit amet</p>
-              
-            </div> */}
-          </div>
-          
+      <div className="min-h-screen bg-transparent py-16 px-4 md:block hidden">
+        <div className="max-w-7xl mx-auto">
           <ExpandSlider images={sliderImages} />
+         
         </div>
-      </div> 
+      </div>
+
+      <div className="min-h-screen bg-transparent py-16 px-4 md:hidden block">
+        <div className="max-w-7xl mx-auto">
+          {/* <ExpandSlider images={sliderImages} /> */}
+          <ServiceSlider />
+        </div>
+      </div>
       
 
       {/* Transport Section */}
@@ -193,7 +196,7 @@ export default function ServicesPage() {
                 key={index}
                 className="group rounded-xl p-4 shadow-sm hover:shadow-xl 
                          transition-all duration-500 transform hover:-translate-y-1
-                         border border-gray-100 hover:border-[var(--primary)] backdrop-blur-sm backdrop-opacity-60"
+                         border border-gray-100 hover:border-[var(--primary)]"
                 data-aos="fade-up"
                 data-aos-delay={index * 100}
               >
