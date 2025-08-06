@@ -190,7 +190,7 @@ export default function About() {
           
             <div
               data-aos="fade-up"
-              className="flex flex-col gap-4 justify-center items-center lg:mt-44 mt-16 min-w-144"
+              className="flex flex-col gap-4 justify-center items-center lg:mt-56 mt-16 min-w-144"
             >
               <p className="text-black font-semibold text-sm md:text-base text-center">
                 TOM, c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,
