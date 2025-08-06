@@ -43,6 +43,14 @@ interface Value {
     },
     {
       id: 4,
+      icon: "/images/famille.png",
+      title: "Nous sommes une famille",
+      description: "Nous cultivons un esprit familial basé sur la confiance,"+
+                    " le dévouement et l'appartenance. "+
+                    "Cela nous pousse à agir avec courage et responsabilité pour le bien de nos clients et collaborateurs. "
+    },
+    {
+      id: 5,
       icon: "/images/passion.png",
       title: "Nous sommes passionnés et engagés",
       description: "Nous sommes animés par une passion qui nous pousse à offrir des services d'excellence,"+
@@ -50,7 +58,7 @@ interface Value {
                     "Chaque membre de notre équipe partage cette volonté de dépassement et de satisfaction."
     },
     {
-      id: 5,
+      id: 6,
       icon: "/images/soucieux.png",
       title: "Nous nous soucions des gens",
       description: "Nous valorisons chaque individu pour sa contribution unique."+
@@ -67,7 +75,7 @@ const ValuesSection = () => {
 
   // Reset index when screen size changes to avoid out of bounds
   useEffect(() => {
-    const maxValidIndex = Math.floor((values.length - 2) / itemsPerPage) * itemsPerPage;
+    const maxValidIndex = Math.floor((values.length - 1) / itemsPerPage) * itemsPerPage;
     if (currentIndex > maxValidIndex) {
       setCurrentIndex(0);
     }
@@ -83,24 +91,27 @@ const ValuesSection = () => {
   const prevSlide = () => {
     setCurrentIndex(prev => {
       const prevIndex = prev - itemsPerPage;
-      return prevIndex < 0 ? Math.floor((values.length - 1) / itemsPerPage) * itemsPerPage : prevIndex;
+      return prevIndex < 0 ? Math.floor((values.length - 2) / itemsPerPage) * itemsPerPage : prevIndex;
     });
   };
 
   const visibleValues = values.slice(currentIndex, currentIndex + itemsPerPage);
 
   return (
-    <section className="py-16 bg-values-bg">
+    <section className="py-4 bg-values-bg">
       <div className="container mx-auto px-4 max-w-7xl">
         <div className="relative">
-          <div className={`grid gap-8 mb-8 ${isMobile ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-2 lg:grid-cols-3'}`}>
+          <div className={`grid gap-8 mb-8 ${isMobile ? 'grid-cols-1' : 'grid-cols-1 md:grid-cols-3 lg:grid-cols-3'} justify-items-center content-center `}>
             {visibleValues.map((value, index) => {
               const IconComponent = value.icon;
               return (
                 <div
                   key={value.id}
                   data-aos="fade-in"
-                  className="text-center p-6 bg-card rounded-lg shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 animate-fade-in"
+                  className={`text-center p-6 bg-card rounded-lg shadow-card hover:shadow-elegant transition-all duration-300 transform hover:-translate-y-2 animate-fade-in
+                    ${
+            value.id === 4 ? 'hidden md:block' : ''
+          }`}
                   style={{ animationDelay: `${index * 0.1}s` }}
                 >
                   <div className="w-20 h-20 mx-auto mb-6 bg-values-icon-bg rounded-full flex items-center justify-center shadow-lg">

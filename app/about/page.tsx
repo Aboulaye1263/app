@@ -187,15 +187,18 @@ export default function About() {
             <NewTimeline />
       
           </div>
-          <div
-            data-aos="fade-up"
-            className="flex flex-col gap-4 items-center mt-16 pb-4"
-          >
-            <p className="text-black font-semibold text-sm md:text-base text-center">
-            TOM, c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,
-            et la puissance d’un réseau logistique global, partenaire et relais régional de MEDLOG et MSC: premier armateur mondial.
-            </p>
-          </div>
+          
+            <div
+              data-aos="fade-up"
+              className="flex flex-col gap-4 justify-center items-center lg:mt-44 mt-16 min-w-144"
+            >
+              <p className="text-black font-semibold text-sm md:text-base text-center">
+                TOM, c’est la combinaison de l’agilité d’un acteur de proximité profondément local avec la maîtrise du terrain,
+                et la puissance d’un réseau logistique global, partenaire et relais régional de MEDLOG et MSC: premier armateur mondial.
+              </p>
+            </div>
+          
+
         </div>
       </div>
 
@@ -470,7 +473,7 @@ export default function About() {
 
         <div id="valeurs"  data-aos="zoom-in" className="bg-[#FAFAFA] relative w-full h-full px-4 md:px-8 md:py-8 lg:px-4 text-center flex flex-col">
           <div>
-            <h2 className="text-4xl text-[var(--foreground)] font-bold mb-20 md:mb-4">
+            <h2 className="text-4xl text-[var(--foreground)] font-bold mb-4 mt-4 md:mb-4">
               NOS VALEURS
             </h2>
           </div>
