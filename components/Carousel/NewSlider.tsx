@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 interface SlideData {
@@ -9,6 +9,9 @@ interface SlideData {
   
 
 }
+
+
+
 
 const slides: SlideData[] = [
     {
@@ -57,24 +60,53 @@ const slides: SlideData[] = [
     }
   ];
 
+  
 const NewSlider: React.FC = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [windowWidth, setWindowWidth] = useState<number | null>(null);
   
+  useEffect(() => {
+    const handleResize = () => setWindowWidth(window.innerWidth);
+
+    handleResize(); // calcul initial
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  if (windowWidth === null) return null; // évite le rendu côté serveur
+
+  const isMobile = windowWidth < 768;
+  const maxIndex = isMobile ? slides.length - 1 : slides.length - 3;
+
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => {
-      // Sur mobile (1 slide), on peut aller jusqu'au dernier slide
-      // Sur desktop (3 slides), on s'arrête quand on ne peut plus afficher 3 slides complètes
-      const maxIndex = window.innerWidth < 768 ? slides.length - 1 : slides.length - 3;
-      return prevIndex < maxIndex ? prevIndex + 1 : prevIndex;
-    });
+    setCurrentIndex((prevIndex) =>
+      prevIndex < maxIndex ? prevIndex + 1 : prevIndex
+    );
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => prevIndex > 0 ? prevIndex - 1 : 0);
+    setCurrentIndex((prevIndex) => (prevIndex > 0 ? prevIndex - 1 : 0));
   };
 
   const canGoPrev = currentIndex > 0;
-  const canGoNext = window.innerWidth < 768 ? currentIndex < slides.length - 1 : currentIndex < slides.length - 3;
+  const canGoNext = currentIndex < maxIndex;
+
+//   const nextSlide = () => {
+//     setCurrentIndex((prevIndex) => {
+//       // Sur mobile (1 slide), on peut aller jusqu'au dernier slide
+//       // Sur desktop (3 slides), on s'arrête quand on ne peut plus afficher 3 slides complètes
+//       const maxIndex = window.innerWidth < 768 ? slides.length - 1 : slides.length - 3;
+//       return prevIndex < maxIndex ? prevIndex + 1 : prevIndex;
+//     });
+//   };
+
+//   const prevSlide = () => {
+//     setCurrentIndex((prevIndex) => prevIndex > 0 ? prevIndex - 1 : 0);
+//   };
+
+//   const canGoPrev = currentIndex > 0;
+//   const canGoNext = window.innerWidth < 768 ? currentIndex < slides.length - 1 : currentIndex < slides.length - 3;
 
   return (
     <div className="relative w-full max-w-7xl mx-auto px-2 py-8">
