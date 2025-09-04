@@ -18,6 +18,7 @@ import ProgressBar from "@/components/ProgressBar";
 import TestimonialCarousel from "@/components/Carousel/TestimonialCarousel";
 import ValuesSection from "@/components/Carousel/ValueSection";
 import ValueSection from "@/components/Carousel/ValueSection";
+import NewSlider from "@/components/Carousel/NewSlider";
 
 
 export default function About() {
@@ -62,7 +63,7 @@ export default function About() {
           },
     {
       name: "Mouna Assad",
-      role: "Gérante de Tropical Fruits",
+      role: "Directrice Générale de Tropical Fruits",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300&h=300",
       text: "En tant qu’entreprise agroalimentaire spécialisée dans la distribution de fruits et légumes frais à travers le Sénégal,"+
       " nous avons des exigences élevées en matière de qualité, de rigueur et de réactivité. Depuis plus de 10 ans, TOM MEDLOG est un partenaire de confiance qui comprend parfaitement nos impératifs et anticipe nos besoins."+
@@ -484,7 +485,7 @@ export default function About() {
                 id="carousel-container"
                 style={{ gap: "2.5rem" }}
               >
-                <ValueSection />
+                <NewSlider />
                
                 
             </div>

@@ -13,7 +13,7 @@ const PartnerPortfolio = () => {
 
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => {
-        const newIndex = (prevIndex + 1) % partnerLogos.length;
+        const newIndex = (prevIndex + 9) % partnerLogos.length;
         const newLogos = [];
         
         for (let i = 0; i < 9; i++) {
@@ -61,11 +61,11 @@ const PartnerPortfolio = () => {
         
         {partnerLogos.length > 9 && (
           <div className="flex justify-center mt-8 space-x-2">
-            {Array.from({ length: Math.min(partnerLogos.length, 5) }).map((_, index) => (
+            {Array.from({ length: Math.min(partnerLogos.length, 3) }).map((_, index) => (
               <div
                 key={index}
                 className={`w-2 h-2 rounded-full transition-all duration-300 ${
-                  Math.floor(currentIndex / 3) % 5 === index
+                  Math.floor(currentIndex / 9) % 3 === index
                     ? 'bg-primary scale-125'
                     : 'bg-border'
                 }`}
