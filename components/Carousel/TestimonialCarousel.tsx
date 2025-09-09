@@ -61,7 +61,7 @@ const testimonials: Testimonial[] = [
   {
     id: 4,
     name: "Tropical Fruits",
-    role: "Gérante",
+    role: "Directrice Générale",
     company: "Mouna Assad",
     excerpt: "Depuis plus de 10 ans, TOM MEDLOG est un partenaire de confiance qui comprend parfaitement nos impératifs et anticipe nos besoins.",
     fullText:  "En tant qu’entreprise agroalimentaire spécialisée dans la distribution de fruits et légumes frais à travers le Sénégal,"+

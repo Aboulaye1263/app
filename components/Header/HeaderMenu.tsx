@@ -52,7 +52,7 @@ export default function HeaderMenu({
 
   return (
     <nav
-      className={`fixed top-0 w-full z-20 px-4 md:px-8 h-24 flex justify-between items-center transition-all duration-500 ${
+      className={`fixed top-0 w-full z-50 px-4 md:px-8 h-24 flex justify-between items-center transition-all duration-500 ${
         isScrolled ? "bg-white shadow-md" : ""
       }`}
     >
