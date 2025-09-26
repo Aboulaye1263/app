@@ -27,7 +27,7 @@ export default function TimelineDemo() {
       content: (
         <div>
         <h3 className="font-semibold md:text-2xl">Alliance avec le Port Autonome de Dakar</h3>
-          <p className="mb-8 text-xs md:text-base dark:text-neutral-200">
+          <p className="mb-8 text-sm md:text-base dark:text-neutral-200">
             Installation sur une plateforme logistique de 210.000 m², à 1 km du Port Autonome de Dakar.
         Une infrastructure unique au Sénégal par sa taille et sa proximité.
         Début d’une alliance stratégique avec le PAD pour repenser la logistique nationale et accompagner l’essor du commerce régional.
@@ -51,7 +51,7 @@ export default function TimelineDemo() {
       content: (
         <div>
             <h3 className="font-semibold md:text-2xl">Lancement de la Zone Unique de Dépotage (ZUD)</h3>
-          <p className="mb-4 text-xs md:text-base dark:text-neutral-200">
+          <p className="mb-4 text-sm md:text-base dark:text-neutral-200">
             Création de la ZUD, initiative pionnière visant à centraliser les opérations de dépotage, 
             fluidifier les contrôles douaniers et accélérer les flux entre le port et l’hinterland, 
             notamment vers le Mali via corridor Dakar-Bamako.
@@ -69,7 +69,7 @@ export default function TimelineDemo() {
           </div>
 
            <h3 className="font-semibold md:text-2xl mt-16">Démarrage des entrepôts et services logistiques spécialisés</h3>
-          <p className="mb-4 text-xs font-normal md:text-base dark:text-neutral-200">
+          <p className="mb-4 text-sm font-normal md:text-base dark:text-neutral-200">
             TOM renforce son ancrage opérationnel avec le développement de services d’entreposage sous douane, 
         de logistique vrac, de manutention spécialisée et de gestion des flux sacherie, 
         répondant aux besoins concrets des grands importateurs nationaux.
@@ -94,7 +94,7 @@ export default function TimelineDemo() {
       content: (
         <div>
         <h3 className="font-semibold md:text-2xl">Champion national, pionnier régional</h3>
-          <p className="mb-8 text-xs text-neutral-800 md:text-base dark:text-neutral-200">
+          <p className="mb-8 text-sm text-neutral-800 md:text-base dark:text-neutral-200">
             TOM est devenu le champion Sénégalais de la logistique et un acteur stratégique incontournable de l’industrie en Afrique de l’Ouest.
             </p>
           

@@ -26,21 +26,45 @@ export default function Home() {
       alt="TOM MEDLOG Image header"
       fill
       key={1}
-      className="carousel-slide md:object-cover brightness-50 transition-all duration-1000"
+      className="carousel-slide object-cover  brightness-50 transition-all duration-1000"
     />,
     <Image
       src="/images/banners/banner_2.jpg"
       alt="TOM MEDLOG Carousel Image 1"
       fill
       key={2}
-      className="carousel-slide md:object-cover brightness-50 transition-all duration-1000"
+      className="carousel-slide object-cover brightness-50 transition-all duration-1000"
     />,
     <Image
       src="/images/new images/header.png"
       alt="TOM MEDLOG Carousel Image 2"
       fill
       key={3}
+      className="carousel-slide object-cover object-right brightness-50 transition-all duration-1000"
+    />,
+  ];
+
+   const mobileItems = [
+    <Image
+      src="/images/mob-header-1.png"
+      alt="TOM MEDLOG Image header"
+      fill
+      key={1}
+      className="carousel-slide object-cover  brightness-50 transition-all duration-1000"
+    />,
+    <Image
+      src="/images/mob-header-2.png"
+      alt="TOM MEDLOG Carousel Image 1"
+      fill
+      key={2}
       className="carousel-slide object-cover brightness-50 transition-all duration-1000"
+    />,
+    <Image
+      src="/images/about-header.png"
+      alt="TOM MEDLOG Carousel Image 2"
+      fill
+      key={3}
+      className="carousel-slide object-cover object-right brightness-50 transition-all duration-1000"
     />,
   ];
   return (
@@ -48,9 +72,54 @@ export default function Home() {
       <HeaderMenu />
 
       {/* Hero Section - Enhanced */}
-      <div className="relative h-screen">
+      <div className="relative h-screen hidden md:block">
         <ProgressBar />
         <CarouselImages items={items} fetchSlideCount />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
+        <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
+          <div className="max-w-5xl justify-items-center md:justify-items-start" data-aos="fade-up">
+            <h1 className="text-3xl m-4 md:text-7xl font-medium mb-2 mt-8 md:mt-0 md:mb-8 leading-tight">
+              Premier port sec en
+              <br/><span className="text-[var(--primary)]">Afrique de l'Ouest</span>
+            </h1>
+            <p className="text-sm  md:text-xl mb-8 m-4 max-w-3xl leading-relaxed opacity-90 text-justify">
+              Fondé en 2007, TOM (Terminal des Opérations Maritimes) est un acteur stratégique et incontournable de la chaîne logistique en Afrique de l’Ouest. 
+
+              <br></br>
+              <br></br>Pionnier dans son domaine, TOM a établi la norme pour la logistique au Sénégal et en Afrique de l’ouest grâce à son engagement envers l’excellence opérationnelle,
+              ses innovations et intégrations technologiques, et son offre de services à forte valeur ajoutée moteur de la performance économique régionale.
+            </p>
+            <Link
+              href="/services"
+              className="flex  items-center justify-center gap-3 m-4 bg-[var(--primary)] text-black font-semibold 
+                       px-8 py-4 rounded-md hover:bg-white hover:scale-105
+                       transition-all duration-300 ease-out shadow-lg
+                       text-base min-w-[200px] group"
+            >
+              Nos services
+              {/* <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="currentColor"
+                className="w-5 h-5 group-hover:translate-x-1 transition-transform"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                />
+              </svg> */}
+            </Link>
+          </div>
+        </div>
+      </div>
+
+      {/* Hero Section - Enhanced Mobile*/}
+      <div className="relative h-screen xs:block md:hidden">
+        <ProgressBar />
+        <CarouselImages items={mobileItems} fetchSlideCount />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />
         <div className="absolute w-full inset-0 flex flex-col items-center justify-center text-white px-4">
           <div className="max-w-5xl justify-items-center md:justify-items-start" data-aos="fade-up">

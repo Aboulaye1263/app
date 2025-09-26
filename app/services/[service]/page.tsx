@@ -11,6 +11,7 @@ import Link from "next/link";
 import CountUp from "react-countup";
 import TypingText from "@/components/TypingText";
 import ProgressBar from "@/components/ProgressBar";
+import { useIsMobile } from "@/components/hooks/use-mobile";
 // Service details map
 const serviceDetails = {
   transport: {
@@ -60,7 +61,7 @@ const serviceDetails = {
     ],
   },
   depot: {
-    title: ["Dépôt de"," Conteneurs"],
+    title: ["Dépôt de ","Conteneurs"],
     heroText: "Votre partenaire de confiance pour la gestion de conteneurs.",
     heroImage: "/images/service_depot.png",
     bannerImage:"/images/depot-banner.jpg",
@@ -124,7 +125,7 @@ const serviceDetails = {
     ],
   },
   entreposage: {
-    title: ["Entreposage / Distribution de"," Marchandises"],
+    title: ["Entreposage / Distribution de ","Marchandises"],
     heroText: "Stockez en toute confiance. Quelles que soient vos marchandises, nous avons l’espace, la sécurité et la solution.",
     heroImage: "/images/other_services/entrepot_sac_jaune.png",
     bannerImage:"/images/Hangar 02.jpg",
@@ -176,7 +177,7 @@ const serviceDetails = {
     ],
   },
   solution: {
-    title: ["Services à Valeur"," Ajoutée"],
+    title: ["Services à Valeur ","Ajoutée"],
     heroText: "Plus que du stockage : de la valeur à chaque étape",
     heroImage: "/images/reefers_new.png",
     bannerImage:"/images/services-banner.jpg",
@@ -307,11 +308,11 @@ export default function ServiceDetail() {
       {/* Hero Section */}
       
       <div className="relative min-h-screen sm:h-[70vh] lg:h-[80vh] w-full">
-      <ProgressBar />
+        <ProgressBar />
       
            <Image
            
-           src={service.heroImage}
+           src={useIsMobile()  ? "/images/services-banner.jpg" : service.heroImage}
            alt= {service.title.join(" ")}
            fill
            className="object-cover"

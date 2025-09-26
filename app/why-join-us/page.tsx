@@ -28,9 +28,17 @@ export default function WhyJoinUs() {
       {/* Hero Section */}
             <div className="relative h-screen flex flex-col justify-end items-center pb-32">
             <ProgressBar />
-              <div className="absolute top-0 left-0 right-0 -z-99 h-full">
+              <div className="absolute top-0 left-0 right-0 -z-99 h-full xs:hidden lg:block">
                 <Image
                   src="/images/joinUs-banner.png"
+                  alt="TOM MEDLOG Image header"
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="absolute top-0 left-0 right-0 -z-99 h-full lg:hidden block">
+                <Image
+                  src="/images/why-header.png"
                   alt="TOM MEDLOG Image header"
                   fill
                   className="object-cover"
@@ -173,7 +181,7 @@ export default function WhyJoinUs() {
               Nos collaborateurs ne sont pas de simples exécutants : ce sont des piliers de notre croissance. 
               C’est pourquoi nous faisons de l’évolution interne une priorité et investissons dans la formation, 
               la responsabilisation et l’accompagnement de chaque membre de l’équipe.
-              Nous voulons que nos talents grandissent avec nous — durablement, selon leurs ambitions, 
+              Nous voulons que nos talents grandissent avec nous durablement, selon leurs ambitions, 
               avec un vrai plan de carrière et un environnement qui favorise l’initiative et la prise de responsabilités.
             </p>
           </div>

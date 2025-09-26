@@ -33,9 +33,17 @@ export default function BlogPage() {
       {/* Header Section */}
       <div className="relative h-screen bg-[#222221] text-white py-12 px-4 text-center pt-40">
       <ProgressBar />
-        <div className="absolute kenburns-left top-0 left-0 right-0 -z-99 h-full">
+        <div className="absolute kenburns-left top-0 left-0 right-0 -z-99 h-full xs:hidden lg:block">
           <Image
             src="/images/actualites.png"
+            alt="TOM MEDLOG Image header"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute kenburns-left top-0 left-0 right-0 -z-99 h-full lg:hidden block">
+          <Image
+            src="/images/news-header.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"

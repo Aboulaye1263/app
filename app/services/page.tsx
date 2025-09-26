@@ -78,9 +78,17 @@ export default function ServicesPage() {
       </div> */}
       <div data-aos="flip-left" className="relative h-screen flex flex-col justify-items-center pb-32">
       
-        <div className="absolute top-0 left-0 right-0 -z-99 h-full ">
+        <div className="absolute top-0 left-0 right-0 -z-99 h-full xs:hidden lg:block">
           <Image
             src="/images/banner_services.png"
+            alt="TOM MEDLOG Image header"
+            fill
+            className="object-cover"
+          />
+        </div>
+        <div className="absolute top-0 left-0 right-0 -z-99 h-full lg:hidden block">
+          <Image
+            src="/images/mob-header-3.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"
