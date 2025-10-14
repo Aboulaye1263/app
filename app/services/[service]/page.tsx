@@ -12,6 +12,7 @@ import CountUp from "react-countup";
 import TypingText from "@/components/TypingText";
 import ProgressBar from "@/components/ProgressBar";
 import { useIsMobile } from "@/components/hooks/use-mobile";
+import { div } from "motion/react-client";
 // Service details map
 const serviceDetails = {
   transport: {
@@ -310,14 +311,35 @@ export default function ServiceDetail() {
       <div className="relative min-h-screen sm:h-[70vh] lg:h-[80vh] w-full">
         <ProgressBar />
       
-           <Image
+          {(params.service === "solution" ) && useIsMobile() === true ? (
+            <div>
+              <Image
+                src={service.bannerImage}
+                alt={service.title.join(" ")}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          ) : (
+            <div>
+              <Image
+                src={service.heroImage}
+                alt={service.title.join(" ")}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          )}
+           {/* <Image
            
-           src={useIsMobile()  ? "/images/services-banner.jpg" : service.heroImage}
+           src={params.solution && useIsMobile() ? serviceDetails.solution.bannerImage : service.heroImage }
            alt= {service.title.join(" ")}
            fill
            className="object-cover"
            priority
-         /> 
+         />  */}
           
         
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/50" />

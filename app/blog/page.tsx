@@ -43,13 +43,13 @@ export default function BlogPage() {
         </div>
         <div className="absolute kenburns-left top-0 left-0 right-0 -z-99 h-full lg:hidden block">
           <Image
-            src="/images/news-header.png"
+            src="/images/header mobile/MSC Michelle Cappellini.jpg"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover"
           />
         </div>
-        <div className="kenburns-left absolute w-full min-h-screen justify-items-center bottom-0 right-0 left-0 bg-gradient-to-r from-black/90 to-black/50" />
+        <div className="kenburns-left absolute w-full min-h-screen justify-items-center bottom-0 right-0 left-0 bg-gradient-to-r from-black/80 to-black/40" />
         <h1 className="w-full md:whitespace-nowrap flex-wrap animate-typing overflow-hidden  border-r-4 border-r-white border-opacity-0 px-5 pt-2 font-medium  absolute top-[40%] md:top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center text-3xl md:text-7xl  mb-4 leading-tight text-white z-10">
           Actualités et
           <span className="text-[#F3DFA2]"> Annonces</span>

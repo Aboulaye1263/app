@@ -91,7 +91,7 @@ export default function About() {
         </div>
         <div data-aos="fade-in" className="absolute top-0 left-0 right-0 -z-99 h-full lg:hidden block">
           <Image
-            src="/images/about-header.png"
+            src="/images/header mobile/2.png"
             alt="TOM MEDLOG Image header"
             fill
             className="object-cover xs:object-cover xs:object-right -start-10"

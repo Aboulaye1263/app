@@ -78,7 +78,7 @@ export default function ValueSection() {
             {group.map((value) => (
               <div
                 key={value.id}
-                className="flex flex-col items-center justify-center bg-white rounded-2xl shadow-md p-6 text-center"
+                className="flex flex-col items-center justify-center xs:justify-center bg-white rounded-2xl shadow-md p-6 text-center"
               >
                 <img src={value.icon} alt={value.title} width={85} />
                 <h3 className="mt-4 text-lg font-semibold">{value.title}</h3>

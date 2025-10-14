@@ -38,7 +38,7 @@ export default function WhyJoinUs() {
               </div>
               <div className="absolute top-0 left-0 right-0 -z-99 h-full lg:hidden block">
                 <Image
-                  src="/images/why-header.png"
+                  src="/images/header mobile/4.png"
                   alt="TOM MEDLOG Image header"
                   fill
                   className="object-cover"
