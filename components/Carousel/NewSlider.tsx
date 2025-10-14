@@ -137,7 +137,7 @@ const NewSlider: React.FC = () => {
               className="w-full md:w-1/3 flex-shrink-0 px-3"
             >
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300 h-96">
-                <div className="relative h-35 overflow-hidden justify-items-center">
+                <div className="relative h-35 overflow-hidden justify-items-center xs:justify-center">
                   <img 
                     src={slide.image} 
                     alt={slide.title}
