@@ -181,7 +181,7 @@ const serviceDetails = {
     title: ["Services à Valeur ","Ajoutée"],
     heroText: "Plus que du stockage : de la valeur à chaque étape",
     heroImage: "/images/reefers_new.png",
-    bannerImage:"/images/services-banner.jpg",
+    bannerImage:"/images/header mobile/8.png",
     description:
       "Dépotage, réparation, maintenance, Genset, conditionnement… Nos solutions spécialisées optimisent vos flux, prolongent la durée de vie des équipements et marchandises, et renforcent votre compétitivité. ",
       actionTitle: "Gagnez en efficacité dès maintenant. ",
