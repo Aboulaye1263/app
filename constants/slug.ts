@@ -1,4 +1,4 @@
-"useclient"; 
+
 export const blogPosts = [
   {
     slug: "transport-revolution",

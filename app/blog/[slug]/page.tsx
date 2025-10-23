@@ -6,46 +6,7 @@ import HeaderMenu from "@/components/Header/HeaderMenu";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/constants/slug";
 
-// const blogArticle = [
-//   {
-//     slug: "transport-revolution",
-//     title: "COMMENT TOM RÉVOLUTIONNE T-ELLE LE TRANSPORT EN AFRIQUE DE L'OUEST ?",
-//     image: "/images/blogs/article_1.jpg",
-//     content: `
-//       <p>
-//         TOM MEDLOG transforme la logistique et le transport en Afrique de l’Ouest
-//         grâce à une approche intégrée basée sur l’innovation, la technologie et la durabilité.
-//       </p>
-//       <p>
-//         En investissant dans des infrastructures modernes et une flotte connectée,
-//         nous favorisons une chaîne logistique plus efficace, plus rapide et plus écologique.
-//       </p>
-//     `
-//   },
-//   {
-//     slug: "environmental-initiatives",
-//     title: "ENGAGEMENT ENVIRONNEMENTAL : NOS INITIATIVES POUR UNE LOGISTIQUE DURABLE",
-//     image: "/images/blogs/article_2.png",
-//     content: `
-//       <p>
-//         Chez TOM MEDLOG, la durabilité est au cœur de notre stratégie.
-//         Nous réduisons notre empreinte carbone en optimisant nos itinéraires,
-//         en favorisant les carburants alternatifs et en recyclant nos ressources.
-//       </p>
-//     `
-//   },
-//   {
-//     slug: "logistics-trends-2025",
-//     title: "LES TENDANCES CLÉS DE LA LOGISTIQUE EN 2025",
-//     image: "/images/blogs/article_3.jpg",
-//     content: `
-//       <p>
-//         L’année 2025 marque une nouvelle ère pour la logistique, dominée par
-//         l’automatisation, la traçabilité en temps réel et la logistique verte.
-//       </p>
-//     `
-//   },
-// ];
+
 
 export default function BlogArticlePage({ params } : { params: { slug: string} }) {
   const article = blogPosts.find((post) => post.slug === params.slug);
