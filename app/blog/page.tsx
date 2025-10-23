@@ -8,20 +8,20 @@ import ProgressBar from '@/components/ProgressBar';
 const blogPosts = [
   {
     id: 1,
-    title: "COMMENT TOM RÉVOLUTIONNE T-ELLE LE TRANSPORT EN AFRIQUE DE L'OUEST ?",
-    image: "/images/blogs/article_1.jpg",
+    title: "Comprendre les Incoterms : la clé d'une logistique internationale sans erreurs",
+    image: "/images/blogs/incoterm2-banner.png",
     slug: "transport-revolution"
   },
   {
     id: 2,
-    title: "ENGAGEMENT ENVIRONNEMENTAL : NOS INITIATIVES POUR UNE LOGISTIQUE DURABLE",
-    image: "/images/blogs/article_2.png",
+    title: "Conteneurs maritimes : au cœur de la performance logistique mondiale",
+    image: "/images/blogs/conteneurs-banner.jpg",
     slug: "environmental-initiatives"
   },
   {
     id: 3,
-    title: "LES TENDANCES CLÉS DE LA LOGISTIQUE EN 2025",
-    image: "/images/blogs/article_3.jpg",
+    title: "Les Reachstackers : la puissance qui fait bouger le monde du conteneur",
+    image: "/images/blogs/reachstacker-banner.jpg",
     slug: "logistics-trends-2025"
   }
 ];

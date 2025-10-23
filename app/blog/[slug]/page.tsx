@@ -6,7 +6,7 @@ import HeaderMenu from "@/components/Header/HeaderMenu";
 import Footer from "@/components/Footer";
 import { blogPosts } from "@/constants/slug";
 
-// const blogPosts = [
+// const blogArticle = [
 //   {
 //     slug: "transport-revolution",
 //     title: "COMMENT TOM RÉVOLUTIONNE T-ELLE LE TRANSPORT EN AFRIQUE DE L'OUEST ?",
@@ -47,7 +47,7 @@ import { blogPosts } from "@/constants/slug";
 //   },
 // ];
 
-export default function BlogArticlePage({ params } : { params: { slug: string; content: string } }) {
+export default function BlogArticlePage({ params } : { params: { slug: string} }) {
   const article = blogPosts.find((post) => post.slug === params.slug);
  
 
