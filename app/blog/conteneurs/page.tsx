@@ -58,58 +58,88 @@ export default async function BlogArticlePage() {
 
         {/* Chapo */}
         <div className="text-lg md:text-xl text-muted-foreground leading-relaxed mb-12 border-l-4 chapo border-accent pl-6 py-4 bg-secondary/30">
-          {article.chapo}
+          Ils sillonnent les océans, empilés par milliers sur les navires porte-conteneurs. Discrets mais essentiels, les conteneurs maritimes sont la colonne vertébrale du commerce international. 
+ <strong> Chez TOM MEDLOG</strong>, nous les manipulons chaque jour, conscients qu’ils sont bien plus que de simples caisses métalliques : ce sont les coffres-forts du commerce mondial, garants de la sécurité, de la standardisation et de la fluidité des échanges.
+
         </div>
 
-      <section className="mb-12">
-        <p>Chez <strong>TOM MEDLOG</strong>, nous les manipulons chaque jour, conscients qu’ils sont bien plus que de simples caisses métalliques :
-      ce sont les coffres-forts du commerce mondial, garants de la sécurité, de la standardisation et de la fluidité des échanges.</p>
+      <section className="mb-12 text-justify">
+        
 
       <br/>
-      <h2>Une standardisation qui a tout changé</h2>
+      <h2 className="text-3xl font-bold text-foreground mb-6">Une standardisation qui a tout changé</h2>
       <p>L’invention du conteneur dans les années 1950 a bouleversé la logistique mondiale. Avant son arrivée, le chargement des navires demandait des jours, parfois des semaines.</p>
-      <p>Grâce à la standardisation des dimensions et des formats, il est désormais possible de transférer rapidement des marchandises d’un camion à un navire ou un train — sans manipulation directe du contenu.</p>
-      <p><strong>Aujourd’hui, plus de 90 % des marchandises échangées dans le monde transitent dans des conteneurs maritimes.</strong>
+      <p>Grâce à la standardisation des dimensions et des formats, il est désormais possible de transférer rapidement des marchandises d’un camion à un navire ou un train sans manipulation directe du contenu.</p>
+      <p><strong>Aujourd’hui, plus de 90 % des marchandises échangées dans le monde transitent dans des conteneurs maritimes. </strong>
       C’est cette innovation qui a rendu le commerce international aussi rapide, fiable et accessible. Une révolution silencieuse… mais essentielle.</p>
-
-      <br/><h2>Les principaux types de conteneurs utilisés par TOM MEDLOG</h2>
+</section>
+      <section className="mb-12">
+      <br/><h2 className="text-3xl font-bold text-foreground mb-6">Les principaux types de conteneurs utilisés par TOM MEDLOG</h2>
       <p>Chez <strong>TOM MEDLOG</strong>, nous gérons et manipulons une large gamme de conteneurs adaptés à chaque type de marchandise. Chaque format a sa fonction et son rôle dans la performance logistique.</p>
 
-      <ul>
-        <li><strong>Dry containers (20’, 40’, 40’ High Cube)</strong><br/>
-        Le modèle standard pour les marchandises sèches : cartons, sacs, palettes, produits manufacturés… C’est le plus polyvalent et le plus courant sur nos plateformes.</li>
+      <ul className="list-none space-y-3 mb-6">
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>Dry containers (20’, 40’, 40’ High Cube)</strong></span>
+            <br/><span className="block pt-3">Le modèle standard pour les marchandises sèches : cartons, sacs, palettes, produits manufacturés… C’est le plus polyvalent et le plus courant sur nos plateformes.</span>
+        </li>
 
-        <li><strong>Reefer containers (conteneurs frigorifiques)</strong><br/>
-        Équipés d’un groupe froid intégré, ils garantissent la température idéale pour les produits périssables : denrées alimentaires, produits pharmaceutiques, etc.
-        Un maillon essentiel pour préserver la qualité des flux sensibles en Afrique de l’Ouest.</li>
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>Reefer containers (conteneurs frigorifiques)</strong></span>
+            <br/><span className="block pt-3">Équipés d’un groupe froid intégré, ils garantissent la température idéale pour les produits périssables : denrées alimentaires, produits pharmaceutiques, etc.
+        Un maillon essentiel pour préserver la qualité des flux sensibles en Afrique de l’Ouest.</span>
+        </li>
 
-        <li><strong>Open top containers</strong><br/>
-        Sans toit rigide, ils sont parfaits pour les cargaisons volumineuses comme les machines industrielles ou les pièces de grande hauteur.
-        Idéal pour les opérations de levage et le transport hors format.</li>
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>Open top containers</strong></span>
+            <br/><span className="block pt-3">Sans toit rigide, ils sont parfaits pour les cargaisons volumineuses comme les machines industrielles ou les pièces de grande hauteur.
+        Idéal pour les opérations de levage et le transport hors format.</span>
+        </li>
 
-        <li><strong>Flat rack containers</strong><br/>
-        Dépourvus de parois latérales, ils facilitent le transport des charges lourdes et hors gabarit : véhicules, structures métalliques, matériaux de construction…
-        Adapté aux projets industriels et aux manutentions complexes.</li>
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>Flat rack containers</strong></span>
+            <br/><span className="block pt-3">Dépourvus de parois latérales, ils facilitent le transport des charges lourdes et hors gabarit : véhicules, structures métalliques, matériaux de construction…
+        Adapté aux projets industriels et aux manutentions complexes.</span>
+        </li>
 
-        <li><strong>Tank containers</strong><br/>
-        Spécialement conçus pour le transport sécurisé de liquides en vrac : produits chimiques, huiles, ou liquides alimentaires.
-        Une garantie de sécurité et de conformité internationale.</li>
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span>
+            <span><strong>Tank containers</strong></span>
+            <br/><span className="block pt-3">Spécialement conçus pour le transport sécurisé de liquides en vrac : produits chimiques, huiles, ou liquides alimentaires.
+        Une garantie de sécurité et de conformité internationale.</span>
+        </li>
+
       </ul>
-
-      <br/><h2>Pourquoi le choix du conteneur est stratégique</h2>
+</section>
+      <section className="mb-12">
+      <br/><h2 className="text-3xl font-bold text-foreground mb-6">Pourquoi le choix du conteneur est stratégique</h2>
       <p>Derrière chaque conteneur se cache une décision logistique clé. Un mauvais choix peut entraîner des pertes de place, des surcoûts de fret, voire des dommages aux marchandises.</p>
       <p>Chez <strong>TOM MEDLOG</strong>, nos équipes conseillent chaque client selon la nature de sa cargaison, ses contraintes de volume et ses exigences réglementaires.</p>
 
       <p>Cette expertise permet d’optimiser :</p>
-      <ul>
-        <li>le coût du transport, en maximisant la capacité de chargement ;</li>
-        <li>la sécurité, en réduisant les manipulations inutiles ;</li>
-        <li>et la traçabilité, grâce à des procédures de suivi intégrées.</li>
+      <ul className="list-none space-y-3 mb-6">
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span> 
+            <span>le coût du transport, en maximisant la capacité de chargement;</span>
+        </li>
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span> 
+            <span>la sécurité, en réduisant les manipulations inutiles;</span>
+        </li>
+        <li className="flex-col items-start mt-3">
+            <span className="inline-block w-2 h-2 bg-accent rounded-full mt-2 mr-3 flex-shrink-0"></span> 
+            <span>et la traçabilité, grâce à des procédures de suivi intégrées.</span>
+        </li>
+        
       </ul>
 
-      <p>Parce que dans la logistique moderne, chaque conteneur compte — et bien choisi, il devient un levier de performance.</p>
-
-      <br/><h2>TOM MEDLOG, acteur clé de la gestion de conteneurs en Afrique de l’Ouest</h2>
+      <p>Parce que dans la logistique moderne, chaque conteneur compte et bien choisi, il devient un levier de performance.</p>
+</section>
+      <section className="mb-12">
+      <br/><h2 className="text-3xl font-bold text-foreground mb-6">TOM MEDLOG, acteur clé de la gestion de conteneurs en Afrique de l’Ouest</h2>
       <p>Au Sénégal et dans la sous-région, <strong>TOM MEDLOG</strong> se distingue par sa capacité à gérer un flux continu de conteneurs sur ses sites portuaires et plateformes logistiques.</p>
       <p>De la manutention à la réparation, du stockage à la livraison finale, chaque opération est pensée pour garantir fluidité, fiabilité et sécurité.</p>
       <p>C’est cette maîtrise de bout en bout qui fait de <strong>TOM MEDLOG</strong> un partenaire logistique de confiance pour les acteurs du commerce régional et international.</p>

@@ -158,7 +158,7 @@ export default async function BlogArticlePage() {
       </section><br/>
 
       
-      <section className="mb-12 bg-accent/10 p-8 rounded-lg">
+      <section className="mb-12 bg-accent/10 rounded-lg">
         <h2 className="text-3xl font-bold text-foreground mb-6">L'expertise TOM MEDLOG</h2>
         <p className="text-foreground mb-4 leading-relaxed">
           Chez TOM MEDLOG, nous maîtrisons les Incoterms jusque dans leurs implications opérationnelles. 
