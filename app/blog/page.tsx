@@ -1,3 +1,4 @@
+
 import Footer from '@/components/Footer';
 import HeaderMenu from '@/components/Header/HeaderMenu';
 import Image from 'next/image';
@@ -5,24 +6,25 @@ import Link from 'next/link';
 import TypingText from '@/components/TypingText';
 import ProgressBar from '@/components/ProgressBar';
 
+
 const blogPosts = [
   {
     id: 1,
     title: "Comprendre les Incoterms : la clé d'une logistique internationale sans erreurs",
     image: "/images/blogs/incoterm2-banner.png",
-    slug: "transport-revolution"
+    slug: "incoterm"
   },
   {
     id: 2,
     title: "Conteneurs maritimes : au cœur de la performance logistique mondiale",
     image: "/images/blogs/conteneurs-banner.jpg",
-    slug: "environmental-initiatives"
+    slug: "conteneurs"
   },
   {
     id: 3,
     title: "Les Reachstackers : la puissance qui fait bouger le monde du conteneur",
     image: "/images/blogs/reachstacker-banner.jpg",
-    slug: "logistics-trends-2025"
+    slug: "reachstackers"
   }
 ];
 

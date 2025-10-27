@@ -1,6 +1,7 @@
 
 export const blogPosts = [
   {
+    id: 1,
     slug: "transport-revolution",
     title: "Comprendre les Incoterms : la clé d'une logistique internationale sans erreurs",
     chapo: "Dans le commerce international, chaque détail compte. Un simple malentendu sur la responsabilité d'un transport ou la prise en charge d'un risque peut coûter des milliers d'euros. C'est pour éviter ces zones grises qu'existent les Incoterms. Ce langage universel qui définit les règles du jeu entre acheteur et vendeur à travers le monde. Chez TOM MEDLOG, nous les utilisons au quotidien pour garantir la fluidité et la sécurité de vos opérations logistiques.",
@@ -131,6 +132,7 @@ export const blogPosts = [
     `
   },
   {
+    id: 2,
     slug: "environmental-initiatives",
     title: "Conteneurs maritimes : au cœur de la performance logistique mondiale",
     chapo: "Ils sillonnent les océans, empilés par milliers sur les navires porte-conteneurs. Discrets mais essentiels, les conteneurs maritimes sont la colonne vertébrale du commerce international. "+
@@ -192,6 +194,7 @@ export const blogPosts = [
     `
   },
   {
+    id: 3,
     slug: "logistics-trends-2025",
     title: "Les Reachstackers : la puissance qui fait bouger le monde du conteneur",
     chapo: "Ils ne font pas de bruit médiatique, mais sans eux, aucune plateforme logistique ne pourrait fonctionner. "+

@@ -9,7 +9,7 @@ import { blogPosts } from "@/constants/slug";
 
 
 export default function BlogArticlePage({ params } : { params: { slug: string} }) {
-  const article = blogPosts.find((post) => post.slug === params.slug);
+  const article =  blogPosts.find((post) => post.slug === params.slug);
  
 
   if (!article) return notFound();
