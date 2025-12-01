@@ -531,17 +531,26 @@ export default function About() {
       </div>
 
       {/* Testimonial Section */}
-      <div className="max-w-screen-xl mx-auto py-12 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
+      <div className="min-w-full mx-auto py-12 md:py-20 px-4 sm:px-6 md:px-12 lg:px-24 xl:px-32">
         <div className="bg-white rounded-lg shadow-lg p-6 sm:p-8 md:p-12">
           <div className="flex flex-col-reverse md:flex-row items-start gap-6 md:gap-8">
             <div className="flex-1 text-justify">
-              <p className="text-gray-700 text-base sm:text-lg mb-6">
-                Nous avons pu traverser l'année 2022 avec d'excellents résultats, aussi bien sur le développement de notre bilan que sur nos performances financières.
+              <p className="text-gray-700 text-base md:text-base mb-6">
+                Lorsque j’ai fondé TOM en 2007, devenue TOM MEDLOG,  mon ambition était de créer le premier port sec du Sénégal, et même d’Afrique de l’Ouest. Je portais la conviction que notre continent, et en particulier le Sénégal, devait s’inspirer des standards de performance et d’excellence des nations les plus développées.
               </p>
-              <p className="text-gray-700 text-base sm:text-lg mb-4">
-                Cette réussite s'explique essentiellement au niveau commercial par :
+              <p className="text-gray-700 text-sm md:text-base mb-4">
+                Le nom TOM rend hommage à mon père, Tommaso de Vargas, et MEDLOG représente la branche logistique du Groupe MSC. Rien n’aurait été possible sans le soutien indéfectible de la famille Aponte, fondatrice et propriétaire de MSC, ainsi que la confiance constante de M. Giuseppe Prudente, président de MEDLOG SA.
               </p>
-              <ul className="list-disc pl-6 space-y-4 text-gray-700 text-base sm:text-lg">
+              <p className="text-gray-700 text-sm md:text-base mb-4">
+                Le Sénégal, terre d’accueil de ma famille depuis plus de 60 ans, est devenu notre pays. Y bâtir un acteur logistique majeur, capable de rivaliser avec les multinationales et de diffuser son savoir-faire en Afrique de l’Ouest, illustre pleinement la richesse et le potentiel du contenu local.
+              </p>
+              <p className="text-gray-700 text-sm md:text-base mb-4">
+                Aujourd’hui, TOM MEDLOG incarne l’alliance d’une vision internationale, de valeurs humaines fortes et d’un ancrage local durable. Cette réussite est avant tout celle de nos collaborateurs, dont l’engagement quotidien constitue le socle de notre développement.
+              </p>
+              <p className="text-gray-700 text-sm md:text-base mb-4">
+                Avec humilité et fierté, nous continuerons à œuvrer pour que TOM MEDLOG demeure une référence et un moteur de croissance pour la région… et au-delà.
+              </p>
+              {/* <ul className="list-disc pl-6 space-y-4 text-gray-700 text-base sm:text-lg">
                 <li>
                   Beaucoup de prudence dans notre diversification sectorielle initiée durant les années Covid, nous forçant à nous replier vers les secteurs à fort potentiel
                 </li>
@@ -551,7 +560,7 @@ export default function About() {
                 <li>
                   Des avancées majeures sur les opérations de commerce extérieur, nous permettant d'apprécier fortement nos revenus de change.
                 </li>
-              </ul>
+              </ul> */}
 
               
             </div>
