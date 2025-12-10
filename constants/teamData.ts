@@ -17,7 +17,7 @@ export interface TeamMember {
       "Adossés au Groupe MSC, leader mondial du transport maritime, nous combinons une vision globale à une présence de proximité. Notre modèle repose sur une expertise de terrain, une culture de la performance, et une capacité à nous adapter aux besoins spécifiques du territoire.",
     "Chez TOM MEDLOG, nous croyons que la performance passe par l’humain, par l’excellence opérationnelle et par la rigueur au quotidien. Mon rôle est de mobiliser nos équipes autour de ces valeurs pour bâtir, chaque jour, une logistique plus fluide, plus intelligente, et porteuse de développement.",
   "Nous sommes prêts à relever vos défis logistiques avec réactivité, fiabilité et engagement. N’hésitez pas à nous faire confiance. Nous mettrons tout en œuvre pour vous satisfaire."],
-      image: "/images/team/maurice-ndong.png",
+      image: "/images/team/maurice-ndong.jpeg",
       experience: " 2009"
     },
     {
@@ -29,7 +29,7 @@ export interface TeamMember {
                  'Chaque donnée fiable, chaque information transparente, chaque processus contribue à accélérer vos opérations, ',
                  'En tant que Directeur Financier et Comptable, je veille à ce que nos engagements financiers soient aussi solides que nos engagements logistiques. Car dans un secteur où la réactivité et la confiance sont essentielles, notre différence se joue aussi dans la précision et la rigueur comptable.'
                  ],
-      image: '/images/team/raul-dagba.png',
+      image: '/images/team/raul-dagba.jpeg',
       experience: " 2011"
     },
     {
@@ -53,7 +53,7 @@ export interface TeamMember {
                  'Chez TOM MEDLOG, la performance commerciale passe par la rigueur, la proximité et l’humain. Notre engagement est clair : transformer la logistique en véritable levier de développement pour nos clients comme pour le pays.',
                  'Nous croyons fermement qu’ensemble, nous pouvons transformer vos défis en opportunités et faire avancer vos projets avec maîtrise et succès.'
                 ],
-        image: '/images/team/alain-dos-reis.png',
+        image: '/images/team/alain-dos-reis.jpeg',
         experience: ' 2008',
     },
   ];
