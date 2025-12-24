@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://tom.sn"), // Replace with your actual domain
+  metadataBase: new URL("https://www.tom.sn"), // Replace with your actual domain
   alternates: {
     canonical: "/",
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Medlog - Logistique et Transport",
     description:
       "Medlog, une entreprise de logistique et de transport spécialisée dans le transport de marchandises et de personnes.",
-    url: "https://tom.sn",
+    url: "https://www.tom.sn",
     siteName: "Medlog",
     images: [
       {
