@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL("https://your-domain.com"), // Replace with your actual domain
+  metadataBase: new URL("https://tom.sn"), // Replace with your actual domain
   alternates: {
     canonical: "/",
   },
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     title: "Medlog - Logistique et Transport",
     description:
       "Medlog, une entreprise de logistique et de transport spécialisée dans le transport de marchandises et de personnes.",
-    url: "https://your-domain.com",
+    url: "https://tom.sn",
     siteName: "Medlog",
     images: [
       {
@@ -100,7 +100,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="fr">
       <body className={`${ubuntu.variable} ${insani.variable} antialiased overflow-x-hidden`}>
         <SplashScreen />
         <div className="animated-background"></div>

@@ -414,7 +414,7 @@ export default function About() {
               </p>
             </div>
             <Image
-              src="/images/notre_mission.jpg"
+              src="/images/notre_mission.png"
               alt="Medlog"
               width={800}
               height={600}

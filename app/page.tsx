@@ -385,7 +385,7 @@ export default function Home() {
                 {/* Image */}
                 <div className="relative h-80 ml-auto w-[95%]">
                   <Image
-                    src="/images/notre_mission.jpg"
+                    src="/images/notre_mission.png"
                     alt="Mission"
                     fill
                     className="object-cover"
