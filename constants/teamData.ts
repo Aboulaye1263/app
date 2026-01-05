@@ -40,7 +40,7 @@ export interface TeamMember {
                  'Je crois à une logistique qui a du sens : humaine, précise, et pleinement alignée sur vos priorités. J’attends de mes équipes ce que je m’impose à moi-même chaque jour : une exigence sans compromis, une écoute sincère, et l’engagement d’avancer avec intégrité.',
                  'Notre terminal ne dort jamais. Parce que vos enjeux n’attendent pas. Bienvenue chez TOM MEDLOG : là où chaque action compte, et où l’engagement est réel.'
                 ],
-      image: '/images/team/hatem-haidar.png',
+      image: '/images/about/hatem.jpg',
       experience: " 2016"
     },
     {

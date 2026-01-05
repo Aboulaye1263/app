@@ -575,7 +575,7 @@ export default function About() {
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-bold text-gray-900 mt-10 md:mt-16 text-end">Franck De VARGAS</h3>
-              <p className="text-gray-600 text-end">Directeur Général</p>
+              <p className="text-gray-600 text-end">Président - Directeur Général</p>
             </div>
           </div>
         </div>

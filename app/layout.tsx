@@ -3,6 +3,7 @@ import { Ubuntu } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import SplashScreen from "@/components/SplashScreen";
+import {GoogleAnalytics, GoogleTagManager} from '@next/third-parties/google';
 import "flowbite-react";
 import "flowbite";
 
@@ -101,6 +102,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="fr">
+      <GoogleTagManager gtmId="GTM-5HNKDMFW"/>
+      <GoogleAnalytics gaId="G-MGHVRNPF8Q"/>
       <body className={`${ubuntu.variable} ${insani.variable} antialiased overflow-x-hidden`}>
         <SplashScreen />
         <div className="animated-background"></div>
